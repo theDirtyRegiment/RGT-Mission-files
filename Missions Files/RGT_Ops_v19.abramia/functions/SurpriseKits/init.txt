@@ -1,0 +1,5 @@
+this addAction['Get Rifleman Loadout',RGT_fnc_AssaultSurprise,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get CLS Loadout',RGT_fnc_CLSSurprise,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Autorifleman Loadout',RGT_fnc_ARSurprise,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get Marksman Loadout',RGT_fnc_MarksmanSurprise,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Grenadier Loadout',RGT_fnc_GrenadierSurprise,nil,1.5,true,true,"","((_target distance _this)<5)"];
