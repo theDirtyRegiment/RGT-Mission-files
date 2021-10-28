@@ -1,8 +1,0 @@
-comment "Remove existing items";
-removeBackpack player;
-
-_array = ["milgp_bp_Pointman_mc", "milgp_bp_Breacher_mc", "milgp_bp_Tomahawk_mc"];
-_pack = selectRandom _array;
-player addBackpack _pack;
-
-hint "You weaved equipment pouches onto the back of your body armor.";
