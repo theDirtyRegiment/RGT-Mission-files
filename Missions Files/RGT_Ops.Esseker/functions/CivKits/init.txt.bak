@@ -1,0 +1,17 @@
+this addAction['Take Civilian Attaire',TG_fnc_civi,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+
+this addAction['Take Businessman Attaire',TG_fnc_busi,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+
+this addAction['Take Mechanic Attaire',TG_fnc_mech,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+
+this addAction['Take Peasant Attaire',TG_fnc_peas,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+
+this addAction['Take Scientist Attaire',TG_fnc_scie,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+
+this addAction['Take Reporter Attaire', TG_fnc_repo,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Take Policeman Attaire', TG_fnc_poli,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Take Wiseguy Attaire', TG_fnc_wise,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Take Aid Worker Attaire', TG_fnc_ngo,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Take Paramedic Attaire', TG_fnc_para,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Take Construction Crew Attaire', TG_fnc_cons,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Take Band Member Attaire', TG_fnc_band,nil,1.5,true,true,"","((_target distance _this)<5)"];  

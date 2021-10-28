@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=373;
+		nextID=380;
 	};
 	class Camera
 	{
-		pos[]={20775.385,53.474998,7183.4209};
-		dir[]={0.83801389,-0.44428989,-0.31698945};
-		up[]={0.41562402,0.89583045,-0.15721372};
-		aside[]={-0.35382155,2.7590431e-008,-0.93538481};
+		pos[]={20780.982,40.927601,7187.6909};
+		dir[]={0.23802114,-0.88773173,-0.39424136};
+		up[]={0.45881742,0.46036589,-0.75994974};
+		aside[]={-0.85613614,1.2526289e-007,-0.51688856};
 	};
 };
 binarizationWanted=0;
-sourceName="RGT_Ops_v19";
+sourceName="RGT_Ops";
 addons[]=
 {
 	"rhsusf_c_melb",
@@ -21362,7 +21362,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""rhs_weap_M136"",""rhs_weap_m72a7""],[5,5]],[[""rhsusf_100Rnd_762x51_m62_tracer"",""rhsusf_100Rnd_556x45_mixed_soft_pouch"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhs_mag_maaws_HEDP"",""rhs_mag_maaws_HEAT"",""rhs_fim92_mag"",""rhs_mag_M441_HE"",""rhsusf_mag_40Rnd_46x30_FMJ"",""ACE_20Rnd_762x51_Mk316_Mod_0_Mag"",""rhs_mag_M397_HET"",""rhs_mag_m661_green"",""rhs_mag_m662_red"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""rhs_mag_m715_Green"",""HandGrenade"",""SmokeShell"",""ACE_M84"",""rhs_mag_20Rnd_SCAR_762x51_mk316_special"",""rhsusf_20Rnd_762x51_SR25_mk316_special_Mag""],[15,20,40,10,10,10,30,20,20,15,15,15,15,15,15,15,15,15,20,20]],[[],[]],[[],[]]],false]";
+							value="[[[[""rhs_weap_M136"",""rhs_weap_m72a7""],[5,5]],[[""rhsusf_100Rnd_762x51_m62_tracer"",""rhsusf_100Rnd_556x45_mixed_soft_pouch"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhs_mag_maaws_HEDP"",""rhs_mag_maaws_HEAT"",""rhs_fim92_mag"",""rhs_mag_M441_HE"",""rhsusf_mag_40Rnd_46x30_FMJ"",""ACE_20Rnd_762x51_Mk316_Mod_0_Mag"",""rhs_mag_M397_HET"",""rhs_mag_m661_green"",""rhs_mag_m662_red"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""rhs_mag_m715_Green"",""HandGrenade"",""SmokeShell"",""ACE_M84"",""rhs_mag_20Rnd_SCAR_762x51_mk316_special"",""rhsusf_20Rnd_762x51_SR25_mk316_special_Mag"",""rhssaf_30rnd_556x45_SOST_G36""],[15,20,40,10,10,10,30,20,20,15,15,15,15,15,15,15,15,15,20,20,40]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};

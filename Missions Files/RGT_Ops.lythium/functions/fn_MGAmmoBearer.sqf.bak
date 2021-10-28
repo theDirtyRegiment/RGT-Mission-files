@@ -1,0 +1,7 @@
+comment "Remove existing items";
+removeBackpack player;
+
+player addBackpack "TRYK_B_BAF_BAG_mcamo";
+for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_100Rnd_762x51_m62_tracer";};
+
+hint "You're are now carrying additional ammo for the 7.62mm general-purpose machine gun.";
