@@ -1,9 +1,0 @@
-this addAction['Get Rebel Loadout',TG_fnc_RebelGue,nil,1.5,true,true,"","((_target distance _this)<5)"];   
-
-this addAction['Get Machinegunner Loadout',TG_fnc_ARGue,nil,1.5,true,true,"","((_target distance _this)<5)"];  
-
-this addAction['Get Medic Loadout',TG_fnc_CLSGue,nil,1.5,true,true,"","((_target distance _this)<5)"];    
-
-this addAction['Get Grenadier Loadout',TG_fnc_GrenadierGue,nil,1.5,true,true,"","((_target distance _this)<5)"];   
-this addAction['Get Commander Loadout',TG_fnc_LeaderGue,nil,1.5,true,true,"","((_target distance _this)<5)"];   
-this addAction['Get Sniper Loadout',TG_fnc_SniperGue,nil,1.5,true,true,"","((_target distance _this)<5)"];   

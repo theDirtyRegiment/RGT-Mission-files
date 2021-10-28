@@ -1,8 +1,0 @@
-removeBackpack player;
-removeGoggles player;
-
-player addBackpack "B_Parachute";
-player addGoggles "USP_FACE_SOLR_MASK";
-player linkItem "ACE_Altimeter";
-
-hint "You are now equipped with a parachute, altimeter, facemask and thus ready for airborne operations.";
