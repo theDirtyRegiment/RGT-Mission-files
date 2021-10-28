@@ -1,4 +1,4 @@
-removeBackpack player;
+player call zade_boc_fnc_actionOnChest;
 removeGoggles player;
 
 player addBackpack "rhs_d6_Parachute_backpack";
