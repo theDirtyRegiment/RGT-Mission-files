@@ -1,0 +1,7 @@
+this addAction['Get Operative Loadout',TG_fnc_RiflemanUc,nil,1.5,true,true,"","((_target distance _this)<5)"];   
+this addAction['Get Combat Lifesaver Loadout',TG_fnc_CLSUc,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get Automatic Rifleman Loadout',TG_fnc_ARUc,nil,1.5,true,true,"","((_target distance _this)<5)"];    
+this addAction['Get Marksman Loadout',TG_fnc_MarksmanUc,nil,1.5,true,true,"","((_target distance _this)<5)"];    
+this addAction['Get Leader Loadout',TG_fnc_LeaderUc,nil,1.5,true,true,"","((_target distance _this)<5)"];    
+this addAction['Get Engineer Loadout',TG_fnc_EngineerUc,nil,1.5,true,true,"","((_target distance _this)<5)"];    
+this addAction["<t color='#2C75FF'>Add Parachute", TG_fnc_Parachute,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
