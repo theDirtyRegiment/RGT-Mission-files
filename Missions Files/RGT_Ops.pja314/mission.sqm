@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=14;
+		nextID=15;
 	};
 	class Camera
 	{
@@ -10792,8 +10792,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5733.7095,164.59776,6229.5864};
-				angles[]={0.0023920804,1.4353409,0.020996479};
+				position[]={5733.709,164.59801,6229.5864};
+				angles[]={0.0023911009,1.4353412,0.02099631};
 			};
 			side="Empty";
 			flags=4;
@@ -10802,7 +10802,7 @@ class Mission
 			};
 			id=362;
 			type="Box_NATO_Support_F";
-			atlOffset=0.20477295;
+			atlOffset=0.00024414063;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10814,7 +10814,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[""rhsusf_bino_m24_ARD"",""ACE_CableTie"",""ACE_EntrenchingTool"",""B_UavTerminal"",""ACE_wirecutter"", ""ACE_Tripod""],[10,10,10,5,10,2]],[[""B_UAV_01_backpack_F"",""B_rhsusf_B_BACKPACK"",""ACE_TacticalLadder_Pack""],[5,5,5]]],false]";
+							value="[[[[],[]],[[],[]],[[""rhsusf_bino_m24_ARD"",""ACE_CableTie"",""ACE_EntrenchingTool"",""B_UavTerminal"",""ACE_wirecutter"",""ACE_Tripod"",""ACE_SpareBarrel_Item""],[10,10,10,5,10,2,5]],[[""B_UAV_01_backpack_F"",""B_rhsusf_B_BACKPACK"",""ACE_TacticalLadder_Pack""],[5,5,5]]],false]";
 						};
 					};
 				};
