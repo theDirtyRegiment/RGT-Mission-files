@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class Camera
 	{
@@ -3318,7 +3318,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9503.3086,504.79617,9863.9482};
-				angles[]={-0,5.2613254,0};
+				angles[]={0,5.2613254,0};
 			};
 			side="Empty";
 			class Attributes
@@ -3351,7 +3351,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9501.4277,504.99582,9861.4521};
-				angles[]={-0,0.54893583,0};
+				angles[]={0,0.54893583,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3386,7 +3386,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9503.0293,504.51172,9864.0723};
-				angles[]={-0,5.2613268,0};
+				angles[]={0,5.2613268,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3402,7 +3402,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9502.1973,504.51172,9862.708};
-				angles[]={-0,5.2613258,0};
+				angles[]={0,5.2613258,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3418,7 +3418,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9501.3574,504.51172,9861.3438};
-				angles[]={-0,5.2613258,0};
+				angles[]={0,5.2613258,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3434,7 +3434,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9500.498,504.50839,9859.9629};
-				angles[]={-0,5.2613258,0.0066592805};
+				angles[]={0,5.2613258,0.0066592805};
 			};
 			side="Empty";
 			flags=4;
@@ -3450,8 +3450,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9502.377,504.89883,9863.0322};
-				angles[]={-0,0.54893583,0};
+				position[]={9502.377,504.89905,9863.0322};
+				angles[]={0,0.54894096,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3460,6 +3460,7 @@ class Mission
 			};
 			id=58;
 			type="Box_NATO_Support_F";
+			atlOffset=0.00021362305;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3471,7 +3472,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[""rhsusf_bino_m24_ARD"",""ACE_CableTie"",""ACE_EntrenchingTool"",""B_UavTerminal"",""ACE_wirecutter"", ""ACE_Tripod""],[10,10,10,5,10,2]],[[""B_UAV_01_backpack_F"",""B_rhsusf_B_BACKPACK"",""ACE_TacticalLadder_Pack""],[5,5,5]]],false]";
+							value="[[[[],[]],[[],[]],[[""rhsusf_bino_m24_ARD"",""ACE_CableTie"",""ACE_EntrenchingTool"",""B_UavTerminal"",""ACE_wirecutter"",""ACE_Tripod"",""ACE_SpareBarrel_Item""],[10,10,10,5,10,2,5]],[[""B_UAV_01_backpack_F"",""B_rhsusf_B_BACKPACK"",""ACE_TacticalLadder_Pack""],[5,5,5]]],false]";
 						};
 					};
 				};
@@ -3484,7 +3485,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9501.9727,504.89883,9862.373};
-				angles[]={-0,0.55362415,0};
+				angles[]={0,0.55362415,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3517,7 +3518,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9500.4541,504.61118,9860.0703};
-				angles[]={-0,5.2769318,0.0066592805};
+				angles[]={0,5.2769318,0.0066592805};
 			};
 			side="Empty";
 			flags=4;
