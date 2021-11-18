@@ -1,0 +1,51 @@
+comment "Remove existing items";
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+comment "Add weapons";
+player addWeapon "rhs_weap_aks74un";
+player addPrimaryWeaponItem "rhs_acc_pgs64_74un";
+
+comment "Add containers";
+player forceAddUniform "rhs_uniform_df15_tan";
+player addItemToUniform "ACE_morphine";
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {player addItemToUniform "ACE_tourniquet";};
+player addItemToUniform "ACE_CableTie";
+player addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "ACE_Flashlight_MX991";
+player addItemToUniform "ACE_MapTools";
+player addItemToUniform "O_IR_Grenade";
+player addItemToUniform "Chemlight_green";
+player addItemToUniform "rhs_mag_rdg2_white";
+player addItemToUniform "rhs_mag_rdg2_black";
+_array = ["rhs_vydra_3m", "rhs_6b23_digi_crewofficer", "rhs_6b23_digi_crew"];
+_vest = selectRandom _array;
+player addVest _vest;
+player addItemToVest "ACE_microDAGR";
+player addItemToVest "ACE_EntrenchingTool";
+for "_i" from 1 to 3 do {player addItemToVest "rhs_30Rnd_545x39_7N6M_plum_AK";};
+player addHeadgear "rhs_zsh7a_mike_green";
+
+comment "Add items";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "tf_microdagr";
+player linkItem "tf_anprc152";
+player linkItem "ItemGPS";
+
+
+player setSpeaker "ACE_NoVoice";
+
+player setVariable ["ACE_GForceCoef", 1];
+
+[[player],"ace_medical_medicClass", 1, true] call ace_common_fnc_assignObjectsInList;
+[[player],"ACE_IsEngineer", 1, true] call ace_common_fnc_assignObjectsInList;
+
+hint "You're now equipped as a Russian helicopter crewman.";

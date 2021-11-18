@@ -252,13 +252,4 @@ class RGTFunctions
 			class cons {};
 			class band {};
 		};	
-		
-		class CommonFunctions
-		{
-			file = "functions\CommonFunctions";
-
-			class Countdown {};
-			class StaticParadrop {};
-			class StartStaticParadrop {};
-		}
 	};

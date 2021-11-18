@@ -1,0 +1,47 @@
+comment "Remove existing items";
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+
+comment "Add weapons";
+player addWeapon "rhs_weap_makarov_pm";
+
+comment "Add containers";
+player forceAddUniform "rhs_uniform_df15";
+player addItemToUniform "ACE_morphine";
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {player addItemToUniform "ACE_tourniquet";};
+player addItemToUniform "ACE_CableTie";
+player addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "ACE_Flashlight_MX991";
+player addItemToUniform "ACE_MapTools";
+player addItemToUniform "O_IR_Grenade";
+player addItemToUniform "Chemlight_green";
+player addItemToUniform "rhs_mag_rdg2_white";
+player addItemToUniform "rhs_mag_rdg2_black";
+player addVest "rhs_vest_pistol_holster";
+player addItemToVest "ACE_CableTie";
+player addItemToVest "ACE_microDAGR";
+player addItemToVest "ACE_EntrenchingTool";
+player addItemToVest "rhs_mag_9x18_8_57N181S";
+player addHeadgear "rhs_zsh7a";
+
+comment "Add items";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "tf_microdagr";
+player linkItem "tf_anprc152";
+player linkItem "ItemGPS";
+
+player setSpeaker "ACE_NoVoice";
+
+player setVariable ["ACE_GForceCoef", 1];
+
+[[player],"ace_medical_medicClass", 1, true] call ace_common_fnc_assignObjectsInList;
+[[player],"ACE_IsEngineer", 1, true] call ace_common_fnc_assignObjectsInList;
+
+hint "You're now a Russian Air Force pilot";

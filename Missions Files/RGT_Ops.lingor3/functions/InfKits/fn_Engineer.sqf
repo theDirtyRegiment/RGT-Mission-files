@@ -13,9 +13,6 @@ player addWeapon _rifle;
 _array = ["rhsusf_acc_M952V", "acc_flashlight", "rhsusf_acc_wmx", "rhsusf_acc_wmx_bk"];
 _rail = selectRandom _array;
 player addPrimaryWeaponItem _rail;
-_array = ["", "rhsusf_acc_grip2", "rhsusf_acc_grip2_tan", "rhsusf_acc_grip2_wd"];
-_grip = selectRandom _array;
-player addPrimaryWeaponItem _grip;
 _optic = ["rhsusf_acc_eotech_552", 0.70, "rhsusf_acc_compm4", 0.25, "rhsusf_acc_ACOG_RMR", 0.05] call BIS_fnc_selectRandomWeighted;
 player addPrimaryWeaponItem _optic;
 
@@ -37,6 +34,7 @@ player addItem "ACE_microDAGR";
 player addItem "SmokeShell";
 player addItem "HandGrenade";
 player addItem "SmokeShellRed";
+player addItem "ACE_EntrenchingTool";
 _array = ["rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", "rhs_mag_30Rnd_556x45_M855A1_EPM", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M855A1_Stanag"];
 _ammo = selectRandom _array;
 for "_i" from 1 to 7 do {player addItem _ammo;};
