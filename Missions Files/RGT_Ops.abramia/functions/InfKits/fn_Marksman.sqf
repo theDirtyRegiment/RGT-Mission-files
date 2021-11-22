@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_rifle = ["rhs_weap_m14ebrri", 0.70, "rhs_weap_mk17_STD", 0.02, "srifle_DMR_06_camo_F", 0.20, "rhs_weap_sr25_d", 0.05, "rhs_weap_m14_rail", 0.50, "rhs_weap_m14_rail_d", 0.50, "rhs_weap_m14_rail_fiberglass", 0.50, "rhs_weap_m14_rail_wd", 0.50, "rhs_weap_m27iar_grip", 0.02, "rhs_weap_m27iar", 0.02] call BIS_fnc_selectRandomWeighted;
+_rifle = ["rhs_weap_m14ebrri", 0.50, "rhs_weap_mk17_STD", 0.05, "srifle_DMR_06_camo_F", 0.15, "rhs_weap_sr25_d", 0.10, "rhs_weap_m14_rail", 0.15, "rhs_weap_m14_rail_d", 0.15, "rhs_weap_m14_rail_fiberglass", 0.15, "rhs_weap_m14_rail_wd", 0.15, "rhs_weap_m27iar_grip", 0.02, "rhs_weap_m27iar", 0.02] call BIS_fnc_selectRandomWeighted;
 player addWeapon _rifle;
 player addPrimaryWeaponItem "optic_MRCO";
 if (_rifle isEqualTo "rhs_weap_mk17_STD") then { 
