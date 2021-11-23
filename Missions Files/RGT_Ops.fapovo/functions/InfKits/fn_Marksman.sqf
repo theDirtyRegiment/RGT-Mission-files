@@ -8,11 +8,11 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_rifle = ["rhs_weap_m14ebrri", 0.50, "rhs_weap_mk17_STD", 0.05, "srifle_DMR_06_camo_F", 0.15, "rhs_weap_sr25_d", 0.10, "rhs_weap_m14_rail", 0.15, "rhs_weap_m14_rail_d", 0.15, "rhs_weap_m14_rail_fiberglass", 0.15, "rhs_weap_m14_rail_wd", 0.15, "rhs_weap_m27iar_grip", 0.02, "rhs_weap_m27iar", 0.02] call BIS_fnc_selectRandomWeighted;player addWeapon _rifle;
+_rifle = ["rhs_weap_m14ebrri", 0.50, "rhs_weap_mk17_LB", 0.10, "srifle_DMR_06_camo_F", 0.15, "rhs_weap_sr25_d", 0.10,"rhs_weap_sr25", 0.10, "rhs_weap_m14_rail", 0.15, "rhs_weap_m14_rail_d", 0.15, "rhs_weap_m14_rail_fiberglass", 0.15, "rhs_weap_m14_rail_wd", 0.15] call BIS_fnc_selectRandomWeighted;
+player addWeapon _rifle;
 player addPrimaryWeaponItem "optic_MRCO";
-if (_rifle isEqualTo "rhs_weap_mk17_STD") then { 
+if (_rifle isEqualTo "rhs_weap_mk17_LB") then { 
 	player addPrimaryWeaponItem "rhsusf_acc_anpeq15_wmx_sc";
-	player addPrimaryWeaponItem "rhsgref_sdn6_suppressor"; 
 }	else	{
 	player addPrimaryWeaponItem "rhsusf_acc_anpeq15side";
 };
@@ -46,20 +46,15 @@ for "_i" from 1 to 2 do {player addItem "HandGrenade";};
 player addItem "ACE_EntrenchingTool";
 for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "SmokeShellBlue";
-_array = ["rhs_mag_20Rnd_SCAR_762x51_mk316_special", "rhs_mag_20Rnd_SCAR_762x51_mk316_special_bk"];
-_mag1 = selectRandom _array;
-_array = ["rhs_mag_20Rnd_SCAR_762x51_m61_ap", "rhs_mag_20Rnd_SCAR_762x51_m61_ap_bk"];
-_mag2 = selectRandom _array;
-_array = ["rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", "rhs_mag_30Rnd_556x45_M855A1_EPM", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M855A1_Stanag"];
-_ammo = selectRandom _array;
-if ((_rifle isEqualTo "rhs_weap_m27iar") or (_rifle isEqualTo "rhs_weap_m27iar_grip")) then {
-	for "_i" from 1 to 7 do {player addItem _ammo;};
-};
-if (_rifle isEqualTo "rhs_weap_sr25_d") then {
+if (_rifle isEqualTo "rhs_weap_sr25_d") or (_rifle isEqualTo "rhs_weap_sr25") then {
 	for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
 	for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
 };
-if (_rifle isEqualTo "rhs_weap_mk17_STD") then {
+if (_rifle isEqualTo "rhs_weap_mk17_LB") then {
+	_array = ["rhs_mag_20Rnd_SCAR_762x51_mk316_special", "rhs_mag_20Rnd_SCAR_762x51_mk316_special_bk"];
+	_mag1 = selectRandom _array;
+	_array = ["rhs_mag_20Rnd_SCAR_762x51_m61_ap", "rhs_mag_20Rnd_SCAR_762x51_m61_ap_bk"];
+	_mag2 = selectRandom _array;
 	for "_i" from 1 to 4 do {player addItem _mag1;};
 	for "_i" from 1 to 3 do {player addItem _mag2;}; 
 };

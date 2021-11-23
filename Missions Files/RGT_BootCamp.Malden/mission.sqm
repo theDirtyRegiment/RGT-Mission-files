@@ -16,14 +16,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={772.56067,33.542927,12108.828};
-		dir[]={0.7318964,-0.67335576,-0.10449798};
-		up[]={0.66659576,0.73931855,-0.095174551};
-		aside[]={-0.14134362,0,-0.98996067};
+		pos[]={758.91223,32.232098,12112.531};
+		dir[]={0.70475656,-0.58745217,-0.39791402};
+		up[]={0.51156801,0.8092469,-0.2888363};
+		aside[]={-0.49168298,-6.868504e-008,-0.87083578};
 	};
 };
 binarizationWanted=0;
-sourceName="RGT_BootCampV20test";
+sourceName="RGT_BootCamp";
 addons[]=
 {
 	"A3_Boat_F_Destroyer_Destroyer_01",
@@ -34188,7 +34188,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[""rhsusf_bino_m24_ARD"",""ACE_CableTie"",""ACE_EntrenchingTool"",""B_UavTerminal"",""ACE_wirecutter"",""ACE_Tripod"",""ACE_SpareBarrel_Item""],[10,10,10,5,10,2,5]],[[""B_UAV_01_backpack_F"",""B_rhsusf_B_BACKPACK"",""ACE_TacticalLadder_Pack""],[5,5,5]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACE_CableTie"",""ACE_EntrenchingTool"",""B_UavTerminal"",""ACE_wirecutter"",""ACE_Tripod"",""ACE_SpareBarrel_Item""],[10,10,5,10,2,5]],[[""B_UAV_01_backpack_F"",""B_rhsusf_B_BACKPACK"",""ACE_TacticalLadder_Pack""],[5,5,5]]],false]";
 						};
 					};
 				};
@@ -37601,13 +37601,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={689.177,29.878027,12124.907};
-				angles[]={0,0.045867253,0};
+				position[]={688.83905,29.399027,12124.845};
+				angles[]={-0,0.045867253,0};
 			};
 			name="slideshow_SOP14adv";
 			id=594;
 			type="ace_slideshow_module";
-			atlOffset=0.47900009;
 			class CustomAttributes
 			{
 				class Attribute0
