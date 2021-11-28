@@ -1,6 +1,6 @@
 //------------------------- On Load
 
-author = Dirty;		// Visible when loading mission
+author = Dirty and Mirrow;		// Visible when loading mission
 onLoadName = "The Regiment";					// Visible when loading mission
 OnLoadMission = "Unit rules and regulations are in effect while this mission is active.";
 loadScreen = "images\loadingscreen.paa";

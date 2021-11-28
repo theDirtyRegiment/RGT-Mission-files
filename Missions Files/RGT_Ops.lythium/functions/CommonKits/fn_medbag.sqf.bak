@@ -1,0 +1,16 @@
+comment "Remove existing items";
+removeBackpack player;
+
+player addBackpack "TRYK_B_Medbag_BK";
+for "_i" from 1 to 15 do {player addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
+player addItemToBackpack "ACE_bodyBag";
+player addItemToBackpack "ACE_EntrenchingTool";
+player addItemToBackpack "ACE_SpraypaintRed";
+for "_i" from 1 to 2 do {player addItemToBackpack "ACE_bloodIV";};
+for "_i" from 1 to 4 do {player addItemToBackpack "ACE_salineIV_500";};
+player addItemToBackpack "ACE_personalAidKit";
+for "_i" from 1 to 20 do {player addItemToBackpack "ACE_elasticBandage";};
+for "_i" from 1 to 7 do {player addItemToBackpack "ACE_tourniquet";};
+
+hint "You shouldered a first aid bag.";

@@ -1,0 +1,10 @@
+this addAction['Get Assaulter Loadout',TG_fnc_AssaultSpetsnaz ,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get Pointman Loadout',TG_fnc_PointmanSpetsnaz,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Breacher Loadout',TG_fnc_BreacherSpetsnaz,nil,1.5,true,true,"","((_target distance _this)<5)"];   
+this addAction['Get CLS Loadout',TG_fnc_CLSSpetsnaz,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get Autorifleman Loadout',TG_fnc_ARSpetsnaz,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get Light AT Loadout',TG_fnc_LightATSpetsnaz,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get Radioman Loadout',TG_fnc_SignalerSpetsnaz,nil,1.5,true,true,"","((_target distance _this)<5)"];   
+this addAction['Get Marksman Loadout',TG_fnc_MarksmanSpetsnaz,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get Leader Loadout', TG_fnc_LeaderSpetsnaz,nil,1.5,true,true,"","((_target distance _this)<5)"];   
+this addAction["<t color='#2C75FF'>Add Parachute", TG_fnc_Parachute,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
