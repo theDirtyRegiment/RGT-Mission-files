@@ -1,5 +1,0 @@
-this addAction['Get Urban Sniper Loadout',TG_fnc_Sniper,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get Urban Spotter Loadout',TG_fnc_Spotter,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get Ghillie Sniper Loadout',TG_fnc_SniperSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get Ghillie Spotter Loadout',TG_fnc_SpotterSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get Heavy Sniper Loadout',TG_fnc_HeavySniperSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
