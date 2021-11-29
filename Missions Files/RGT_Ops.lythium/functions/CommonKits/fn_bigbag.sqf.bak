@@ -1,6 +1,0 @@
-comment "Remove existing items";
-removeBackpack player;
-
-player addBackpack "TRYK_B_BAF_BAG_mcamo";
-
-hint "You shouldered a patrol pack.";
