@@ -46,7 +46,7 @@ for "_i" from 1 to 2 do {player addItem "HandGrenade";};
 player addItem "ACE_EntrenchingTool";
 for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "SmokeShellBlue";
-if (_rifle isEqualTo "rhs_weap_sr25_d") or (_rifle isEqualTo "rhs_weap_sr25") then {
+if ((_rifle isEqualTo "rhs_weap_sr25_d") or (_rifle isEqualTo "rhs_weap_sr25")) then {
 	for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
 	for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
 };
