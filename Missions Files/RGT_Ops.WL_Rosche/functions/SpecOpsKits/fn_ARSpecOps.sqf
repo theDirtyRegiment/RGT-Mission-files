@@ -9,23 +9,25 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-_array = ["rhs_weap_minimi_para_railed", "rhs_weap_m249_pip_S", "rhs_weap_m249_pip_S_para", "rhs_weap_m249_light_S"];
+_array = ["rhs_weap_minimi_para_railed", "rhs_weap_m249_pip_S", "rhs_weap_m249_pip_S_para", "rhs_weap_m249_light_S", "rhs_weap_m27iar", "rhs_weap_m27iar_grip"];
 _rifle = selectRandom _array;
 player addWeapon _rifle;
 if (_rifle isEqualTo "rhs_weap_m249_pip_S") then {
-	player addPrimaryWeaponItem "rhsusf_acc_rotex5_grey";
 	player addPrimaryWeaponItem "rhsusf_acc_anpeq16a";
 	player addPrimaryWeaponItem "rhsusf_acc_grip1";
-	_optic = ["rhsusf_acc_eotech_xps3", 0.50, "rhsusf_acc_g33_xps3", 0.50] call BIS_fnc_selectRandomWeighted;
-	player addPrimaryWeaponItem _optic;
-}	else	{
-	player addPrimaryWeaponItem "rhsusf_acc_rotex5_grey";
+};
+if ((_rifle isEqualTo "rhs_weap_minimi_para_railed") or (_rifle isEqualTo "rhs_weap_m249_pip_S_para") or (_rifle isEqualTo "rhs_weap_m249_light_S")) then {
 	player addPrimaryWeaponItem "rhsusf_acc_anpeq16a";
-	_optic = ["rhsusf_acc_eotech_xps3", 0.50, "rhsusf_acc_g33_xps3", 0.50] call BIS_fnc_selectRandomWeighted;
-	player addPrimaryWeaponItem _optic;
 	_bipod = ["rhsusf_acc_grip1", 0.50, "rhsusf_acc_kac_grip_saw_bipod", 0.10, "rhsusf_acc_saw_bipod", 0.10, "rhsusf_acc_grip4_bipod", 0.10] call BIS_fnc_selectRandomWeighted;
 	player addPrimaryWeaponItem _bipod;
 };
+if  ((_rifle isEqualTo "rhs_weap_m27iar") or (_rifle isEqualTo "rhs_weap_m27iar_grip")) then {
+	player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk_h";
+	player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+};
+player addPrimaryWeaponItem "rhsusf_acc_rotex5_grey";
+_optic = ["rhsusf_acc_eotech_xps3", 0.50, "rhsusf_acc_g33_xps3", 0.50] call BIS_fnc_selectRandomWeighted;
+player addPrimaryWeaponItem _optic;
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "acc_flashlight_pistol";
@@ -47,9 +49,13 @@ player addItem "HandGrenade";
 player addItem "SmokeShell";
 player addItem "SmokeShellRed";
 player addItem "ACE_M84";
-_array = ["rhsusf_100Rnd_556x45_mixed_soft_pouch_ucp", "rhsusf_100Rnd_556x45_mixed_soft_pouch", "rhsusf_100Rnd_556x45_mixed_soft_pouch_coyote"];
-_mag = selectRandom _array;
-for "_i" from 1 to 4 do {player addItem _mag;};
+if ((_rifle isEqualTo "rhs_weap_minimi_para_railed") or (_rifle isEqualTo "rhs_weap_m249_pip_S_para") or (_rifle isEqualTo "rhs_weap_m249_light_S") or (_rifle isEqualTo "rhs_weap_m249_pip_S")) then {
+	_array = ["rhsusf_100Rnd_556x45_mixed_soft_pouch_ucp", "rhsusf_100Rnd_556x45_mixed_soft_pouch", "rhsusf_100Rnd_556x45_mixed_soft_pouch_coyote"];
+	_mag = selectRandom _array;
+	for "_i" from 1 to 4 do {player addItem _mag;};
+} else {
+	for "_i" from 1 to 4 do {player addItem "rhs_mag_100Rnd_556x45_M855A1_cmag";};
+};
 for "_i" from 1 to 3 do {player addItem "ACE_CableTie";};
 player addItem "ACE_EarPlugs";
 player addItem "ACE_IR_Strobe_Item";

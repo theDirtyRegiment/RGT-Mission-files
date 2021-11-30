@@ -8,12 +8,18 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_weapon = ["rhs_weap_m249", 0.90, "rhs_weap_m249_light_S", 0.02] call BIS_fnc_selectRandomWeighted;
+_weapon = ["rhs_weap_m249", 0.90, "rhs_weap_m249_light_S", 0.05, "rhs_weap_m27iar", 0.02, "rhs_weap_m27iar_grip", 0.02] call BIS_fnc_selectRandomWeighted;
 player addWeapon _weapon;
 player addPrimaryWeaponItem "rhsusf_acc_saw_bipod";
-if (_weapon isEqualTo "rhs_weap_m249_light_S") then {
+if(_weapon isEqualTo "rhs_weap_m249_light_S") then {
 	player addPrimaryWeaponItem "rhsusf_acc_elcan_ard";
 	player addPrimaryWeaponItem "rhsusf_acc_m952v";
+};
+if((_weapon isEqualTo "rhs_weap_m27iar_grip") or (_weapon isEqualTo "rhs_weap_m27iar")) then {
+	player addPrimaryWeaponItem "rhsusf_acc_m952v";
+	player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+	_optic = ["rhsusf_acc_eotech_552", 0.70, "rhsusf_acc_compm4", 0.25] call BIS_fnc_selectRandomWeighted;
+	player addPrimaryWeaponItem _optic;
 };
 
 comment "Add containers";
@@ -34,9 +40,13 @@ for "_i" from 1 to 2 do {player addItem "HandGrenade";};
 for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "ACE_EntrenchingTool";
 for "_i" from 1 to 3 do {player addItem "rhsusf_mag_15Rnd_9x19_JHP";};
-_array = ["rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote", "rhsusf_200Rnd_556x45_mixed_soft_pouch", "rhsusf_200Rnd_556x45_mixed_soft_pouch_ucp"];
-_mag = selectRandom _array;
-for "_i" from 1 to 3 do {player addItem _mag;};
+if((_weapon isEqualTo "rhs_weap_m249_light_S") or (_weapon isEqualTo "rhs_weap_m249")) then {
+	_array = ["rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote", "rhsusf_200Rnd_556x45_mixed_soft_pouch", "rhsusf_200Rnd_556x45_mixed_soft_pouch_ucp"];
+	_mag = selectRandom _array;
+	for "_i" from 1 to 3 do {player addItem _mag;};
+} else {
+	for "_i" from 1 to 5 do {player addItem "rhs_mag_100Rnd_556x45_M855A1_cmag";};
+};
 _array = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_headset_ocp"];
 _helmet = selectRandom _array;
 player addHeadgear _helmet;
