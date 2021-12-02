@@ -8,11 +8,10 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add containers";
-_array = ["LOP_U_CHR_Rocker_03", "LOP_U_CHR_Rocker_04", "LOP_U_CHR_Rocker_01", "LOP_U_CHR_Rocker_02"];
-_suit = selectRandom _array;
+_suit = ["LOP_U_CHR_Rocker_03", "LOP_U_CHR_Rocker_04", "LOP_U_CHR_Rocker_01", "LOP_U_CHR_Rocker_02"] call BIS_fnc_selectRandom;
 player forceAddUniform _suit;
-player addItemToUniform "ACE_MapTools";
-player addItemToUniform "ACE_Flashlight_XL50";
+player addItem "ACE_MapTools";
+player addItem "ACE_Flashlight_XL50";
 
 comment "Add items";
 player linkItem "ItemMap";

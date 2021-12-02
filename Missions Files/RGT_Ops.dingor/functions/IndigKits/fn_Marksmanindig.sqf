@@ -19,11 +19,9 @@ player addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
 
 comment "Add containers";
 
-_array = ["TRYK_U_taki_BL", "TRYK_U_taki_BLK", "TRYK_U_taki_COY", "TRYK_U_taki_wh", "TRYK_U_taki_G_BL", "TRYK_U_taki_G_BLK", "TRYK_U_taki_G_COY", "TRYK_U_taki_G_WH"];
-_clothing = selectRandom _array;
+_clothing = ["TRYK_U_taki_BL", "TRYK_U_taki_BLK", "TRYK_U_taki_COY", "TRYK_U_taki_wh", "TRYK_U_taki_G_BL", "TRYK_U_taki_G_BLK", "TRYK_U_taki_G_COY", "TRYK_U_taki_G_WH"] call BIS_fnc_selectRandom;
 player forceAddUniform _clothing;
-_array = ["V_TacChestrig_oli_F", "V_TacChestrig_cbr_F", "V_TacChestrig_grn_F"];
-_vest = selectRandom _array;
+_vest = ["V_TacChestrig_oli_F", "V_TacChestrig_cbr_F", "V_TacChestrig_grn_F"] call BIS_fnc_selectRandom;
 player addVest _vest;
 player addBackpack "rhs_sidor";
 player addItem "ACE_morphine";

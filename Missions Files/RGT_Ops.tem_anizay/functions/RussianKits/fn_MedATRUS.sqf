@@ -15,11 +15,9 @@ player addSecondaryWeaponItem "rhs_acc_rpg7v_zeroing_100";
 player addSecondaryWeaponItem "rhs_acc_pgo7v3";
 
 comment "Add containers";
-_array = ["rhs_uniform_emr_patchless", "rhs_uniform_vkpo", "rhs_uniform_vkpo_alt", "rhs_uniform_vkpo_gloves", "rhs_uniform_vkpo_gloves_alt"];
-_uniform = selectRandom _array;
+_uniform = ["rhs_uniform_emr_patchless", "rhs_uniform_vkpo", "rhs_uniform_vkpo_alt", "rhs_uniform_vkpo_gloves", "rhs_uniform_vkpo_gloves_alt"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
-_array = ["rhs_6b23_6sh116", "rhs_6b23_digi_6sh92", "rhs_6b23_digi_6sh92_spetsnaz2", "rhs_6b23_digi_6sh92_headset", "rhs_6b23_digi_6sh92_headset_spetsnaz", "rhs_6b23_digi_6sh92_radio", "rhs_6b23_digi_6sh92_Spetsnaz"];
-_vest = selectRandom _array;
+_vest = ["rhs_6b23_6sh116", "rhs_6b23_digi_6sh92", "rhs_6b23_digi_6sh92_spetsnaz2", "rhs_6b23_digi_6sh92_headset", "rhs_6b23_digi_6sh92_headset_spetsnaz", "rhs_6b23_digi_6sh92_radio", "rhs_6b23_digi_6sh92_Spetsnaz"] call BIS_fnc_selectRandom;
 player addVest _vest;
 player addBackpack "rhs_rpg_empty";
 player addItem "ACE_morphine";

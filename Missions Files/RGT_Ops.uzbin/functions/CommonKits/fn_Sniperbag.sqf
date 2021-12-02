@@ -1,8 +1,7 @@
 comment "Remove existing items";
 removeBackpack player;
 
-_array = ["USP_PATROL_PACK_BLK", "USP_PATROL_PACK_CBR", "USP_PATROL_PACK", "USP_PATROL_PACK_MCD", "USP_PATROL_PACK_RGR", "USP_PATROL_PACK_CB_CS_FH_ZT", "USP_PATROL_PACK_CS_FH", "USP_PATROL_PACK_ZT", "USP_PATROL_PACK_CS", "USP_PATROL_PACK_CB_RP"];
-_bag = selectRandom _array;
+_bag = ["USP_PATROL_PACK_BLK", "USP_PATROL_PACK_CBR", "USP_PATROL_PACK", "USP_PATROL_PACK_MCD", "USP_PATROL_PACK_RGR", "USP_PATROL_PACK_CB_CS_FH_ZT", "USP_PATROL_PACK_CS_FH", "USP_PATROL_PACK_ZT", "USP_PATROL_PACK_CS", "USP_PATROL_PACK_CB_RP"] call BIS_fnc_selectRandom;
 player addBackpack _bag;
 for "_i" from 1 to 5 do {player addItemToBackpack "rhsusf_5Rnd_300winmag_xm2010";};
 player addItemToBackpack "rhsusf_acc_premier_mrds";

@@ -20,14 +20,11 @@ player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 player addPrimaryWeaponItem "rhsusf_acc_m14_bipod";
 
 comment "Add containers";
-_array = ["milgp_u_g3_field_set_mc", "USP_PCU_G3C_MC", "USP_PCU_G3C_KP_MC", "USP_PCU_G3C_KP_MX_MC", "USP_PCU_G3C_KP_OR_MC", "USP_PCU_G3C_MX_MC", "USP_PCU_G3C_OR_MC", "USP_SOFTSHELL_G3C_MC", "USP_SOFTSHELL_G3C_KP_MC", "USP_SOFTSHELL_G3C_KP_MX_MC", "USP_SOFTSHELL_G3C_KP_OR_MC", "USP_SOFTSHELL_G3C_MX_MC", "USP_SOFTSHELL_G3C_OR_MC"];
-_uniform = selectRandom _array;
+_uniform = ["milgp_u_g3_field_set_mc", "USP_PCU_G3C_MC", "USP_PCU_G3C_KP_MC", "USP_PCU_G3C_KP_MX_MC", "USP_PCU_G3C_KP_OR_MC", "USP_PCU_G3C_MX_MC", "USP_PCU_G3C_OR_MC", "USP_SOFTSHELL_G3C_MC", "USP_SOFTSHELL_G3C_KP_MC", "USP_SOFTSHELL_G3C_KP_MX_MC", "USP_SOFTSHELL_G3C_KP_OR_MC", "USP_SOFTSHELL_G3C_MX_MC", "USP_SOFTSHELL_G3C_OR_MC"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
-_array = ["rhsusf_spcs_ocp_sniper", "milgp_v_marciras_marksman_mc", "milgp_v_marciras_marksman_belt_mc"];
-_vest = selectRandom _array;
+_vest = ["rhsusf_spcs_ocp_sniper", "milgp_v_marciras_marksman_mc", "milgp_v_marciras_marksman_belt_mc"] call BIS_fnc_selectRandom;
 player addVest _vest;
-_array = ["TRYK_B_BAF_BAG_mcamo", "USP_PATROL_PACK_CS_FH_ZT", "USP_PATROL_PACK_CB_CS_FH_RP_ZT", "USP_45L_RUCKSACK_MC"];
-_bag = selectRandom _array;
+_bag = ["TRYK_B_BAF_BAG_mcamo", "USP_PATROL_PACK_CS_FH_ZT", "USP_PATROL_PACK_CB_CS_FH_RP_ZT", "USP_45L_RUCKSACK_MC"] call BIS_fnc_selectRandom;
 player addBackpack _bag;
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
@@ -51,19 +48,15 @@ if ((_rifle isEqualTo "rhs_weap_sr25_d") or (_rifle isEqualTo "rhs_weap_sr25")) 
 	for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
 };
 if (_rifle isEqualTo "rhs_weap_mk17_LB") then {
-	_array = ["rhs_mag_20Rnd_SCAR_762x51_mk316_special", "rhs_mag_20Rnd_SCAR_762x51_mk316_special_bk"];
-	_mag1 = selectRandom _array;
-	_array = ["rhs_mag_20Rnd_SCAR_762x51_m61_ap", "rhs_mag_20Rnd_SCAR_762x51_m61_ap_bk"];
-	_mag2 = selectRandom _array;
+	_mag1 = ["rhs_mag_20Rnd_SCAR_762x51_mk316_special", "rhs_mag_20Rnd_SCAR_762x51_mk316_special_bk"] call BIS_fnc_selectRandom;
+	_mag2 = ["rhs_mag_20Rnd_SCAR_762x51_m61_ap", "rhs_mag_20Rnd_SCAR_762x51_m61_ap_bk"] call BIS_fnc_selectRandom;
 	for "_i" from 1 to 4 do {player addItem _mag1;};
 	for "_i" from 1 to 3 do {player addItem _mag2;}; 
-};
-if ((_rifle isEqualTo "rhs_weap_m14ebrri") or (_rifle isEqualTo "srifle_DMR_06_camo_F") or (_rifle isEqualTo "rhs_weap_m14_rail") or (_rifle isEqualTo "rhs_weap_m14_rail_d") or (_rifle isEqualTo "rhs_weap_m14_rail_fiberglass") or (_rifle isEqualTo "rhs_weap_m14_rail_wd")) then {
+} else {
 	for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
 	for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
 };
-_array = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_ESS_ocp", "rhsusf_ach_helmet_ocp"];
-_helmet = selectRandom _array;
+_helmet = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_ESS_ocp", "rhsusf_ach_helmet_ocp"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
 player addWeapon "rhsusf_weap_m9";
@@ -83,4 +76,3 @@ player setVariable ["ACE_GForceCoef", 1];
 [[player],"ACE_IsEngineer", 0, true] call ace_common_fnc_assignObjectsInList;
 
 hint "You're now equipped as an infantry marksman. \nYour equipment is optimized for daylight medium-range precision engagements";
-

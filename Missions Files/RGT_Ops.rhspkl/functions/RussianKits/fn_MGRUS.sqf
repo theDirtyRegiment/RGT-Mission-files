@@ -13,8 +13,7 @@ _rifle = selectRandom _array;
 player addWeapon _rifle;
 
 comment "Add containers";
-_array = ["rhs_uniform_emr_patchless", "rhs_uniform_vkpo", "rhs_uniform_vkpo_alt", "rhs_uniform_vkpo_gloves", "rhs_uniform_vkpo_gloves_alt"];
-_uniform = selectRandom _array;
+_uniform = ["rhs_uniform_emr_patchless", "rhs_uniform_vkpo", "rhs_uniform_vkpo_alt", "rhs_uniform_vkpo_gloves", "rhs_uniform_vkpo_gloves_alt"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
 player addVest "rhs_6b45_mg";
 player addBackpack "rhs_sidor";

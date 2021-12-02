@@ -136,6 +136,7 @@ class RGTFunctions
 		{
 			file = "functions\RussianKits";
 
+			class ARRUS {};
 			class CLSRUS {};
 			class EngineerAmmoBearerRUS {};
 			class EngineerRUS {};

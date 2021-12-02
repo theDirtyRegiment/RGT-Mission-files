@@ -8,13 +8,11 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add containers";
-_array = ["LOP_U_CHR_Profiteer_02", "LOP_U_CHR_Profiteer_03", "LOP_U_CHR_Profiteer_01", "LOP_U_CHR_Profiteer_04", "LOP_U_CHR_Citizen_03", "LOP_U_CHR_Citizen_04", "LOP_U_CHR_Citizen_01", "LOP_U_CHR_Citizen_02", "LOP_U_CHR_Citizen_06"];
-_suit = selectRandom _array;
+_suit = ["LOP_U_CHR_Profiteer_02", "LOP_U_CHR_Profiteer_03", "LOP_U_CHR_Profiteer_01", "LOP_U_CHR_Profiteer_04", "LOP_U_CHR_Citizen_03", "LOP_U_CHR_Citizen_04", "LOP_U_CHR_Citizen_01", "LOP_U_CHR_Citizen_02", "LOP_U_CHR_Citizen_06"] call BIS_fnc_selectRandom;
 player forceAddUniform _suit;
-player addItemToUniform "ACE_MapTools";
-player addItemToUniform "ACE_Flashlight_XL50";
-_array = ["", "TRYK_H_wig"];
-_head = selectRandom _array;
+player addItem "ACE_MapTools";
+player addItem "ACE_Flashlight_XL50";
+_head = ["", "TRYK_H_wig"] call BIS_fnc_selectRandom;
 player addHeadgear _head;
 
 comment "Add items";

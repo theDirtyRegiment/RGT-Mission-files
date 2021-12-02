@@ -13,8 +13,7 @@ player addWeapon _rifle;
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 _optic = ["rhsusf_acc_eotech_552", 0.70, "rhsusf_acc_compm4", 0.25, "rhsusf_acc_ACOG_RMR", 0.05] call BIS_fnc_selectRandomWeighted;
 player addPrimaryWeaponItem _optic;
-_array = ["", "rhsusf_acc_grip2", "rhsusf_acc_grip2_tan", "rhsusf_acc_grip2_wd"];
-_grip = selectRandom _array;
+_grip = ["", "rhsusf_acc_grip2", "rhsusf_acc_grip2_tan", "rhsusf_acc_grip2_wd"] call BIS_fnc_selectRandom;
 player addPrimaryWeaponItem _grip;
 player addWeapon "ACE_Vector";
 
@@ -41,8 +40,7 @@ for "_i" from 1 to 7 do {player addItem "rhssaf_30rnd_556x45_EPR_G36";};
 player addItem "rhsusf_mag_15Rnd_9x19_FMJ";
 player addItemToBackpack "Laserdesignator_03";
 player addItemToBackpack "Laserbatteries";
-_array = ["rhsusf_opscore_rg_cover_pelt", "rhsusf_opscore_paint_pelt_nsw", "rhsusf_opscore_fg_pelt_nsw", "milgp_h_opscore_05_rgr", "milgp_h_opscore_04_rgr", "milgp_h_opscore_05_goggles_rgr_hexagon", "milgp_h_opscore_04_goggles_rgr", "milgp_h_opscore_03_rgr", "milgp_h_opscore_03_goggles_rgr_hexagon"];
-_helmet = selectRandom _array;
+_helmet = ["rhsusf_opscore_rg_cover_pelt", "rhsusf_opscore_paint_pelt_nsw", "rhsusf_opscore_fg_pelt_nsw", "milgp_h_opscore_05_rgr", "milgp_h_opscore_04_rgr", "milgp_h_opscore_05_goggles_rgr_hexagon", "milgp_h_opscore_04_goggles_rgr", "milgp_h_opscore_03_rgr", "milgp_h_opscore_03_goggles_rgr_hexagon"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
 player addWeapon "rhsusf_weap_m9";

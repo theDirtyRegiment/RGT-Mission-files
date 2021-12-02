@@ -8,13 +8,11 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add containers";
-_array = ["LOP_U_CHR_Villager_01", "LOP_U_CHR_Villager_04", "LOP_U_CHR_Villager_03", "LOP_U_CHR_Villager_02", "LOP_U_CHR_Worker_03", "LOP_U_CHR_Worker_04", "LOP_U_CHR_Worker_01", "LOP_U_CHR_Worker_02"];
-_suit = selectRandom _array;
+_suit = ["LOP_U_CHR_Villager_01", "LOP_U_CHR_Villager_04", "LOP_U_CHR_Villager_03", "LOP_U_CHR_Villager_02", "LOP_U_CHR_Worker_03", "LOP_U_CHR_Worker_04", "LOP_U_CHR_Worker_01", "LOP_U_CHR_Worker_02"] call BIS_fnc_selectRandom;
 player forceAddUniform _suit;
-player addItemToUniform "ACE_MapTools";
-player addItemToUniform "ACE_Flashlight_XL50";
-_array = ["", "H_Cap_red", "", "H_Cap_oli", "", "H_Cap_grn", "", "H_Cap_blu", "", "H_Cap_blk", "", "milgp_h_cap_01_CB", "", "milgp_h_cap_01_khk", "", "milgp_h_cap_01_RGR", "", "rhs_beanie_green", "", "TRYK_H_woolhat", "", "TRYK_H_woolhat_br", "", "TRYK_H_woolhat_cu", "", "TRYK_H_woolhat_tan", "", "H_Hat_Safari_olive_F", "", "H_Hat_Safari_sand_F", "", "LOP_H_Cowboy_hat"];
-_hat = selectRandom _array;
+player addItem "ACE_MapTools";
+player addItem "ACE_Flashlight_XL50";
+_hat = ["", "H_Cap_red", "", "H_Cap_oli", "", "H_Cap_grn", "", "H_Cap_blu", "", "H_Cap_blk", "", "milgp_h_cap_01_CB", "", "milgp_h_cap_01_khk", "", "milgp_h_cap_01_RGR", "", "rhs_beanie_green", "", "TRYK_H_woolhat", "", "TRYK_H_woolhat_br", "", "TRYK_H_woolhat_cu", "", "TRYK_H_woolhat_tan", "", "H_Hat_Safari_olive_F", "", "H_Hat_Safari_sand_F", "", "LOP_H_Cowboy_hat"] call BIS_fnc_selectRandom;
 player addHeadgear _hat;
 
 comment "Add items";

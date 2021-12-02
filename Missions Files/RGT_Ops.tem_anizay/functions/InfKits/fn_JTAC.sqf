@@ -8,14 +8,24 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_rifle = ["rhs_weap_m4a1_blockII", 0.48, "rhs_weap_m4a1_blockII_d", 0.25, "rhs_weap_m4a1_blockII_KAC", 0.48, "rhs_weap_m4a1", 0.02, "rhs_weap_mk18", 0.02, "rhs_weap_m27iar", 0.02, "rhs_weap_m27iar_grip", 0.02] call BIS_fnc_selectRandomWeighted;
+_rifle = ["rhs_weap_m4a1_blockII", 0.48, "rhs_weap_m4a1_blockII_d", 0.25, "rhs_weap_m4a1_blockII_KAC", 0.48, "rhs_weap_m4a1", 0.02, "rhs_weap_mk18", 0.02, "rhs_weap_m27iar", 0.02] call BIS_fnc_selectRandomWeighted;
 player addWeapon _rifle;
+switch(_rifle) do {
+	case "rhs_weap_m27iar": {
+		player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+	};
+	case "rhs_weap_m4a1_blockII_d": {
+		_grip = ["", "rhsusf_acc_grip2_tan"] call BIS_fnc_selectRandom;
+		player addPrimaryWeaponItem _grip;
+	};
+	default {
+		_grip = ["", "rhsusf_acc_grip2"] call BIS_fnc_selectRandom;
+		player addPrimaryWeaponItem _grip;
+	};
+};
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 _optic = ["rhsusf_acc_eotech_552", 0.70, "rhsusf_acc_compm4", 0.25, "rhsusf_acc_ACOG_RMR", 0.05] call BIS_fnc_selectRandomWeighted;
 player addPrimaryWeaponItem _optic;
-_array = ["", "rhsusf_acc_grip2", "rhsusf_acc_grip2_tan", "rhsusf_acc_grip2_wd"];
-_grip = selectRandom _array;
-player addPrimaryWeaponItem _grip;
 player addWeapon "ACE_Vector";
 
 comment "Add containers";
@@ -37,14 +47,12 @@ player addItem "ACE_EntrenchingTool";
 player addItem "SmokeShell";
 player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
-_array = ["rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", "rhs_mag_30Rnd_556x45_M855A1_EPM", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M855A1_Stanag"];
-_ammo = selectRandom _array;
+_ammo = ["rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", "rhs_mag_30Rnd_556x45_M855A1_EPM", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M855A1_Stanag"] call BIS_fnc_selectRandom;
 for "_i" from 1 to 7 do {player addItem _ammo;};
 player addItem "rhsusf_mag_15Rnd_9x19_FMJ";
 player addItemToBackpack "Laserdesignator_03";
 player addItemToBackpack "Laserbatteries";
-_array = ["rhsusf_opscore_mc_cover_pelt_cam", "rhsusf_opscore_mc_pelt_nsw", "milgp_h_opscore_05_MC", "milgp_h_opscore_04_MC", "milgp_h_opscore_05_goggles_MC", "milgp_h_opscore_04_goggles_MC", "milgp_h_opscore_03_MC", "milgp_h_opscore_03_goggles_MC"];
-_helmet = selectRandom _array;
+_helmet = ["rhsusf_opscore_mc_cover_pelt_cam", "rhsusf_opscore_mc_pelt_nsw", "milgp_h_opscore_05_MC", "milgp_h_opscore_04_MC", "milgp_h_opscore_05_goggles_MC", "milgp_h_opscore_04_goggles_MC", "milgp_h_opscore_03_MC", "milgp_h_opscore_03_goggles_MC"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
 player addWeapon "rhsusf_weap_m9";

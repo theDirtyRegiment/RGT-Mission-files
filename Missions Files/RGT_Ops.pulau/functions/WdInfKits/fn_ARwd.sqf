@@ -8,23 +8,20 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_weapon = ["rhs_weap_m249", 0.90, "rhs_weap_m249_light_S", 0.02, "rhs_weap_m249_pip", 0.20] call BIS_fnc_selectRandomWeighted;
-player addWeapon _weapon;
+_rifle = ["rhs_weap_m249", 0.90, "rhs_weap_m249_light_S", 0.02, "rhs_weap_m249_pip", 0.20] call BIS_fnc_selectRandomWeighted;
+player addWeapon _rifle;
 player addPrimaryWeaponItem "rhsusf_acc_saw_bipod";
-if (_weapon isEqualTo "rhs_weap_m249_light_S") then {
+if (_rifle isEqualTo "rhs_weap_m249_light_S") then {
 	player addPrimaryWeaponItem "rhsusf_acc_elcan_ard";
 	player addPrimaryWeaponItem "rhsusf_acc_m952v";
 };
 
 comment "Add containers";
-_array = ["rhs_uniform_g3_m81", "rhs_uniform_bdu_erdl", "USP_PCU_G3C_MCT_M81", "USP_G3C_M81", "USP_G3C_CU_TSW", "USP_G3C_CU_KP_M81", "USP_G3C_CU_KP_MX_M81", "USP_G3C_CU_KP_OR_TSW", "USP_G3C_CU_MX_M81", "USP_G3C_CU_OR_M81", "USP_G3C_KP_TSW"];
-_uniform = selectRandom _array;
+_uniform = ["rhs_uniform_g3_m81", "rhs_uniform_bdu_erdl", "USP_PCU_G3C_MCT_M81", "USP_G3C_M81", "USP_G3C_CU_TSW", "USP_G3C_CU_KP_M81", "USP_G3C_CU_KP_MX_M81", "USP_G3C_CU_KP_OR_TSW", "USP_G3C_CU_MX_M81", "USP_G3C_CU_OR_M81", "USP_G3C_KP_TSW"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
-_array = ["milgp_v_marciras_hgunner_rgr", "milgp_v_marciras_hgunner_belt_rgr"];
-_vest = selectRandom _array;
+_vest = ["milgp_v_marciras_hgunner_rgr", "milgp_v_marciras_hgunner_belt_rgr"]call BIS_fnc_selectRandom;
 player addVest _vest;
-_array = ["TRYK_B_BAF_BAG_rgr", "USP_PATROL_PACK_RGR"];
-_bag = selectRandom _array;
+_bag = ["TRYK_B_BAF_BAG_rgr", "USP_PATROL_PACK_RGR"] call BIS_fnc_selectRandom;
 player addBackpack _bag;
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
@@ -34,11 +31,9 @@ for "_i" from 1 to 2 do {player addItem "HandGrenade";};
 for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "ACE_EntrenchingTool";
 for "_i" from 1 to 3 do {player addItem "rhsusf_mag_15Rnd_9x19_JHP";};
-_array = ["rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote", "rhsusf_200Rnd_556x45_mixed_soft_pouch", "rhsusf_200Rnd_556x45_mixed_soft_pouch_ucp"];
-_mag = selectRandom _array;
+_mag = ["rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote", "rhsusf_200Rnd_556x45_mixed_soft_pouch", "rhsusf_200Rnd_556x45_mixed_soft_pouch_ucp"] call BIS_fnc_selectRandom;
 for "_i" from 1 to 3 do {player addItem _mag;};
-_array = ["rhsusf_ach_helmet_M81", "rhsusf_ach_bare_wood", "rhsusf_ach_bare_wood_ess", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset_ess", "rhsusf_ach_bare"];
-_helmet = selectRandom _array;
+_helmet = ["rhsusf_ach_helmet_M81", "rhsusf_ach_bare_wood", "rhsusf_ach_bare_wood_ess", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset_ess", "rhsusf_ach_bare"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 player addItem "ACE_EarPlugs";
 player addItem "ACE_Flashlight_MX991";

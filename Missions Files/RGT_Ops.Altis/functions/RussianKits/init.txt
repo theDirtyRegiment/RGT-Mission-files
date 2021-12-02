@@ -1,5 +1,6 @@
 this addAction['Get Rifleman Loadout',RGT_fnc_RiflemanRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];  
-this addAction['Get CLS Loadout',RGT_fnc_CLSRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get CLS Loadout',RGT_fnc_CLSRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];
+this addAction['Get Autorifleman Loadout',RGT_fnc_ARRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];  
 this addAction['Get Machinegunner Loadout',RGT_fnc_MGRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];   
 this addAction['Get MG Ammobearer Loadout',RGT_fnc_MGAmmoBearerRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];   
 this addAction['Get Light AT Loadout',RGT_fnc_LightATRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];  

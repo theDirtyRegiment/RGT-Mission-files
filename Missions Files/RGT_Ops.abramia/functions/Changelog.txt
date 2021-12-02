@@ -6,6 +6,10 @@ Loadouts:
 * Cleaned up the Inf Marksman script
 * Updated ScubaKits (cooler look)
 * Added Woodland Infantry and Arctic loadouts to all maps
+Files:
+* Replaced all TG classnames with RGT
+
+***MAP FILE CHANGELOG 20MAR21***
 Loadouts:
 * Loadouts were not working due to USP mod update - FIXED
 Loadouts:

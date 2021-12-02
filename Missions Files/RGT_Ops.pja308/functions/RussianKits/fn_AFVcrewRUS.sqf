@@ -12,8 +12,7 @@ player addWeapon "rhs_weap_aks74un";
 player addPrimaryWeaponItem "rhs_acc_dtk1983";
 
 comment "Add containers";
-_array = ["rhs_uniform_emr_patchless", "rhs_uniform_vkpo", "rhs_uniform_vkpo_alt", "rhs_uniform_vkpo_gloves", "rhs_uniform_vkpo_gloves_alt"];
-_uniform = selectRandom _array;
+_uniform = ["rhs_uniform_emr_patchless", "rhs_uniform_vkpo", "rhs_uniform_vkpo_alt", "rhs_uniform_vkpo_gloves", "rhs_uniform_vkpo_gloves_alt"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
 _array = ["rhs_vydra_3m", "rhs_6b23_digi_crewofficer", "rhs_6b23_digi_crew"];
 _vest = selectRandom _array;

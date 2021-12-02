@@ -8,12 +8,11 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_rifle = ["rhs_weap_m14ebrri", 0.70, "rhs_weap_mk17_STD", 0.02, "srifle_DMR_06_camo_F", 0.20, "rhs_weap_sr25_d", 0.05, "rhs_weap_m14_rail", 0.50, "rhs_weap_m14_rail_d", 0.50, "rhs_weap_m14_rail_fiberglass", 0.50, "rhs_weap_m14_rail_wd", 0.50] call BIS_fnc_selectRandomWeighted;
+_rifle = ["rhs_weap_m14ebrri", 0.70, "rhs_weap_mk17_LB", 0.02, "srifle_DMR_06_camo_F", 0.20, "rhs_weap_sr25_d", 0.02, "rhs_weap_m14_rail", 0.50, "rhs_weap_m14_rail_d", 0.50, "rhs_weap_m14_rail_fiberglass", 0.50, "rhs_weap_m14_rail_wd", 0.50] call BIS_fnc_selectRandomWeighted;
 player addWeapon _rifle;
 player addPrimaryWeaponItem "optic_MRCO";
-if (_rifle isEqualTo "rhs_weap_mk17_STD") then { 
+if (_rifle isEqualTo "rhs_weap_mk17_LB") then { 
 	player addPrimaryWeaponItem "rhsusf_acc_anpeq15_wmx_sc";
-	player addPrimaryWeaponItem "rhsgref_sdn6_suppressor"; 
 }	else	{
 	player addPrimaryWeaponItem "rhsusf_acc_anpeq15side";
 };
@@ -21,14 +20,11 @@ player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 player addPrimaryWeaponItem "rhsusf_acc_m14_bipod";
 
 comment "Add containers";
-_array = ["rhs_uniform_g3_m81", "rhs_uniform_bdu_erdl", "USP_PCU_G3C_MCT_M81", "USP_G3C_M81", "USP_G3C_CU_TSW", "USP_G3C_CU_KP_M81", "USP_G3C_CU_KP_MX_M81", "USP_G3C_CU_KP_OR_TSW", "USP_G3C_CU_MX_M81", "USP_G3C_CU_OR_M81", "USP_G3C_KP_TSW"];
-_uniform = selectRandom _array;
+_uniform = ["rhs_uniform_g3_m81", "rhs_uniform_bdu_erdl", "USP_PCU_G3C_MCT_M81", "USP_G3C_M81", "USP_G3C_CU_TSW", "USP_G3C_CU_KP_M81", "USP_G3C_CU_KP_MX_M81", "USP_G3C_CU_KP_OR_TSW", "USP_G3C_CU_MX_M81", "USP_G3C_CU_OR_M81", "USP_G3C_KP_TSW"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
-_array = ["milgp_v_marciras_marksman_rgr", "milgp_v_marciras_marksman_belt_rgr"];
-_vest = selectRandom _array;
+_vest = ["milgp_v_marciras_marksman_rgr", "milgp_v_marciras_marksman_belt_rgr"] call BIS_fnc_selectRandom;
 player addVest _vest;
-_array = ["TRYK_B_BAF_BAG_rgr", "USP_PATROL_PACK_RGR"];
-_bag = selectRandom _array;
+_bag = ["TRYK_B_BAF_BAG_rgr", "USP_PATROL_PACK_RGR"] call BIS_fnc_selectRandom;
 player addBackpack _bag;
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
@@ -47,44 +43,23 @@ for "_i" from 1 to 2 do {player addItem "HandGrenade";};
 player addItem "ACE_EntrenchingTool";
 for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "SmokeShellBlue";
-_array = ["rhs_mag_20Rnd_SCAR_762x51_mk316_special", "rhs_mag_20Rnd_SCAR_762x51_mk316_special_bk"];
-_mag1 = selectRandom _array;
-_array = ["rhs_mag_20Rnd_SCAR_762x51_m61_ap", "rhs_mag_20Rnd_SCAR_762x51_m61_ap_bk"];
-_mag2 = selectRandom _array;
-if (_rifle isEqualTo "rhs_weap_sr25_d") then {
-	for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
-	for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
+switch(_rifle) do {
+	case "rhs_weap_sr25_d": {
+		for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
+		for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
+	};
+	case "rhs_weap_mk17_LB": {
+		_mag1 = ["rhs_mag_20Rnd_SCAR_762x51_mk316_special", "rhs_mag_20Rnd_SCAR_762x51_mk316_special_bk"] call BIS_fnc_selectRandom;
+		_mag2 = ["rhs_mag_20Rnd_SCAR_762x51_m61_ap", "rhs_mag_20Rnd_SCAR_762x51_m61_ap_bk"] call BIS_fnc_selectRandom;
+		for "_i" from 1 to 4 do {player addItem _mag1;};
+		for "_i" from 1 to 3 do {player addItem _mag2;}; 
+	};
+	default {
+		for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
+		for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
+	};
 };
-if (_rifle isEqualTo "rhs_weap_mk17_STD") then {
-	for "_i" from 1 to 4 do {player addItem _mag1;};
-	for "_i" from 1 to 3 do {player addItem _mag2;}; 
-};
-if (_rifle isEqualTo "rhs_weap_m14ebrri") then {
-	for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
-	for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
-};
-if (_rifle isEqualTo "srifle_DMR_06_camo_F") then {
-	for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
-	for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
-};
-if (_rifle isEqualTo "rhs_weap_m14_rail") then {
-	for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
-	for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
-};
-if (_rifle isEqualTo "rhs_weap_m14_rail_d") then {
-	for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
-	for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
-};
-if (_rifle isEqualTo "rhs_weap_m14_rail_fiberglass") then {
-	for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
-	for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
-};
-if (_rifle isEqualTo "rhs_weap_m14_rail_wd") then {
-	for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
-	for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
-};
-_array = ["rhsusf_ach_helmet_M81", "rhsusf_ach_bare_wood", "rhsusf_ach_bare_wood_ess", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset_ess", "rhsusf_ach_bare"];
-_helmet = selectRandom _array;
+_helmet = ["rhsusf_ach_helmet_M81", "rhsusf_ach_bare_wood", "rhsusf_ach_bare_wood_ess", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset_ess", "rhsusf_ach_bare"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
 player addWeapon "rhsusf_weap_m9";
