@@ -9,7 +9,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "rhs_weap_m27iar";
+player addWeapon "rhs_weap_m27iar_grip";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 _optic = ["rhsusf_acc_eotech_552", 0.25, "rhsusf_acc_acog", 0.25, "rhsusf_acc_T1_high", 0.20, "rhsusf_acc_eotech_xps3", 0.20, "rhsusf_acc_su230_c", 0.10] call BIS_fnc_selectRandomWeighted;
