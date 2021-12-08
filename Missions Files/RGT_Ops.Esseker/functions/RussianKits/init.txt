@@ -11,6 +11,7 @@ this addAction['Get Demo. Carrier Loadout',RGT_fnc_EngineerAmmoBearerRUS,nil,1.5
 this addAction['Get Grenadier Loadout',RGT_fnc_GrenadierRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];  
 this addAction['Get Grenadier Ammobearer Loadout',RGT_fnc_GrenadierAmmoBearerRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];   
 this addAction['Get Leader Loadout', RGT_fnc_LeaderRUS,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction["<t color='#FF2B2B'>Weapon Teams", "createDialog 'RussianLoadoutUI'",nil,1.5,true,true,"","((_target distance _this)<5)"];
 this addAction["<t color='#2C75FF'>Add Parachute", RGT_fnc_Parachute,nil,1.5,true,true,"","((_target distance _this)<5)"];  
 this addAction['Get AFV Crewman Loadout', RGT_fnc_AFVcrewRUS,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
 this addAction['Get RW Crewman Loadout', RGT_fnc_RWcrewRUS,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
