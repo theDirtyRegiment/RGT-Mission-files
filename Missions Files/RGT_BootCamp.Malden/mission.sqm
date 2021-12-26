@@ -12,14 +12,14 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=598;
+		nextID=611;
 	};
 	class Camera
 	{
-		pos[]={757.20129,32.243416,12109.203};
-		dir[]={0.52193242,-0.62209189,-0.58361691};
-		up[]={0.41469914,0.78294057,-0.46371049};
-		aside[]={-0.7454071,-1.15484e-007,-0.66662228};
+		pos[]={693.71191,35.400948,12127.237};
+		dir[]={-0.72824782,-0.64014167,-0.24469142};
+		up[]={-0.60680449,0.76825684,-0.20388643};
+		aside[]={-0.31850207,0,0.94792223};
 	};
 };
 binarizationWanted=0;
@@ -12198,7 +12198,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=712;
+		items=714;
 		class Item0
 		{
 			dataType="Object";
@@ -33526,386 +33526,6 @@ class Mission
 		};
 		class Item671
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={688.94,29.631001,12119.061};
-				angles[]={0,0.045867253,0};
-			};
-			name="slideshow_SOP71";
-			id=490;
-			type="ace_slideshow_module";
-			atlOffset=0.23197365;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_slideshow_module_SetName";
-					expression="_this setVariable ['SetName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="SOP07.1";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_slideshow_module_Controllers";
-					expression="_this setVariable ['Controllers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="briefing_switch_01";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_slideshow_module_Objects";
-					expression="_this setVariable ['Objects',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_slideshow_module_Images";
-					expression="_this setVariable ['Images',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_07_1-CQB-1.paa,images\SOP_slides-sop_07_1-CQB-2.paa,images\SOP_slides-sop_07_1-CQB-3.paa,images\SOP_slides-sop_07_1-CQB-4.paa,images\SOP_slides-sop_07_1-CQB-5.paa,images\SOP_slides-sop_07_1-CQB-6.paa,images\SOP_slides-sop_07_1-CQB-Rolling_T.paa,images\SOP_slides-sop_07_1-CQB-Serpentine.paa,images\SOP_slides-sop_07_1-Stairwell.paa";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ace_slideshow_module_Names";
-					expression="_this setVariable ['Names',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Start,CQB 1,CQB 2,CQB 3,CQB 4,CQB 5,CQB 6,Rolling T,Serpentine,Stairwell";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ace_slideshow_module_Duration";
-					expression="_this setVariable ['Duration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				nAttributes=6;
-			};
-		};
-		class Item672
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={688.98199,29.572001,12120.062};
-				angles[]={0,0.045867253,0};
-			};
-			name="slideshow_SOP72";
-			id=491;
-			type="ace_slideshow_module";
-			atlOffset=0.17297363;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_slideshow_module_SetName";
-					expression="_this setVariable ['SetName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="SOP07.2";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_slideshow_module_Controllers";
-					expression="_this setVariable ['Controllers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="briefing_switch_01";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_slideshow_module_Objects";
-					expression="_this setVariable ['Objects',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_slideshow_module_Images";
-					expression="_this setVariable ['Images',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_07_2-MOUT-city_overview.paa,images\SOP_slides-sop_07_2-MOUT-phase_1.paa,images\SOP_slides-sop_07_2-MOUT-phase_2.paa,images\SOP_slides-sop_07_2-MOUT-phase_3.paa,images\SOP_slides-sop_07_2-MOUT-phase_4.paa,images\SOP_slides-sop_07_2-MOUT-phase_5.paa,images\SOP_slides-sop_07_2-MOUT-security.paa";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ace_slideshow_module_Names";
-					expression="_this setVariable ['Names',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Start,City Overview,Mout 1,Mout 2,Mout 3,Mout 4,Mout 5,Mout Security";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ace_slideshow_module_Duration";
-					expression="_this setVariable ['Duration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				nAttributes=6;
-			};
-		};
-		class Item673
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={689.03101,29.516001,12121.059};
-				angles[]={0,0.045867253,0};
-			};
-			name="slideshow_SOP081";
-			id=492;
-			type="ace_slideshow_module";
-			atlOffset=0.11697388;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_slideshow_module_SetName";
-					expression="_this setVariable ['SetName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="SOP08.1";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_slideshow_module_Controllers";
-					expression="_this setVariable ['Controllers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="briefing_switch_01";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_slideshow_module_Objects";
-					expression="_this setVariable ['Objects',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_slideshow_module_Images";
-					expression="_this setVariable ['Images',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_08_1-Soft_dismount_360.paa,images\SOP_slides-sop_08_1-Hard_dismount_360.paa,images\SOP_slides-sop_08_1-5-25.paa,images\SOP_slides-sop_08_1-Herringbone.paa,images\SOP_slides-sop_08_1-Coil.paa,images\SOP_slides-sop_08_1-Mounted_Patrol_Formations_-_Patrol_Line_Front.paa,images\SOP_slides-sop_08_1-Mounted_Patrol_Formations_-_Patrol_Line_Right.paa";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ace_slideshow_module_Names";
-					expression="_this setVariable ['Names',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Start,Soft Dismount 360,Hard Dismount 360,5-25,Herringbone,Coil,Patrol Line Front,Patrol Line Right";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ace_slideshow_module_Duration";
-					expression="_this setVariable ['Duration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				nAttributes=6;
-			};
-		};
-		class Item674
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={689.021,29.399,12121.973};
-				angles[]={0,0.045867253,0};
-			};
-			name="slideshow_SOP82";
-			id=494;
-			type="ace_slideshow_module";
-			atlOffset=0.47900009;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_slideshow_module_SetName";
-					expression="_this setVariable ['SetName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="SOP08.2";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_slideshow_module_Controllers";
-					expression="_this setVariable ['Controllers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="briefing_switch_01";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_slideshow_module_Objects";
-					expression="_this setVariable ['Objects',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_slideshow_module_Images";
-					expression="_this setVariable ['Images',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_08_2-Paradrop_-_In_the_air_-_free_fall.paa,images\SOP_slides-sop_08_2-Paradrop_-_In_the_air_-_deployed_parachute.paa,images\SOP_slides-sop_08_2-Rear_Loading_Unloading.paa,images\SOP_slides-sop_08_2-Side_Loading_Unloading.paa,images\SOP_slides-sop_08_2-Rotary_Wing_Seats_&_Sectors_1.paa,images\SOP_slides-sop_08_2-Rotary_Wing_Seats_&_Sectors_2.paa,images\SOP_slides-sop_08_2-Edge_Hover_Insertion.paa,images\SOP_slides-sop_08_2-Slope_Hovering.paa";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ace_slideshow_module_Names";
-					expression="_this setVariable ['Names',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Start,Paradrop Free Fall,Paradrop Deployed,Rear Loading,Side Loading,Seats and Sectors 1,Seats and Sectors 2,Edge Hover Insertion,Slope Hovering";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ace_slideshow_module_Duration";
-					expression="_this setVariable ['Duration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				nAttributes=6;
-			};
-		};
-		class Item675
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -33936,7 +33556,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item676
+		class Item672
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33968,7 +33588,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item677
+		class Item673
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34001,7 +33621,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item678
+		class Item674
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34035,7 +33655,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item679
+		class Item675
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34068,7 +33688,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item680
+		class Item676
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34103,7 +33723,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item681
+		class Item677
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34119,7 +33739,7 @@ class Mission
 			id=505;
 			type="Paleta1";
 		};
-		class Item682
+		class Item678
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34135,7 +33755,7 @@ class Mission
 			id=506;
 			type="Paleta1";
 		};
-		class Item683
+		class Item679
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34151,7 +33771,7 @@ class Mission
 			id=507;
 			type="Paleta1";
 		};
-		class Item684
+		class Item680
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34167,7 +33787,7 @@ class Mission
 			id=508;
 			type="Paleta1";
 		};
-		class Item685
+		class Item681
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34201,7 +33821,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item686
+		class Item682
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34235,7 +33855,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item687
+		class Item683
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34268,7 +33888,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item688
+		class Item684
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34341,7 +33961,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item689
+		class Item685
 		{
 			dataType="Group";
 			side="Civilian";
@@ -34477,7 +34097,7 @@ class Mission
 			id=529;
 			atlOffset=0.010381699;
 		};
-		class Item690
+		class Item686
 		{
 			dataType="Group";
 			side="Civilian";
@@ -34747,7 +34367,7 @@ class Mission
 			id=531;
 			atlOffset=0.012371063;
 		};
-		class Item691
+		class Item687
 		{
 			dataType="Group";
 			side="Civilian";
@@ -34929,7 +34549,7 @@ class Mission
 			id=533;
 			atlOffset=0.0064620972;
 		};
-		class Item692
+		class Item688
 		{
 			dataType="Group";
 			side="Civilian";
@@ -35154,7 +34774,7 @@ class Mission
 			};
 			id=535;
 		};
-		class Item693
+		class Item689
 		{
 			dataType="Group";
 			side="Civilian";
@@ -35409,7 +35029,7 @@ class Mission
 			};
 			id=537;
 		};
-		class Item694
+		class Item690
 		{
 			dataType="Group";
 			side="Civilian";
@@ -35609,7 +35229,7 @@ class Mission
 			};
 			id=539;
 		};
-		class Item695
+		class Item691
 		{
 			dataType="Group";
 			side="Civilian";
@@ -35800,7 +35420,7 @@ class Mission
 			id=541;
 			atlOffset=0.0074157715;
 		};
-		class Item696
+		class Item692
 		{
 			dataType="Group";
 			side="Civilian";
@@ -36027,7 +35647,7 @@ class Mission
 			};
 			id=543;
 		};
-		class Item697
+		class Item693
 		{
 			dataType="Group";
 			side="Civilian";
@@ -36225,7 +35845,7 @@ class Mission
 			id=545;
 			atlOffset=0.014322281;
 		};
-		class Item698
+		class Item694
 		{
 			dataType="Group";
 			side="Civilian";
@@ -36489,7 +36109,7 @@ class Mission
 			id=547;
 			atlOffset=0.017349243;
 		};
-		class Item699
+		class Item695
 		{
 			dataType="Group";
 			side="Civilian";
@@ -36693,7 +36313,7 @@ class Mission
 			id=549;
 			atlOffset=0.010324478;
 		};
-		class Item700
+		class Item696
 		{
 			dataType="Group";
 			side="Civilian";
@@ -36821,7 +36441,7 @@ class Mission
 			id=551;
 			atlOffset=0.014028549;
 		};
-		class Item701
+		class Item697
 		{
 			dataType="Group";
 			side="Civilian";
@@ -37025,7 +36645,7 @@ class Mission
 			id=553;
 			atlOffset=0.010532379;
 		};
-		class Item702
+		class Item698
 		{
 			dataType="Group";
 			side="Civilian";
@@ -37161,7 +36781,7 @@ class Mission
 			id=555;
 			atlOffset=0.010324478;
 		};
-		class Item703
+		class Item699
 		{
 			dataType="Group";
 			side="Civilian";
@@ -37363,7 +36983,7 @@ class Mission
 			};
 			id=557;
 		};
-		class Item704
+		class Item700
 		{
 			dataType="Object";
 			class PositionInfo
@@ -37379,7 +36999,7 @@ class Mission
 			id=589;
 			type="Land_rhs_mi28_wreck2";
 		};
-		class Item705
+		class Item701
 		{
 			dataType="Object";
 			class PositionInfo
@@ -37413,17 +37033,539 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item702
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={758.47247,29.021036,12105.855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=596;
+			type="jbad_paletaA";
+		};
+		class Item703
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={758.43402,29.272726,12105.831};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=597;
+			type="rhs_7ya37_1_single";
+			atlOffset=0.20400047;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item704
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={688.466,29.399,12118.484};
+				angles[]={0,0.045867253,0};
+			};
+			name="slideshow_SOP6";
+			id=598;
+			type="ace_slideshow_module";
+			atlOffset=0.47900009;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_slideshow_module_SetName";
+					expression="_this setVariable ['SetName',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SOP06";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_slideshow_module_Controllers";
+					expression="_this setVariable ['Controllers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_switch_01";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_slideshow_module_Objects";
+					expression="_this setVariable ['Objects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_slideshow_module_Images";
+					expression="_this setVariable ['Images',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_06-cls_workflow.paa";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_slideshow_module_Names";
+					expression="_this setVariable ['Names',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Start,Workflow";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_slideshow_module_Duration";
+					expression="_this setVariable ['Duration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item705
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={688.21277,29.152,12119.36};
+				angles[]={0,0.045867253,0};
+			};
+			name="slideshow_SOP71";
+			id=599;
+			type="ace_slideshow_module";
+			atlOffset=0.23200035;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_slideshow_module_SetName";
+					expression="_this setVariable ['SetName',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SOP07.1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_slideshow_module_Controllers";
+					expression="_this setVariable ['Controllers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_switch_01";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_slideshow_module_Objects";
+					expression="_this setVariable ['Objects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_slideshow_module_Images";
+					expression="_this setVariable ['Images',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_07_1-CQB-1.paa,images\SOP_slides-sop_07_1-CQB-2.paa,images\SOP_slides-sop_07_1-CQB-3.paa,images\SOP_slides-sop_07_1-CQB-4.paa,images\SOP_slides-sop_07_1-CQB-5.paa,images\SOP_slides-sop_07_1-CQB-6.paa,images\SOP_slides-sop_07_1-CQB-Rolling_T.paa,images\SOP_slides-sop_07_1-CQB-Serpentine.paa,images\SOP_slides-sop_07_1-Stairwell.paa";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_slideshow_module_Names";
+					expression="_this setVariable ['Names',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Start,CQB 1,CQB 2,CQB 3,CQB 4,CQB 5,CQB 6,Rolling T,Serpentine,Stairwell";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_slideshow_module_Duration";
+					expression="_this setVariable ['Duration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
 		class Item706
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={689.07306,29.399027,12122.937};
+				position[]={688.25476,29.093,12120.361};
+				angles[]={0,0.045867253,0};
+			};
+			name="slideshow_SOP72";
+			id=600;
+			type="ace_slideshow_module";
+			atlOffset=0.17300034;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_slideshow_module_SetName";
+					expression="_this setVariable ['SetName',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SOP07.2";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_slideshow_module_Controllers";
+					expression="_this setVariable ['Controllers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_switch_01";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_slideshow_module_Objects";
+					expression="_this setVariable ['Objects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_slideshow_module_Images";
+					expression="_this setVariable ['Images',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_07_2-MOUT-city_overview.paa,images\SOP_slides-sop_07_2-MOUT-phase_1.paa,images\SOP_slides-sop_07_2-MOUT-phase_2.paa,images\SOP_slides-sop_07_2-MOUT-phase_3.paa,images\SOP_slides-sop_07_2-MOUT-phase_4.paa,images\SOP_slides-sop_07_2-MOUT-phase_5.paa,images\SOP_slides-sop_07_2-MOUT-security.paa";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_slideshow_module_Names";
+					expression="_this setVariable ['Names',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Start,City Overview,Mout 1,Mout 2,Mout 3,Mout 4,Mout 5,Mout Security";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_slideshow_module_Duration";
+					expression="_this setVariable ['Duration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item707
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={688.30377,29.037001,12121.358};
+				angles[]={0,0.045867253,0};
+			};
+			name="slideshow_SOP081";
+			id=601;
+			type="ace_slideshow_module";
+			atlOffset=0.11700058;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_slideshow_module_SetName";
+					expression="_this setVariable ['SetName',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SOP08.1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_slideshow_module_Controllers";
+					expression="_this setVariable ['Controllers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_switch_01";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_slideshow_module_Objects";
+					expression="_this setVariable ['Objects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_slideshow_module_Images";
+					expression="_this setVariable ['Images',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_08_1-Soft_dismount_360.paa,images\SOP_slides-sop_08_1-Hard_dismount_360.paa,images\SOP_slides-sop_08_1-5-25.paa,images\SOP_slides-sop_08_1-Herringbone.paa,images\SOP_slides-sop_08_1-Coil.paa,images\SOP_slides-sop_08_1-Mounted_Patrol_Formations_-_Patrol_Line_Front.paa,images\SOP_slides-sop_08_1-Mounted_Patrol_Formations_-_Patrol_Line_Right.paa";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_slideshow_module_Names";
+					expression="_this setVariable ['Names',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Start,Soft Dismount 360,Hard Dismount 360,5-25,Herringbone,Coil,Patrol Line Front,Patrol Line Right";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_slideshow_module_Duration";
+					expression="_this setVariable ['Duration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item708
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={688.29376,29.399027,12122.272};
+				angles[]={0,0.045867253,0};
+			};
+			name="slideshow_SOP82";
+			id=602;
+			type="ace_slideshow_module";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_slideshow_module_SetName";
+					expression="_this setVariable ['SetName',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SOP08.2";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_slideshow_module_Controllers";
+					expression="_this setVariable ['Controllers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_switch_01";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_slideshow_module_Objects";
+					expression="_this setVariable ['Objects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_slideshow_module_Images";
+					expression="_this setVariable ['Images',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_08_2-Paradrop_-_In_the_air_-_free_fall.paa,images\SOP_slides-sop_08_2-Paradrop_-_In_the_air_-_deployed_parachute.paa,images\SOP_slides-sop_08_2-Rear_Loading_Unloading.paa,images\SOP_slides-sop_08_2-Side_Loading_Unloading.paa,images\SOP_slides-sop_08_2-Rotary_Wing_Seats_&_Sectors_1.paa,images\SOP_slides-sop_08_2-Rotary_Wing_Seats_&_Sectors_2.paa,images\SOP_slides-sop_08_2-Edge_Hover_Insertion.paa,images\SOP_slides-sop_08_2-Slope_Hovering.paa";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_slideshow_module_Names";
+					expression="_this setVariable ['Names',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Start,Paradrop Free Fall,Paradrop Deployed,Rear Loading,Side Loading,Seats and Sectors 1,Seats and Sectors 2,Edge Hover Insertion,Slope Hovering";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_slideshow_module_Duration";
+					expression="_this setVariable ['Duration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item709
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={688.34583,28.920027,12123.236};
 				angles[]={0,0.045867253,0};
 			};
 			name="slideshow_SOP09";
-			id=592;
+			id=603;
 			type="ace_slideshow_module";
+			atlOffset=2.6702881e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -37507,18 +37649,113 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item707
+		class Item710
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={689.10242,29.431999,12123.953};
+				position[]={688.39398,29.431999,12123.947};
+				angles[]={0,0.045867253,0};
+			};
+			name="slideshow_SOP102";
+			id=607;
+			type="ace_slideshow_module";
+			atlOffset=0.032972336;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_slideshow_module_SetName";
+					expression="_this setVariable ['SetName',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SOP10-2";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_slideshow_module_Controllers";
+					expression="_this setVariable ['Controllers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_switch_01";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_slideshow_module_Objects";
+					expression="_this setVariable ['Objects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="briefing_screen_01,briefing_screen_02,briefing_screen_03,briefing_screen_04,briefing_switch_01";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_slideshow_module_Images";
+					expression="_this setVariable ['Images',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="images\SOP_slides-start_screen.paa,images\SOP_slides-sop_10_2-LinearAmbush.paa,images\SOP_slides-sop_10_2-PerpendicularAmbush.paa,images\SOP_slides-sop_10_2-LshapeAmbush.paa";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_slideshow_module_Names";
+					expression="_this setVariable ['Names',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Start,Linear ambush,Perpendicular ambush,L-shape ambush";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_slideshow_module_Duration";
+					expression="_this setVariable ['Duration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item711
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={688.52448,29.432026,12124.542};
 				angles[]={0,0.045867253,0};
 			};
 			name="slideshow_SOP14";
-			id=593;
+			id=608;
 			type="ace_slideshow_module";
-			atlOffset=0.032972336;
+			atlOffset=0.032999039;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -37602,17 +37839,18 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item708
+		class Item712
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={688.83905,29.399027,12124.845};
+				position[]={688.26111,29.399054,12125.434};
 				angles[]={0,0.045867253,0};
 			};
 			name="slideshow_SOP14adv";
-			id=594;
+			id=609;
 			type="ace_slideshow_module";
+			atlOffset=2.6702881e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -37696,18 +37934,17 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item709
+		class Item713
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={689.24017,29.878027,12126.006};
+				position[]={688.66223,29.399027,12126.595};
 				angles[]={0,5.6527548,0};
 			};
 			name="slideshow_SOP15";
-			id=595;
+			id=610;
 			type="ace_slideshow_module";
-			atlOffset=0.47900009;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -37789,53 +38026,6 @@ class Mission
 					};
 				};
 				nAttributes=6;
-			};
-		};
-		class Item710
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={758.47247,29.021036,12105.855};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=596;
-			type="jbad_paletaA";
-		};
-		class Item711
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={758.43402,29.272726,12105.831};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=597;
-			type="rhs_7ya37_1_single";
-			atlOffset=0.20400047;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
 			};
 		};
 	};
