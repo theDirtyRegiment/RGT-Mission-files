@@ -43,7 +43,6 @@ player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
 player addItem "AMP_Breaching_Charge_Mag";
 player addItem "ACE_M84";
-player addItem "rhsusf_20Rnd_762x51_m118_special_Mag";
 for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
 for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
 for "_i" from 1 to 2 do {player addItem "rhsusf_mag_17Rnd_9x19_FMJ";};
