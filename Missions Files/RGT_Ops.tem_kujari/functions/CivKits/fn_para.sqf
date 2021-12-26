@@ -9,10 +9,9 @@ removeHeadgear player;
 
 comment "Add containers";
 player forceAddUniform "U_C_Paramedic_01_F";
-player addItemToUniform "ACE_MapTools";
-player addItemToUniform "ACE_Flashlight_XL50";
-_array = ["V_LegStrapBag_black_F", "V_Plain_crystal_F", "V_TacVest_blk"];
-_vest = selectRandom _array;
+player addItem "ACE_MapTools";
+player addItem "ACE_Flashlight_XL50";
+_vest = ["V_LegStrapBag_black_F", "V_Plain_crystal_F", "V_TacVest_blk"] call BIS_fnc_selectRandom;
 player addVest _vest;
 player addBackpack "TRYK_B_Medbag_BK";
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};

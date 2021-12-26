@@ -8,9 +8,8 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_array = ["rhs_weap_m240B", "rhs_weap_m240G", "rhs_weap_fnmag"];
-_weapon = selectRandom _array;
-player addWeapon _weapon;
+_rifle = ["rhs_weap_m240B", "rhs_weap_m240G", "rhs_weap_fnmag"] call BIS_fnc_selectRandom;
+player addWeapon _rifle;
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 _optic = ["rhsusf_acc_ACOG_MDO", 0.50, "rhsusf_acc_elcan", 0.25, "rhsusf_acc_su230a_mrds_c", 0.12, "rhsusf_acc_su230a_c", 0.12] call BIS_fnc_selectRandomWeighted;
 player addPrimaryWeaponItem _optic;
@@ -18,11 +17,9 @@ player addPrimaryWeaponItem "rhsusf_acc_ardec_m240";
 player addWeapon "Binocular";
 
 comment "Add containers";
-_array = ["milgp_u_g3_field_set_mc", "USP_PCU_G3C_MC", "USP_PCU_G3C_KP_MC", "USP_PCU_G3C_KP_MX_MC", "USP_PCU_G3C_KP_OR_MC", "USP_PCU_G3C_MX_MC", "USP_PCU_G3C_OR_MC", "USP_SOFTSHELL_G3C_MC", "USP_SOFTSHELL_G3C_KP_MC", "USP_SOFTSHELL_G3C_KP_MX_MC", "USP_SOFTSHELL_G3C_KP_OR_MC", "USP_SOFTSHELL_G3C_MX_MC", "USP_SOFTSHELL_G3C_OR_MC"];
-_uniform = selectRandom _array;
+_uniform = ["milgp_u_g3_field_set_mc", "USP_PCU_G3C_MC", "USP_PCU_G3C_KP_MC", "USP_PCU_G3C_KP_MX_MC", "USP_PCU_G3C_KP_OR_MC", "USP_PCU_G3C_MX_MC", "USP_PCU_G3C_OR_MC", "USP_SOFTSHELL_G3C_MC", "USP_SOFTSHELL_G3C_KP_MC", "USP_SOFTSHELL_G3C_KP_MX_MC", "USP_SOFTSHELL_G3C_KP_OR_MC", "USP_SOFTSHELL_G3C_MX_MC", "USP_SOFTSHELL_G3C_OR_MC"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
-_array = ["rhsusf_spcs_ocp_saw", "milgp_v_marciras_hgunner_mc", "milgp_v_marciras_hgunner_belt_mc"];
-_vest = selectRandom _array;
+_vest = ["rhsusf_spcs_ocp_saw", "milgp_v_marciras_hgunner_mc", "milgp_v_marciras_hgunner_belt_mc"] call BIS_fnc_selectRandom;
 player addVest _vest;
 player addItem "ACE_EarPlugs";
 player addItem "ACE_morphine";
@@ -37,8 +34,7 @@ player addItem "HandGrenade";
 player addItem "ACE_EntrenchingTool";
 player addItem "SmokeShell";
 for "_i" from 1 to 3 do {player addItem "rhsusf_100Rnd_762x51_m62_tracer";};
-_array = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_ESS_ocp", "rhsusf_ach_helmet_ocp"];
-_helmet = selectRandom _array;
+_helmet = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_ESS_ocp", "rhsusf_ach_helmet_ocp"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
 player addWeapon "rhsusf_weap_m9";

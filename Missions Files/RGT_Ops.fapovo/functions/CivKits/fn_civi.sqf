@@ -8,13 +8,11 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add containers";
-_array = ["U_C_Man_casual_2_F", "U_C_Man_casual_3_F", "U_C_Man_casual_1_F", "LOP_U_AFR_Civ_01", "LOP_U_AFR_Civ_02", "LOP_U_AFR_Civ_04", "LOP_U_AFR_Civ_05", "LOP_U_AFR_Civ_06", "LOP_U_AFR_Civ_01S", "LOP_U_AFR_Civ_02S", "LOP_U_AFR_Civ_03S", "LOP_U_AFR_Civ_04S", "LOP_U_AFR_Civ_05S", "LOP_U_AFR_Civ_06S", "U_C_Poloshirt_blue", "TRYK_U_B_BLK_T_BK", "TRYK_U_B_RED_T_BR", "TRYK_U_B_BLK_T_WH", "TRYK_U_B_Denim_T_BK", "TRYK_U_B_Denim_T_WH"];
-_suit = selectRandom _array;
+_suit = ["U_C_Man_casual_2_F", "U_C_Man_casual_3_F", "U_C_Man_casual_1_F", "LOP_U_AFR_Civ_01", "LOP_U_AFR_Civ_02", "LOP_U_AFR_Civ_04", "LOP_U_AFR_Civ_05", "LOP_U_AFR_Civ_06", "LOP_U_AFR_Civ_01S", "LOP_U_AFR_Civ_02S", "LOP_U_AFR_Civ_03S", "LOP_U_AFR_Civ_04S", "LOP_U_AFR_Civ_05S", "LOP_U_AFR_Civ_06S", "U_C_Poloshirt_blue", "TRYK_U_B_BLK_T_BK", "TRYK_U_B_RED_T_BR", "TRYK_U_B_BLK_T_WH", "TRYK_U_B_Denim_T_BK", "TRYK_U_B_Denim_T_WH"] call BIS_fnc_selectRandom;
 player forceAddUniform _suit;
-player addItemToUniform "ACE_MapTools";
-player addItemToUniform "ACE_Flashlight_XL50";
-_array = ["", "TRYK_H_wig"];
-_head = selectRandom _array;
+player addItem "ACE_MapTools";
+player addItem "ACE_Flashlight_XL50";
+_head = ["", "TRYK_H_wig"] call BIS_fnc_selectRandom;
 player addHeadgear _head;
 
 comment "Add items";

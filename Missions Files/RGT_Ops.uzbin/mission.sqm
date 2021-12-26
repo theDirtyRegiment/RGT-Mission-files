@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=192;
+		nextID=194;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15;
+		nextID=16;
 	};
 	class Camera
 	{
-		pos[]={9412.9678,561.29272,9771.0508};
-		dir[]={-0.4959901,-0.8591916,0.12567817};
-		up[]={-0.83287168,0.51165086,0.21104053};
-		aside[]={0.24562781,2.2310996e-007,0.96936971};
+		pos[]={9502.7305,511.5896,9873.3926};
+		dir[]={-0.10962941,-0.4870854,-0.86646867};
+		up[]={-0.061145827,0.87333798,-0.4832623};
+		aside[]={-0.99210912,-2.651941e-007,0.12552686};
 	};
 };
 binarizationWanted=0;
@@ -92,13 +92,14 @@ addons[]=
 	"AMP_Breaching_Charge",
 	"ace_grenades",
 	"po_factions_fic",
-	"ace_slideshow"
+	"ace_slideshow",
+	"Jbad_Misc_Construction"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=54;
+		items=55;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -458,6 +459,11 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item54
+		{
+			className="Jbad_Misc_Construction";
+			name="Jbad_Misc_Construction";
+		};
 	};
 };
 dlcs[]=
@@ -679,7 +685,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=76;
+		items=78;
 		class Item0
 		{
 			dataType="Logic";
@@ -3317,8 +3323,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9503.3086,504.79617,9863.9482};
-				angles[]={0,5.2613254,0};
+				position[]={9503.7803,504.79617,9864.6582};
+				angles[]={-0,5.2613254,0};
 			};
 			side="Empty";
 			class Attributes
@@ -3350,8 +3356,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9501.4277,504.99582,9861.4521};
-				angles[]={0,0.54893583,0};
+				position[]={9501.8994,504.99582,9862.1621};
+				angles[]={-0,0.54893583,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3385,8 +3391,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9503.0293,504.51172,9864.0723};
-				angles[]={0,5.2613268,0};
+				position[]={9503.501,504.51172,9864.7822};
+				angles[]={-0,5.2613268,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3401,8 +3407,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9502.1973,504.51172,9862.708};
-				angles[]={0,5.2613258,0};
+				position[]={9502.6689,504.51172,9863.418};
+				angles[]={-0,5.2613258,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3417,8 +3423,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9501.3574,504.51172,9861.3438};
-				angles[]={0,5.2613258,0};
+				position[]={9501.8291,504.51172,9862.0537};
+				angles[]={-0,5.2613258,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3433,8 +3439,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9500.498,504.50839,9859.9629};
-				angles[]={0,5.2613258,0.0066592805};
+				position[]={9500.9697,504.51154,9860.6729};
+				angles[]={-0,5.2613258,0.0066592805};
 			};
 			side="Empty";
 			flags=4;
@@ -3450,8 +3456,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9502.377,504.89905,9863.0322};
-				angles[]={0,0.54894096,0};
+				position[]={9502.8486,504.89905,9863.7422};
+				angles[]={-0,0.54894096,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3484,8 +3490,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9501.9727,504.89883,9862.373};
-				angles[]={0,0.55362415,0};
+				position[]={9502.4443,504.89883,9863.083};
+				angles[]={-0,0.55362415,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3505,7 +3511,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[],[]],[[""ATMine_Range_Mag"",""APERSMine_Range_Mag"",""APERSBoundingMine_Range_Mag"",""SLAMDirectionalMine_Wire_Mag"",""APERSTripMine_Wire_Mag"",""ClaymoreDirectionalMine_Remote_Mag"",""DemoCharge_Remote_Mag"",""SatchelCharge_Remote_Mag""],[5,5,5,5,5,5,10,10]],[[""ACE_Clacker"",""ACE_DefusalKit""],[5,1]],[[],[]]],false]";
+							value="[[[[],[]],[[""ATMine_Range_Mag"",""APERSMine_Range_Mag"",""APERSBoundingMine_Range_Mag"",""SLAMDirectionalMine_Wire_Mag"",""APERSTripMine_Wire_Mag"",""ClaymoreDirectionalMine_Remote_Mag"",""DemoCharge_Remote_Mag"",""SatchelCharge_Remote_Mag"",""AMP_Breaching_Charge_Mag""],[5,5,5,5,5,5,10,10,20]],[[""ACE_Clacker"",""ACE_DefusalKit""],[5,1]],[[],[]]],false]";
 						};
 					};
 				};
@@ -3517,8 +3523,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9500.4541,504.61118,9860.0703};
-				angles[]={0,5.2769318,0.0066592805};
+				position[]={9500.9258,504.61432,9860.7803};
+				angles[]={-0,5.2769318,0.0066592805};
 			};
 			side="Empty";
 			flags=4;
@@ -5460,8 +5466,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9502.667,504.89905,9864.3164};
-				angles[]={0,0.51970667,0};
+				position[]={9503.1387,504.89905,9865.0264};
+				angles[]={-0,0.51970667,0};
 			};
 			side="Empty";
 			flags=4;
@@ -6310,7 +6316,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="call{this addAction['Get Rifleman Loadout',RGT_fnc_RiflemanRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get CLS Loadout',RGT_fnc_CLSRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Machinegunner Loadout',RGT_fnc_MGRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Light AT Loadout',RGT_fnc_LightATRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Radioman Loadout',RGT_fnc_LRRMRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Marksman Loadout',RGT_fnc_MarksmanRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Engineer Loadout',RGT_fnc_EngineerRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Grenadier Loadout',RGT_fnc_GrenadierRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Leader Loadout', RGT_fnc_LeaderRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction[""<t color='#FF2B2B'>Weapon Teams"", ""createDialog 'RussianLoadoutUI'"",nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction[""<t color='#2C75FF'>Add Static Line Parachute"", RGT_fnc_ParachuteS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get AFV Crewman Loadout', RGT_fnc_AFVcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Get RW Crewman Loadout', RGT_fnc_RWcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Get FW Crewman Loadout', RGT_fnc_FWcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];}";
+					init="this addAction['Get Rifleman Loadout',RGT_fnc_RiflemanRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get CLS Loadout',RGT_fnc_CLSRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "this addAction['Get Autorifleman Loadout',RGT_fnc_ARRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Machinegunner Loadout',RGT_fnc_MGRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];    " \n "this addAction['Get Light AT Loadout',RGT_fnc_LightATRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Radioman Loadout',RGT_fnc_LRRMRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Marksman Loadout',RGT_fnc_MarksmanRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Engineer Loadout',RGT_fnc_EngineerRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Grenadier Loadout',RGT_fnc_GrenadierRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Leader Loadout', RGT_fnc_LeaderRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction[""<t color='#FF2B2B'>Weapon Teams"", ""createDialog 'RussianLoadoutUI'"",nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "this addAction[""<t color='#2C75FF'>Add Parachute"", RGT_fnc_Parachute,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get AFV Crewman Loadout', RGT_fnc_AFVcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Get RW Crewman Loadout', RGT_fnc_RWcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Get FW Crewman Loadout', RGT_fnc_FWcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];";
 						description="Russian Loadouts";
 						disableSimulation=1;
 						ignoreByDynSimulGrid=1;
@@ -9764,6 +9770,54 @@ class Mission
 					};
 				};
 				nAttributes=6;
+			};
+		};
+		class Item76
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9498.8467,504.49667,9860.3145};
+				angles[]={-0,0,0.0066592805};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=192;
+			type="jbad_paletaA";
+		};
+		class Item77
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9498.8076,504.95215,9860.29};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=193;
+			type="rhs_7ya37_1_single";
+			atlOffset=0.20407104;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};

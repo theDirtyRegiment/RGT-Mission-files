@@ -8,16 +8,25 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_rifle = ["rhs_weap_m4a1_blockII", 0.48, "rhs_weap_m4a1_blockII_d", 0.25, "rhs_weap_m4a1_blockII_KAC", 0.48, "rhs_weap_m4a1", 0.02, "rhs_weap_mk18", 0.02, "rhs_weap_m27iar", 0.02, "rhs_weap_m27iar_grip", 0.02] call BIS_fnc_selectRandomWeighted;
+_rifle = ["rhs_weap_m4a1_blockII", 0.48, "rhs_weap_m4a1_blockII_d", 0.25, "rhs_weap_m4a1_blockII_KAC", 0.48, "rhs_weap_m4a1", 0.02, "rhs_weap_mk18", 0.02, "rhs_weap_m27iar", 0.02] call BIS_fnc_selectRandomWeighted;
 player addWeapon _rifle;
-_array = ["rhsusf_acc_M952V", "acc_flashlight", "rhsusf_acc_wmx", "rhsusf_acc_wmx_bk"];
-_rail = selectRandom _array;
+switch(_rifle) do {
+	case "rhs_weap_m27iar": {
+		player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+	};
+	case "rhs_weap_m4a1_blockII_d": {
+		_grip = ["", "rhsusf_acc_grip2_tan"] call BIS_fnc_selectRandom;
+		player addPrimaryWeaponItem _grip;
+	};
+	default {
+		_grip = ["", "rhsusf_acc_grip2"] call BIS_fnc_selectRandom;
+		player addPrimaryWeaponItem _grip;
+	};
+};
+_rail = ["rhsusf_acc_M952V", "acc_flashlight", "rhsusf_acc_wmx", "rhsusf_acc_wmx_bk"] call BIS_fnc_selectRandom;
 player addPrimaryWeaponItem _rail;
 _optic = ["rhsusf_acc_eotech_552", 0.70, "rhsusf_acc_compm4", 0.25, "rhsusf_acc_ACOG_RMR", 0.05] call BIS_fnc_selectRandomWeighted;
 player addPrimaryWeaponItem _optic;
-_array = ["", "rhsusf_acc_grip2", "rhsusf_acc_grip2_tan", "rhsusf_acc_grip2_wd"];
-_grip = selectRandom _array;
-player addPrimaryWeaponItem _grip;
 player addWeapon "rhs_weap_fim92";
 player addSecondaryWeaponItem "rhs_fim92_mag";
 

@@ -1,9 +1,8 @@
-removeBackpack player;
+player call zade_boc_fnc_actionOnChest;
 removeGoggles player;
 
 player addBackpack "rhs_d6_Parachute_backpack";
-_array = ["USP_ADVANCER_CLR", "USP_ADVANCER_YEL", "USP_ADVANCER", "USP_OAKLEY_SI2_BLK", "USP_OAKLEY_SI2_EMB", "USP_OAKLEY_SI2_YEL", "USP_OAKLEY_SI2", "USP_OAKLEY_SI2_MC_BLK", "USP_OAKLEY_SI2_MC_EMB", "USP_OAKLEY_SI2_MC_YEL", "USP_OAKLEY_SI2_MC", "USP_OAKLEY_SI2_TAN_BLK", "USP_OAKLEY_SI2_TAN_EMB", "USP_OAKLEY_SI2_TAN_YEL", "USP_OAKLEY_SI2_TAN"];
-_goggles = selectRandom _array;
+_goggles = ["USP_ADVANCER_CLR", "USP_ADVANCER_YEL", "USP_ADVANCER", "USP_OAKLEY_SI2_BLK", "USP_OAKLEY_SI2_EMB", "USP_OAKLEY_SI2_YEL", "USP_OAKLEY_SI2", "USP_OAKLEY_SI2_MC_BLK", "USP_OAKLEY_SI2_MC_EMB", "USP_OAKLEY_SI2_MC_YEL", "USP_OAKLEY_SI2_MC", "USP_OAKLEY_SI2_TAN_BLK", "USP_OAKLEY_SI2_TAN_EMB", "USP_OAKLEY_SI2_TAN_YEL", "USP_OAKLEY_SI2_TAN"] call BIS_fnc_selectRandom;
 player addGoggles _goggles;
 player linkItem "ACE_Altimeter";
 

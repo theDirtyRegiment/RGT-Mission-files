@@ -1,8 +1,7 @@
 comment "Remove existing items";
 removeBackpack player;
 
-_array = ["TRYK_B_BAF_BAG_rgr", "USP_PATROL_PACK_RGR"];
-_bag = selectRandom _array;
+_bag = ["TRYK_B_BAF_BAG_rgr", "USP_PATROL_PACK_RGR"] call BIS_fnc_selectRandom;
 player addBackpack _bag;
 for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_100Rnd_762x51_m62_tracer";};
 

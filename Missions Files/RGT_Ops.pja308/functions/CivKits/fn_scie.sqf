@@ -8,16 +8,13 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add containers";
-_array = ["U_C_Scientist", "LOP_U_CHR_Doctor_01"];
-_suit = selectRandom _array;
+_suit = ["U_C_Scientist", "LOP_U_CHR_Doctor_01"] call BIS_fnc_selectRandom;
 player forceAddUniform _suit;
-player addItemToUniform "ACE_MapTools";
-player addItemToUniform "ACE_Flashlight_XL50";
-_array = ["", "H_Bandanna_blu", "", "H_Bandanna_sand", "", "H_Bandanna_surfer", "", "H_Bandanna_surfer_blk", "", "H_Bandanna_surfer_grn"];
-_head = selectRandom _array;
+player addItem "ACE_MapTools";
+player addItem "ACE_Flashlight_XL50";
+_head = ["", "H_Bandanna_blu", "", "H_Bandanna_sand", "", "H_Bandanna_surfer", "", "H_Bandanna_surfer_blk", "", "H_Bandanna_surfer_grn"] call BIS_fnc_selectRandom;
 player addHeadgear _head;
-_array = ["G_Respirator_blue_F", "G_Respirator_white_F"];
-_mask = selectRandom _array;
+_mask = ["G_Respirator_blue_F", "G_Respirator_white_F"] call BIS_fnc_selectRandom;
 player addGoggles _mask;
 
 comment "Add items";

@@ -8,8 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_array = ["rhs_weap_m240B", "rhs_weap_m240G", "rhs_weap_fnmag"];
-_weapon = selectRandom _array;
+_weapon = ["rhs_weap_m240B", "rhs_weap_m240G", "rhs_weap_fnmag"] call BIS_fnc_selectRandom;
 player addWeapon _weapon;
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 _optic = ["rhsusf_acc_ACOG_MDO", 0.50, "rhsusf_acc_elcan", 0.25, "rhsusf_acc_su230a_mrds_c", 0.12, "rhsusf_acc_su230a_c", 0.12] call BIS_fnc_selectRandomWeighted;
@@ -18,11 +17,9 @@ player addPrimaryWeaponItem "rhsusf_acc_ardec_m240";
 player addWeapon "Binocular";
 
 comment "Add containers";
-_array = ["rhs_uniform_g3_m81", "rhs_uniform_bdu_erdl", "USP_PCU_G3C_MCT_M81", "USP_G3C_M81", "USP_G3C_CU_TSW", "USP_G3C_CU_KP_M81", "USP_G3C_CU_KP_MX_M81", "USP_G3C_CU_KP_OR_TSW", "USP_G3C_CU_MX_M81", "USP_G3C_CU_OR_M81", "USP_G3C_KP_TSW"];
-_uniform = selectRandom _array;
+_uniform = ["rhs_uniform_g3_m81", "rhs_uniform_bdu_erdl", "USP_PCU_G3C_MCT_M81", "USP_G3C_M81", "USP_G3C_CU_TSW", "USP_G3C_CU_KP_M81", "USP_G3C_CU_KP_MX_M81", "USP_G3C_CU_KP_OR_TSW", "USP_G3C_CU_MX_M81", "USP_G3C_CU_OR_M81", "USP_G3C_KP_TSW"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
-_array = ["milgp_v_marciras_hgunner_rgr", "milgp_v_marciras_hgunner_belt_rgr"];
-_vest = selectRandom _array;
+_vest = ["milgp_v_marciras_hgunner_rgr", "milgp_v_marciras_hgunner_belt_rgr"] call BIS_fnc_selectRandom;
 player addVest _vest;
 player addItem "ACE_EarPlugs";
 player addItem "ACE_morphine";
@@ -37,8 +34,7 @@ player addItem "HandGrenade";
 player addItem "ACE_EntrenchingTool";
 player addItem "SmokeShell";
 for "_i" from 1 to 3 do {player addItem "rhsusf_100Rnd_762x51_m62_tracer";};
-_array = ["rhsusf_ach_helmet_M81", "rhsusf_ach_bare_wood", "rhsusf_ach_bare_wood_ess", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset_ess", "rhsusf_ach_bare"];
-_helmet = selectRandom _array;
+_helmet = ["rhsusf_ach_helmet_M81", "rhsusf_ach_bare_wood", "rhsusf_ach_bare_wood_ess", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset_ess", "rhsusf_ach_bare"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
 player addWeapon "rhsusf_weap_m9";

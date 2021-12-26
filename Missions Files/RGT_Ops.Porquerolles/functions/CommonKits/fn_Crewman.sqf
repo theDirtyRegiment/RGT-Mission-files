@@ -23,13 +23,12 @@ player addItem "ACE_Chemlight_IR";
 player addItem "Chemlight_red";
 player addItem "ACE_EntrenchingTool";
 player addVest "V_TacVest_oli";
-for "_i" from 1 to 5 do {player addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
-for "_i" from 1 to 2 do {player addItemToVest "FlareGreen_F";};
+for "_i" from 1 to 5 do {player addItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+for "_i" from 1 to 2 do {player addItem "FlareGreen_F";};
 player addBackpack "B_AssaultPack_mcamo";
 player addItemToBackpack "ToolKit";
 player addItem "ACE_microDAGR";
-_array = ["rhsusf_cvc_green_alt_helmet", "rhsusf_cvc_green_ess", "rhsusf_cvc_alt_helmet", "rhsusf_cvc_ess"];
-_helmet = selectRandom _array;
+_helmet = ["rhsusf_cvc_green_alt_helmet", "rhsusf_cvc_green_ess", "rhsusf_cvc_alt_helmet", "rhsusf_cvc_ess"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
 comment "Add weapons";
