@@ -1,6 +1,5 @@
 comment "Remove existing items";
 removeHeadgear player;
-player removeItem "tf_anprc152";
 
 player addHeadgear "rhsusf_ihadss";
 

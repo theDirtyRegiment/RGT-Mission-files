@@ -72,7 +72,7 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152";
+player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
 _nods = ["USP_NSEAS", "rhsusf_ANPVS_14", "USP_PVS14"] call BIS_fnc_selectRandom;
 player linkItem _nods;

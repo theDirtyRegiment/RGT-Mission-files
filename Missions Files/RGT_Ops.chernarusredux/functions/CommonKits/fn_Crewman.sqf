@@ -40,8 +40,8 @@ player addWeapon "rhsusf_bino_m24_ARD";
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
-player linkItem "tf_microdagr";
-player linkItem "tf_anprc152";
+player linkItem "TFAR_microdagr";
+player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
 
 

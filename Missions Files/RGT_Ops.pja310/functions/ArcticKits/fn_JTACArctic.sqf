@@ -42,7 +42,7 @@ player addItemToVest "SmokeShellBlue";
 for "_i" from 1 to 4 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_PMAG_Tan";};
 player addItemToVest "AMP_Breaching_Charge_Mag";
 for "_i" from 1 to 2 do {player addItemToVest "ACE_M84";};
-player addBackpack "tf_rt1523g_sage";
+player addBackpack "TFAR_rt1523g_sage";
 player addItemToBackpack "ACE_bodyBag";
 player addItemToBackpack "Laserdesignator_03";
 player addItemToBackpack "Laserbatteries";
@@ -54,8 +54,8 @@ player addGoggles "rhsusf_shemagh_white";
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
-player linkItem "tf_microdagr";
-player linkItem "tf_anprc152";
+player linkItem "TFAR_microdagr";
+player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
 
 

@@ -18,7 +18,7 @@ class RGTRespawnInv
 			   "ItemMap",
 			   "ItemCompass",
 			   "ItemWatch",
-			   "tf_anprc152",
+			   "TFAR_anprc152",
 			   "ItemGPS",
 			   "rhsusf_ANPVS_14"
 			   

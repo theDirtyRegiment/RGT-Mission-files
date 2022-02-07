@@ -6026,8 +6026,8 @@ class Mission
 			side="Empty";
 			flags=4;
 			class Attributes
-			{
-				init="call{this addAction['Take an Assault Pack',RGT_fnc_smallbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take a Patrol Pack',RGT_fnc_bigbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take Small LR Radio',RGT_fnc_slr,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take Big LR Radio',RGT_fnc_blr,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take First Aid Bag',RGT_fnc_medbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take Sniper Bag',RGT_fnc_Sniperbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take M3 MAAWS',RGT_fnc_maws,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take a Cig Pack and Matches',RGT_fnc_CigsMatch,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take a Cigar and a Zippo',RGT_fnc_CigarZippo,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take IHADSS Helmet',RGT_fnc_Ihadss,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   }";
+	{
+				init="call{this addAction['Take an Assault Pack',RGT_fnc_smallbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take a Patrol Pack',RGT_fnc_bigbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take Small LR Radio',RGT_fnc_slr,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take Big LR Radio',RGT_fnc_blr,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take First Aid Bag',RGT_fnc_medbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take Sniper Bag',RGT_fnc_Sniperbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take M3 MAAWS',RGT_fnc_maws,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; this addAction['Take Mortar Tube',RGT_fnc_Mortar_Tube,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take Mortar Ammo',RGT_fnc_Mortar_Ammo,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Take a Cig Pack and Matches',RGT_fnc_CigsMatch,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take a Cigar and a Zippo',RGT_fnc_CigarZippo,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take IHADSS Helmet',RGT_fnc_Ihadss,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   }";
 			};
 			id=184;
 			type="Box_NATO_Equip_F";
@@ -6525,7 +6525,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="tf_microdagr";
+							watch="TFAR_microdagr";
 							gps="ItemGPS";
 							goggles="rhsusf_shemagh2_od";
 							hmd="rhsusf_ANPVS_14";
@@ -6705,8 +6705,8 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="tf_microdagr";
-							radio="tf_anprc152";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
 							gps="ItemGPS";
 							goggles="G_B_Diving";
 							hmd="USP_GPNVG18_TAN";
@@ -6931,8 +6931,8 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="tf_microdagr";
-							radio="tf_fadak";
+							watch="TFAR_microdagr";
+							radio="TFAR_fadak";
 							gps="ItemGPS";
 							hmd="rhs_1PN138";
 							headgear="rhs_6b47";
@@ -7389,8 +7389,8 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="tf_microdagr";
-							radio="tf_anprc152";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
 							gps="ItemGPS";
 							headgear="TRYK_H_pakol2";
 						};
@@ -7577,8 +7577,8 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="tf_microdagr";
-							radio="tf_anprc152";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_14";
 							headgear="rhsusf_opscore_rg_cover";
@@ -7808,7 +7808,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="TFAR_anprc152";
 							gps="ItemGPS";
 							goggles="rhs_googles_clear";
 						};
@@ -8471,8 +8471,8 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="tf_microdagr";
-							radio="tf_anprc152";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
 							gps="ItemGPS";
 							headgear="MCTropic_Boonie_HS";
 						};
@@ -8802,8 +8802,8 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="tf_microdagr";
-							radio="tf_anprc152";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_14";
 							headgear="rhsusf_ach_helmet_M81";
@@ -8939,8 +8939,8 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="tf_microdagr";
-							radio="tf_anprc152";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
 							gps="ItemGPS";
 							headgear="LOP_H_Beanie_tan";
 						};
@@ -9142,8 +9142,8 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="tf_microdagr";
-							radio="tf_anprc152";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_14";
 							headgear="rhsusf_ach_helmet_headset_ocp";

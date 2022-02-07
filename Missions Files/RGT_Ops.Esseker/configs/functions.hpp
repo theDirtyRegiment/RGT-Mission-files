@@ -28,8 +28,6 @@ class RGTFunctions
 			class MedATAmmoBearer {};
 			class MG {};
 			class MGAmmoBearer {};
-			class Mortar_tube {};
-			class Mortar_bipod {};
 			class Rifleman {};
 		};
 		class WoodlandKits
@@ -54,8 +52,6 @@ class RGTFunctions
 			class MedATAmmoBearerwd {};
 			class MGwd {};
 			class MGAmmoBearerwd {};
-			class Mortar_tubewd {};
-			class Mortar_bipodwd {};
 			class Riflemanwd {};
 		};
 		class ReconKits
@@ -114,6 +110,8 @@ class RGTFunctions
 			class smallbagRUS {};
 			class blr {};
 			class slr {};
+			class Mortar_Tube {};
+			class Mortar_Ammo {};
 			class Ghilliearid1 {};
 			class Ghilliearid2 {};
 			class Ghillietrop1 {};
@@ -213,6 +211,7 @@ class RGTFunctions
 			class LightATArctic {};
 			class MarksmanArctic {};
 			class RTOArctic {};
+			class JTACArctic {};
 		};	
 		class GuerillaKits
 		{

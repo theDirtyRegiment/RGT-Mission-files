@@ -39,7 +39,7 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
-player linkItem "tf_anprc152";
+player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
 
 
