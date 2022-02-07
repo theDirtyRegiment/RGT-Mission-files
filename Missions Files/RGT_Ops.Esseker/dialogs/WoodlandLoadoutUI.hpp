@@ -151,7 +151,7 @@ class WoodlandLoadoutUI
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0.1,0.1,0.1,1};
 			sizeEx = 0.06;
-			action = "remoteExec ['RGT_fnc_MedATwd', player, false]";
+				action = "remoteExec ['RGT_fnc_maws', player, false]";
 		};
 		class RscButton_1604: RscButton
 		{

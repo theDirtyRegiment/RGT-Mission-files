@@ -10,7 +10,6 @@ class RGTFunctions
 		{
 			file = "functions\InfKits";
 
-			class AntiAir {};
 			class AntiAirAmmoBearer{};
 			class AR {};
 			class ARAmmoBearer {};
@@ -24,7 +23,6 @@ class RGTFunctions
 			class LightAT {};
 			class LRRM {};
 			class Marksman {};
-			class MedAT {};
 			class MedATAmmoBearer {};
 			class MG {};
 			class MGAmmoBearer {};
@@ -34,7 +32,6 @@ class RGTFunctions
 		{
 			file = "functions\WdInfKits";
 
-			class AntiAirwd {};
 			class AntiAirAmmoBearerwd{};
 			class ARwd {};
 			class ARAmmoBearerwd {};
@@ -48,7 +45,6 @@ class RGTFunctions
 			class LightATwd {};
 			class LRRMwd {};
 			class Marksmanwd {};
-			class MedATwd {};
 			class MedATAmmoBearerwd {};
 			class MGwd {};
 			class MGAmmoBearerwd {};
@@ -112,6 +108,7 @@ class RGTFunctions
 			class slr {};
 			class Mortar_Tube {};
 			class Mortar_Ammo {};
+			class AntiAir {};
 			class Ghilliearid1 {};
 			class Ghilliearid2 {};
 			class Ghillietrop1 {};
