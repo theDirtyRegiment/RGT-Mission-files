@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=196;
+		nextID=197;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13;
+		nextID=14;
 	};
 	class Camera
 	{
 		pos[]={5282.0142,11.807703,1250.4353};
-		dir[]={-0.77471888,-0.50832051,-0.37638626};
-		up[]={-0.45732436,0.86108458,-0.2221837};
-		aside[]={-0.43704537,1.2610108e-006,0.89956325};
+		dir[]={-0.89192772,-0.30134511,0.33749491};
+		up[]={-0.28199968,0.95345062,0.10670613};
+		aside[]={0.35393557,2.2531021e-006,0.93538958};
 	};
 };
 binarizationWanted=0;
@@ -43,7 +43,6 @@ addons[]=
 	"milgp_uniforms_cfg",
 	"A3_Data_F_Curator_Virtual",
 	"CUP_CAMisc",
-	"rhs_c_weapons",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Props_F_Exp_Military_Camps",
 	"A3_Supplies_F_Heli_CargoNets",
@@ -84,6 +83,7 @@ addons[]=
 	"ace_captives",
 	"rhs_c_troops",
 	"ace_compat_rhs_afrf3",
+	"rhs_c_weapons",
 	"rhsgref_c_weapons",
 	"ace_trenches",
 	"TRYK_Uniform",
@@ -158,252 +158,252 @@ class AddonsMetaData
 		};
 		class Item9
 		{
-			className="rhs_c_weapons";
-			name="AFRF Weapons Pack";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item10
-		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item12
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item14
+		class Item13
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item14
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item16
+		class Item15
 		{
 			className="cba_main";
 			name="Community Base Addons - Main Component";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item17
+		class Item16
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item17
 		{
 			className="ryanzombiesfunctions";
 			name="ryanzombiesfunctions";
 			author="Ryan";
 		};
-		class Item19
+		class Item18
 		{
 			className="rhsusf_c_melb";
 			name="MELB";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item20
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item21
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item22
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item23
 		{
 			className="po_factions_eu";
 			name="po_factions_eu";
 			author="Leight, Keeway";
 		};
-		class Item25
+		class Item24
 		{
 			className="milgp_headgear_cfg";
 			name="milgp_headgear_cfg";
 		};
-		class Item26
+		class Item25
 		{
 			className="ARD_Crye_Config";
 			name="ARD_Crye_Config";
 		};
-		class Item27
+		class Item26
 		{
 			className="milgp_vests_cfg";
 			name="milgp_vests_cfg";
 		};
-		class Item28
+		class Item27
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item29
+		class Item28
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item31
+		class Item30
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item32
+		class Item31
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item33
+		class Item32
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item34
+		class Item33
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item35
+		class Item34
 		{
 			className="ace_atragmx";
 			name="ACE3 - ATragMX";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item36
+		class Item35
 		{
 			className="ace_kestrel4500";
 			name="ACE3 - Kestrel 4500";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item37
+		class Item36
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item38
+		class Item37
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item39
+		class Item38
 		{
 			className="rhsusf_c_weapons";
 			name="RHSUSF Weapons & Accessories";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item40
+		class Item39
 		{
 			className="USP_Gear_NVG";
 			name="USP Gear (NVG)";
 			author="UnderSiege Productions";
 			url="https://uspmod.com/";
 		};
-		class Item41
+		class Item40
 		{
 			className="USP_Gear_Head";
 			name="USP_Gear_Head";
 		};
-		class Item42
+		class Item41
 		{
 			className="USP_Gear_Body";
 			name="USP Gear (Body)";
 			author="UnderSiege Productions";
 			url="https://uspmod.com/";
 		};
-		class Item43
+		class Item42
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item43
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item45
+		class Item44
 		{
 			className="ace_compat_rhs_afrf3";
 			name="ACE3 - RHS AFRF Compatibility";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item45
+		{
+			className="rhs_c_weapons";
+			name="AFRF Weapons Pack";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item46
 		{
@@ -3290,24 +3290,6 @@ class Mission
 		};
 		class Item9
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5273.7861,9.1945572,1255.6167};
-				angles[]={0,1.1727356,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{this addAction['Take an Assault Pack',RGT_fnc_smallbagRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take a Patrol Pack',RGT_fnc_bigbagRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   }";
-			};
-			id=78;
-			type="rhs_mags_crate";
-			atlOffset=8.0108643e-005;
-		};
-		class Item10
-		{
 			dataType="Layer";
 			name="Rudder (Lite)";
 			class Entities
@@ -3334,7 +3316,7 @@ class Mission
 			};
 			id=79;
 		};
-		class Item11
+		class Item10
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3352,7 +3334,7 @@ class Mission
 			type="Land_TripodScreen_01_large_F";
 			atlOffset=0.00020122528;
 		};
-		class Item12
+		class Item11
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3399,7 +3381,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item13
+		class Item12
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3416,7 +3398,7 @@ class Mission
 			type="Box_NATO_AmmoVeh_F";
 			atlOffset=-8.5830688e-006;
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3517,7 +3499,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3528,7 +3510,7 @@ class Mission
 			id=87;
 			type="CBA_main_require";
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3595,7 +3577,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3662,7 +3644,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3729,7 +3711,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3796,7 +3778,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item20
+		class Item19
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3863,7 +3845,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item21
+		class Item20
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3904,7 +3886,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item22
+		class Item21
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3971,7 +3953,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4116,7 +4098,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4209,7 +4191,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4380,7 +4362,7 @@ class Mission
 				nAttributes=12;
 			};
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4435,7 +4417,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item27
+		class Item26
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4619,7 +4601,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4790,7 +4772,7 @@ class Mission
 				nAttributes=12;
 			};
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4831,7 +4813,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item30
+		class Item29
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4878,7 +4860,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item31
+		class Item30
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4895,7 +4877,7 @@ class Mission
 			type="Box_NATO_AmmoVeh_F";
 			atlOffset=1.6212463e-005;
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4942,7 +4924,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item33
+		class Item32
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4959,7 +4941,7 @@ class Mission
 			type="Box_NATO_AmmoVeh_F";
 			atlOffset=-8.5830688e-006;
 		};
-		class Item34
+		class Item33
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5006,7 +4988,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item35
+		class Item34
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5023,7 +5005,7 @@ class Mission
 			type="Box_NATO_AmmoVeh_F";
 			atlOffset=1.7166138e-005;
 		};
-		class Item36
+		class Item35
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5122,7 +5104,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item37
+		class Item36
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5223,7 +5205,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item38
+		class Item37
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5336,7 +5318,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item39
+		class Item38
 		{
 			dataType="Marker";
 			position[]={5294.4868,8.4870005,1272.938};
@@ -5346,7 +5328,7 @@ class Mission
 			id=116;
 			atlOffset=9.727478e-005;
 		};
-		class Item40
+		class Item39
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5379,7 +5361,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item41
+		class Item40
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5413,7 +5395,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item42
+		class Item41
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5424,7 +5406,7 @@ class Mission
 			side="Empty";
 			flags=4;
 			class Attributes
-	{
+			{
 				init="call{this addAction['Take an Assault Pack',RGT_fnc_smallbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take a Patrol Pack',RGT_fnc_bigbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take Small LR Radio',RGT_fnc_slr,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take Big LR Radio',RGT_fnc_blr,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take First Aid Bag',RGT_fnc_medbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take Sniper Bag',RGT_fnc_Sniperbag,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take M3 MAAWS',RGT_fnc_maws,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; this addAction['Take Mortar Tube',RGT_fnc_Mortar_Tube,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take Mortar Ammo',RGT_fnc_Mortar_Ammo,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Take a Cig Pack and Matches',RGT_fnc_CigsMatch,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take a Cigar and a Zippo',RGT_fnc_CigarZippo,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Take IHADSS Helmet',RGT_fnc_Ihadss,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   }";
 			};
 			id=131;
@@ -5568,7 +5550,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item43
+		class Item42
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5584,7 +5566,7 @@ class Mission
 			type="Paleta1";
 			atlOffset=0.15793514;
 		};
-		class Item44
+		class Item43
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5600,7 +5582,7 @@ class Mission
 			type="Paleta1";
 			atlOffset=0.15793419;
 		};
-		class Item45
+		class Item44
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5616,7 +5598,7 @@ class Mission
 			type="Paleta1";
 			atlOffset=0.15793419;
 		};
-		class Item46
+		class Item45
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5632,7 +5614,7 @@ class Mission
 			type="Paleta1";
 			atlOffset=0.15793419;
 		};
-		class Item47
+		class Item46
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5665,7 +5647,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item48
+		class Item47
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5698,7 +5680,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item49
+		class Item48
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5851,7 +5833,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item50
+		class Item49
 		{
 			dataType="Group";
 			side="Civilian";
@@ -5985,7 +5967,7 @@ class Mission
 			};
 			id=153;
 		};
-		class Item51
+		class Item50
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6253,7 +6235,7 @@ class Mission
 			};
 			id=155;
 		};
-		class Item52
+		class Item51
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6433,7 +6415,7 @@ class Mission
 			};
 			id=157;
 		};
-		class Item53
+		class Item52
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6452,7 +6434,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-					init="this addAction['Get Rifleman Loadout',RGT_fnc_RiflemanRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get CLS Loadout',RGT_fnc_CLSRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "this addAction['Get Autorifleman Loadout',RGT_fnc_ARRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Machinegunner Loadout',RGT_fnc_MGRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];    " \n "this addAction['Get Light AT Loadout',RGT_fnc_LightATRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Radioman Loadout',RGT_fnc_LRRMRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Marksman Loadout',RGT_fnc_MarksmanRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Engineer Loadout',RGT_fnc_EngineerRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Grenadier Loadout',RGT_fnc_GrenadierRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Leader Loadout', RGT_fnc_LeaderRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction[""<t color='#FF2B2B'>Weapon Teams"", ""createDialog 'RussianLoadoutUI'"",nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "this addAction[""<t color='#2C75FF'>Add Parachute"", RGT_fnc_Parachute,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get AFV Crewman Loadout', RGT_fnc_AFVcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Get RW Crewman Loadout', RGT_fnc_RWcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Get FW Crewman Loadout', RGT_fnc_FWcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];";
+						init="this addAction['Get Rifleman Loadout',RGT_fnc_RiflemanRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get CLS Loadout',RGT_fnc_CLSRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "this addAction['Get Autorifleman Loadout',RGT_fnc_ARRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Machinegunner Loadout',RGT_fnc_MGRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];    " \n "this addAction['Get Light AT Loadout',RGT_fnc_LightATRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Radioman Loadout',RGT_fnc_LRRMRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Marksman Loadout',RGT_fnc_MarksmanRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get Engineer Loadout',RGT_fnc_EngineerRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Grenadier Loadout',RGT_fnc_GrenadierRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Get Leader Loadout', RGT_fnc_LeaderRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction[""<t color='#FF2B2B'>Weapon Teams"", ""createDialog 'RussianLoadoutUI'"",nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "this addAction[""<t color='#2C75FF'>Add Parachute"", RGT_fnc_Parachute,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get AFV Crewman Loadout', RGT_fnc_AFVcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Get RW Crewman Loadout', RGT_fnc_RWcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "this addAction['Get FW Crewman Loadout', RGT_fnc_FWcrewRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];";
 						description="Russian Loadouts";
 						disableSimulation=1;
 						ignoreByDynSimulGrid=1;
@@ -6658,7 +6640,7 @@ class Mission
 			};
 			id=159;
 		};
-		class Item54
+		class Item53
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6913,7 +6895,7 @@ class Mission
 			};
 			id=161;
 		};
-		class Item55
+		class Item54
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7113,7 +7095,7 @@ class Mission
 			};
 			id=163;
 		};
-		class Item56
+		class Item55
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7302,7 +7284,7 @@ class Mission
 			};
 			id=165;
 		};
-		class Item57
+		class Item56
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7529,7 +7511,7 @@ class Mission
 			};
 			id=167;
 		};
-		class Item58
+		class Item57
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7725,7 +7707,7 @@ class Mission
 			};
 			id=169;
 		};
-		class Item59
+		class Item58
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7987,7 +7969,7 @@ class Mission
 			};
 			id=171;
 		};
-		class Item60
+		class Item59
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8189,7 +8171,7 @@ class Mission
 			};
 			id=173;
 		};
-		class Item61
+		class Item60
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8315,7 +8297,7 @@ class Mission
 			};
 			id=175;
 		};
-		class Item62
+		class Item61
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8519,7 +8501,7 @@ class Mission
 			id=177;
 			atlOffset=0.00031757355;
 		};
-		class Item63
+		class Item62
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8653,7 +8635,7 @@ class Mission
 			};
 			id=179;
 		};
-		class Item64
+		class Item63
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8855,7 +8837,7 @@ class Mission
 			};
 			id=181;
 		};
-		class Item65
+		class Item64
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8949,7 +8931,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item66
+		class Item65
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9044,7 +9026,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item67
+		class Item66
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9138,7 +9120,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item68
+		class Item67
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9233,7 +9215,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item69
+		class Item68
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9328,7 +9310,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item70
+		class Item69
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9423,7 +9405,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item71
+		class Item70
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9517,7 +9499,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item72
+		class Item71
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9611,7 +9593,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item73
+		class Item72
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9706,7 +9688,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item74
+		class Item73
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9801,7 +9783,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item75
+		class Item74
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9896,7 +9878,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item76
+		class Item75
 		{
 			dataType="Object";
 			class PositionInfo
@@ -9912,7 +9894,7 @@ class Mission
 			id=194;
 			type="jbad_paletaA";
 		};
-		class Item77
+		class Item76
 		{
 			dataType="Object";
 			class PositionInfo
@@ -9926,7 +9908,7 @@ class Mission
 			};
 			id=195;
 			type="rhs_7ya37_1_single";
-			atlOffset=0.20390034;
+			atlOffset=0.20379257;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9945,16 +9927,51 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item77
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5273.7954,9.194706,1255.6075};
+				angles[]={-0,1.2923549,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction['Take an Assault Pack',RGT_fnc_smallbagRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "this addAction['Take a Patrol Pack',RGT_fnc_bigbagRUS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   }";
+			};
+			id=196;
+			type="rhs_mags_crate";
+			atlOffset=0.00022888184;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[""rhs_mag_9x19_17"",""rhs_mag_9x18_12_57N181S"",""rhs_mag_9x18_8_57N181S"",""rhs_20rnd_9x39mm_SP5"",""rhs_20rnd_9x39mm_SP6"",""rhs_10rnd_9x39mm_SP5"",""rhs_10rnd_9x39mm_SP6"",""rhs_30Rnd_545x39_7N6_AK"",""rhs_30Rnd_545x39_7N6_green_AK"",""rhs_30Rnd_545x39_AK_green"",""rhs_30Rnd_545x39_AK_plum_green"",""rhs_30Rnd_545x39_7U1_AK"",""rhs_30Rnd_545x39_7N6M_AK"",""rhs_30Rnd_545x39_7N6M_green_AK"",""rhs_30Rnd_545x39_7N6M_plum_AK"",""rhs_30Rnd_545x39_7N10_AK"",""rhs_30Rnd_545x39_7N10_plum_AK"",""rhs_30Rnd_545x39_7N10_camo_AK"",""rhs_30Rnd_545x39_7N10_desert_AK"",""rhs_30Rnd_545x39_7N22_AK"",""rhs_30Rnd_545x39_7N22_plum_AK"",""rhs_30Rnd_545x39_7N22_camo_AK"",""rhs_30Rnd_545x39_7N22_desert_AK"",""rhs_30Rnd_545x39_7N10_2mag_AK"",""rhs_30Rnd_545x39_7N10_2mag_plum_AK"",""rhs_30Rnd_545x39_7N10_2mag_camo_AK"",""rhs_30Rnd_545x39_7N10_2mag_desert_AK"",""rhs_45Rnd_545X39_AK"",""rhs_30Rnd_762x39mm"",""rhs_30Rnd_762x39mm_tracer"",""rhs_30Rnd_762x39mm_89"",""rhs_30Rnd_762x39mm_U"",""rhs_30Rnd_762x39mm_bakelite"",""rhs_30Rnd_762x39mm_bakelite_tracer"",""rhs_30Rnd_762x39mm_bakelite_89"",""rhs_30Rnd_762x39mm_bakelite_U"",""rhs_30Rnd_762x39mm_polymer"",""rhs_30Rnd_762x39mm_polymer_tracer"",""rhs_30Rnd_762x39mm_polymer_89"",""rhs_30Rnd_762x39mm_polymer_U"",""rhs_10Rnd_762x39mm"",""rhs_10Rnd_762x39mm_tracer"",""rhs_10Rnd_762x39mm_89"",""rhs_10Rnd_762x39mm_U"",""rhs_75Rnd_762x39mm"",""rhs_75Rnd_762x39mm_tracer"",""rhs_75Rnd_762x39mm_89"",""rhs_10Rnd_762x54mmR_7N1"",""rhs_10Rnd_762x54mmR_7N14"",""rhs_5Rnd_338lapua_t5000"",""rhs_100Rnd_762x54mmR"",""rhs_100Rnd_762x54mmR_green"",""rhs_100Rnd_762x54mmR_7N13"",""rhs_100Rnd_762x54mmR_7N26"",""rhs_100Rnd_762x54mmR_7BZ3"",""rhs_VOG25"",""rhs_VOG25P"",""rhs_VG40TB"",""rhs_VG40SZ"",""rhs_VG40MD"",""rhs_VG40OP_white"",""rhs_VG40OP_green"",""rhs_VG40OP_red"",""rhs_GRD40_White"",""rhs_GRD40_Green"",""rhs_GRD40_Red"",""rhs_GDM40"",""rhs_mag_rgd5"",""rhs_mag_rgn"",""rhs_mag_rgo"",""rhs_mag_rdg2_white"",""rhs_mag_rdg2_black"",""rhs_mag_nspn_yellow"",""rhs_mag_nspn_red"",""rhs_mag_nspn_green"",""rhs_mag_nspd"",""rhs_mag_fakel"",""rhs_mag_fakels"",""rhs_mag_zarya2"",""rhs_mag_plamyam"",""rhs_rpg7_PG7V_mag"",""rhs_rpg7_PG7VM_mag"",""rhs_rpg7_PG7VS_mag"",""rhs_rpg7_PG7VL_mag"",""rhs_rpg7_PG7VR_mag"",""rhs_rpg7_OG7V_mag"",""rhs_rpg7_TBG7V_mag""],[20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,5,5,5,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,10,10,10,10,10,10,10]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=146;
+			nextID=145;
 		};
 		class Links
 		{
-			items=146;
+			items=145;
 			class Item0
 			{
 				linkID=0;
@@ -10968,7 +10985,7 @@ class Mission
 			class Item101
 			{
 				linkID=101;
-				item0=78;
+				item0=81;
 				item1=93;
 				class CustomData
 				{
@@ -10978,7 +10995,7 @@ class Mission
 			class Item102
 			{
 				linkID=102;
-				item0=81;
+				item0=27;
 				item1=93;
 				class CustomData
 				{
@@ -10988,7 +11005,7 @@ class Mission
 			class Item103
 			{
 				linkID=103;
-				item0=27;
+				item0=28;
 				item1=93;
 				class CustomData
 				{
@@ -10998,7 +11015,7 @@ class Mission
 			class Item104
 			{
 				linkID=104;
-				item0=28;
+				item0=29;
 				item1=93;
 				class CustomData
 				{
@@ -11008,7 +11025,7 @@ class Mission
 			class Item105
 			{
 				linkID=105;
-				item0=29;
+				item0=30;
 				item1=93;
 				class CustomData
 				{
@@ -11018,7 +11035,7 @@ class Mission
 			class Item106
 			{
 				linkID=106;
-				item0=30;
+				item0=31;
 				item1=93;
 				class CustomData
 				{
@@ -11028,7 +11045,7 @@ class Mission
 			class Item107
 			{
 				linkID=107;
-				item0=31;
+				item0=32;
 				item1=93;
 				class CustomData
 				{
@@ -11038,7 +11055,7 @@ class Mission
 			class Item108
 			{
 				linkID=108;
-				item0=32;
+				item0=33;
 				item1=93;
 				class CustomData
 				{
@@ -11048,7 +11065,7 @@ class Mission
 			class Item109
 			{
 				linkID=109;
-				item0=33;
+				item0=34;
 				item1=93;
 				class CustomData
 				{
@@ -11058,7 +11075,7 @@ class Mission
 			class Item110
 			{
 				linkID=110;
-				item0=34;
+				item0=35;
 				item1=93;
 				class CustomData
 				{
@@ -11068,7 +11085,7 @@ class Mission
 			class Item111
 			{
 				linkID=111;
-				item0=35;
+				item0=36;
 				item1=93;
 				class CustomData
 				{
@@ -11078,7 +11095,7 @@ class Mission
 			class Item112
 			{
 				linkID=112;
-				item0=36;
+				item0=37;
 				item1=93;
 				class CustomData
 				{
@@ -11088,7 +11105,7 @@ class Mission
 			class Item113
 			{
 				linkID=113;
-				item0=37;
+				item0=38;
 				item1=93;
 				class CustomData
 				{
@@ -11098,7 +11115,7 @@ class Mission
 			class Item114
 			{
 				linkID=114;
-				item0=38;
+				item0=39;
 				item1=93;
 				class CustomData
 				{
@@ -11108,7 +11125,7 @@ class Mission
 			class Item115
 			{
 				linkID=115;
-				item0=39;
+				item0=40;
 				item1=93;
 				class CustomData
 				{
@@ -11118,7 +11135,7 @@ class Mission
 			class Item116
 			{
 				linkID=116;
-				item0=40;
+				item0=41;
 				item1=93;
 				class CustomData
 				{
@@ -11128,7 +11145,7 @@ class Mission
 			class Item117
 			{
 				linkID=117;
-				item0=41;
+				item0=42;
 				item1=93;
 				class CustomData
 				{
@@ -11138,7 +11155,7 @@ class Mission
 			class Item118
 			{
 				linkID=118;
-				item0=42;
+				item0=43;
 				item1=93;
 				class CustomData
 				{
@@ -11148,7 +11165,7 @@ class Mission
 			class Item119
 			{
 				linkID=119;
-				item0=43;
+				item0=44;
 				item1=93;
 				class CustomData
 				{
@@ -11158,7 +11175,7 @@ class Mission
 			class Item120
 			{
 				linkID=120;
-				item0=44;
+				item0=45;
 				item1=93;
 				class CustomData
 				{
@@ -11168,7 +11185,7 @@ class Mission
 			class Item121
 			{
 				linkID=121;
-				item0=45;
+				item0=46;
 				item1=93;
 				class CustomData
 				{
@@ -11178,7 +11195,7 @@ class Mission
 			class Item122
 			{
 				linkID=122;
-				item0=46;
+				item0=47;
 				item1=93;
 				class CustomData
 				{
@@ -11188,7 +11205,7 @@ class Mission
 			class Item123
 			{
 				linkID=123;
-				item0=47;
+				item0=48;
 				item1=93;
 				class CustomData
 				{
@@ -11198,7 +11215,7 @@ class Mission
 			class Item124
 			{
 				linkID=124;
-				item0=48;
+				item0=49;
 				item1=93;
 				class CustomData
 				{
@@ -11208,7 +11225,7 @@ class Mission
 			class Item125
 			{
 				linkID=125;
-				item0=49;
+				item0=50;
 				item1=93;
 				class CustomData
 				{
@@ -11218,7 +11235,7 @@ class Mission
 			class Item126
 			{
 				linkID=126;
-				item0=50;
+				item0=51;
 				item1=93;
 				class CustomData
 				{
@@ -11228,7 +11245,7 @@ class Mission
 			class Item127
 			{
 				linkID=127;
-				item0=51;
+				item0=52;
 				item1=93;
 				class CustomData
 				{
@@ -11238,7 +11255,7 @@ class Mission
 			class Item128
 			{
 				linkID=128;
-				item0=52;
+				item0=53;
 				item1=93;
 				class CustomData
 				{
@@ -11248,7 +11265,7 @@ class Mission
 			class Item129
 			{
 				linkID=129;
-				item0=53;
+				item0=54;
 				item1=93;
 				class CustomData
 				{
@@ -11258,7 +11275,7 @@ class Mission
 			class Item130
 			{
 				linkID=130;
-				item0=54;
+				item0=55;
 				item1=93;
 				class CustomData
 				{
@@ -11268,7 +11285,7 @@ class Mission
 			class Item131
 			{
 				linkID=131;
-				item0=55;
+				item0=56;
 				item1=93;
 				class CustomData
 				{
@@ -11278,7 +11295,7 @@ class Mission
 			class Item132
 			{
 				linkID=132;
-				item0=56;
+				item0=57;
 				item1=93;
 				class CustomData
 				{
@@ -11288,7 +11305,7 @@ class Mission
 			class Item133
 			{
 				linkID=133;
-				item0=57;
+				item0=58;
 				item1=93;
 				class CustomData
 				{
@@ -11298,7 +11315,7 @@ class Mission
 			class Item134
 			{
 				linkID=134;
-				item0=58;
+				item0=59;
 				item1=93;
 				class CustomData
 				{
@@ -11308,7 +11325,7 @@ class Mission
 			class Item135
 			{
 				linkID=135;
-				item0=59;
+				item0=60;
 				item1=93;
 				class CustomData
 				{
@@ -11318,7 +11335,7 @@ class Mission
 			class Item136
 			{
 				linkID=136;
-				item0=60;
+				item0=61;
 				item1=93;
 				class CustomData
 				{
@@ -11328,7 +11345,7 @@ class Mission
 			class Item137
 			{
 				linkID=137;
-				item0=61;
+				item0=86;
 				item1=93;
 				class CustomData
 				{
@@ -11338,7 +11355,7 @@ class Mission
 			class Item138
 			{
 				linkID=138;
-				item0=86;
+				item0=112;
 				item1=93;
 				class CustomData
 				{
@@ -11348,7 +11365,7 @@ class Mission
 			class Item139
 			{
 				linkID=139;
-				item0=112;
+				item0=115;
 				item1=93;
 				class CustomData
 				{
@@ -11358,7 +11375,7 @@ class Mission
 			class Item140
 			{
 				linkID=140;
-				item0=115;
+				item0=114;
 				item1=93;
 				class CustomData
 				{
@@ -11368,7 +11385,7 @@ class Mission
 			class Item141
 			{
 				linkID=141;
-				item0=114;
+				item0=131;
 				item1=93;
 				class CustomData
 				{
@@ -11378,7 +11395,7 @@ class Mission
 			class Item142
 			{
 				linkID=142;
-				item0=131;
+				item0=137;
 				item1=93;
 				class CustomData
 				{
@@ -11388,7 +11405,7 @@ class Mission
 			class Item143
 			{
 				linkID=143;
-				item0=137;
+				item0=130;
 				item1=93;
 				class CustomData
 				{
@@ -11398,16 +11415,6 @@ class Mission
 			class Item144
 			{
 				linkID=144;
-				item0=130;
-				item1=93;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item145
-			{
-				linkID=145;
 				item0=129;
 				item1=93;
 				class CustomData

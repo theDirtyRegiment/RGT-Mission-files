@@ -9,7 +9,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "rhs_weap_mk18_d";
+player addWeapon "rhs_weap_mk18_KAC_bk";
 player addPrimaryWeaponItem "rhsusf_acc_rotex5_grey";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq16a_top";
 _optic = ["rhsusf_acc_eotech_552", 0.25, "rhsusf_acc_compm4", 0.25, "rhsusf_acc_T1_high", 0.20, "rhsusf_acc_eotech_xps3", 0.20, "rhsusf_acc_su230a", 0.10] call BIS_fnc_selectRandomWeighted;
