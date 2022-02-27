@@ -22,7 +22,7 @@ _clothing = ["TRYK_U_taki_BL", "TRYK_U_taki_BLK", "TRYK_U_taki_COY", "TRYK_U_tak
 player forceAddUniform _clothing;
 _vest = ["V_TacChestrig_oli_F", "V_TacChestrig_cbr_F", "V_TacChestrig_grn_F"] call BIS_fnc_selectRandom;
 player addVest _vest;
-player addBackpack "tf_rt1523g_green";
+player addBackpack "TFAR_rt1523g_green";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -55,8 +55,8 @@ player addGoggles "JK_FullBeard_DarkBrown";
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
-player linkItem "tf_microdagr";
-player linkItem "tf_anprc152";
+player linkItem "TFAR_microdagr";
+player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
 
 

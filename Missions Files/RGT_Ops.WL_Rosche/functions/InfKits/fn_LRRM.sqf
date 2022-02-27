@@ -51,15 +51,15 @@ for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "SmokeShellBlue";
 _ammo = ["rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", "rhs_mag_30Rnd_556x45_M855A1_EPM", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M855A1_Stanag"] call BIS_fnc_selectRandom;
 for "_i" from 1 to 7 do {player addItem _ammo;};
-player addBackpack "tf_rt1523g_rhs";
+player addBackpack "TFAR_rt1523g_rhs";
 _helmet = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_ESS_ocp", "rhsusf_ach_helmet_ocp"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
-player linkItem "tf_microdagr";
-player linkItem "tf_anprc152";
+player linkItem "TFAR_microdagr";
+player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
 player linkItem "USP_PVS14";
 player setSpeaker "ACE_NoVoice";

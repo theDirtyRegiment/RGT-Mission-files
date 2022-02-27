@@ -64,7 +64,7 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152";
+player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
 player linkItem "USP_PVS14";
 player setSpeaker "ACE_NoVoice";

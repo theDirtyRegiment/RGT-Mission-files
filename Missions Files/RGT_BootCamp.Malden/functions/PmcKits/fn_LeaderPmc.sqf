@@ -20,7 +20,7 @@ _clothing = ["TRYK_B_TRYK_UCP_T", "TRYK_U_B_PCUGs_BLK_R", "TRYK_U_B_PCUGs_gry_R"
 player forceAddUniform _clothing;
 _vest = ["milgp_v_marciras_light_cb", "milgp_v_marciras_light_khk", "milgp_v_marciras_light_rgr", "TRYK_V_IOTV_BLK"] call BIS_fnc_selectRandom;
 player addVest _vest;
-player addBackpack "tf_rt1523g_black";
+player addBackpack "TFAR_rt1523g_black";
 player addItem "ACE_EarPlugs";
 player addItem "ACE_MapTools";
 player addItem "ACE_CableTie";
@@ -51,7 +51,7 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152";
+player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
 
 

@@ -20,7 +20,7 @@ _array = ["TRYK_B_TRYK_UCP_T", "TRYK_U_B_PCUGs_BLK_R", "TRYK_U_B_PCUGs_gry_R", "
 _clothing = selectRandom _array;
 player forceAddUniform _clothing;
 player addVest "V_TacChestrig_grn_F";
-player addBackpack "tf_rt1523g_green";
+player addBackpack "TFAR_rt1523g_green";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -50,8 +50,8 @@ player addHeadgear _helmet;
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
-player linkItem "tf_microdagr";
-player linkItem "tf_anprc152";
+player linkItem "TFAR_microdagr";
+player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
 
 

@@ -151,7 +151,7 @@ class StandardLoadoutUI
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0.1,0.1,0.1,1};
 			sizeEx = 0.06;
-			action = "remoteExec ['RGT_fnc_MedAT', player, false]";
+			action = "remoteExec ['RGT_fnc_maws', player, false]";
 		};
 		class RscButton_1604: RscButton
 		{
@@ -177,7 +177,7 @@ class StandardLoadoutUI
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0.1,0.1,0.1,1};
 			sizeEx = 0.06;
-			action = "remoteExec ['RGT_fnc_Mortar_bipod', player, false]";
+			action = "remoteExec ['RGT_fnc_Mortar_Tube', player, false]";
 		};
 		class RscButton_1606: RscButton
 		{
@@ -190,7 +190,7 @@ class StandardLoadoutUI
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0.1,0.1,0.1,1};
 			sizeEx = 0.06;
-			action = "remoteExec ['RGT_fnc_Mortar_tube', player, false]";
+			action = "remoteExec ['RGT_fnc_Mortar_Ammo', player, false]";
 		};
 		class RscButton_1609: RscButton
 		{
