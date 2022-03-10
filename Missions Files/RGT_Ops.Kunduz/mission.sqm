@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=490;
+		nextID=497;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=19;
+		nextID=20;
 	};
 	class Camera
 	{
-		pos[]={5226.1655,19.727266,1921.2009};
-		dir[]={-0.4463647,-0.70830119,-0.54689234};
-		up[]={-0.44786665,0.70590848,-0.5487321};
-		aside[]={-0.7747252,-3.3818651e-007,0.63231862};
+		pos[]={5244.0571,43.688046,1894.0405};
+		dir[]={0.96213138,-0.19942944,0.18592648};
+		up[]={0.195823,0.97990805,0.037842102};
+		aside[]={0.18973841,-1.4103716e-007,-0.98185152};
 	};
 };
 binarizationWanted=0;
@@ -3424,7 +3424,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5266.2314,13.87118,1923.3231};
+						position[]={5282.3398,13.22379,1905.277};
 						angles[]={0,4.6792808,0};
 					};
 					side="Empty";
@@ -3528,7 +3528,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5259.7354,12.612919,1912.1689};
+						position[]={5274.9971,13.094937,1895.6887};
 						angles[]={0,1.5551412,0};
 					};
 					side="Empty";
@@ -3632,7 +3632,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5266.3047,13.655519,1918.6931};
+						position[]={5282.3877,13.52847,1900.7866};
 						angles[]={0,4.6792808,0};
 					};
 					side="Empty";
@@ -3643,7 +3643,6 @@ class Mission
 					};
 					id=165;
 					type="Land_dp_transformer_F";
-					atlOffset=-9.5367432e-007;
 				};
 				class Item166
 				{
@@ -3894,14 +3893,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5265.5938,33.367748,1913.0254};
-						angles[]={0,1.485328,0};
+						position[]={5280.8042,33.831757,1895.446};
+						angles[]={0,1.4853275,0};
 					};
 					side="Empty";
 					flags=5;
 					class Attributes
 					{
 						skill=0.2;
+						disableSimulation=1;
 					};
 					id=180;
 					type="Land_wpp_Turbine_V1_F";
