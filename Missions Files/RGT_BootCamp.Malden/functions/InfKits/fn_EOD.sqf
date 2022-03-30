@@ -8,21 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_rifle = ["rhs_weap_m4a1_blockII", 0.48, "rhs_weap_m4a1_blockII_d", 0.25, "rhs_weap_m4a1_blockII_KAC", 0.48, "rhs_weap_m4a1", 0.02, "rhs_weap_mk18", 0.02, "rhs_weap_m27iar", 0.02] call BIS_fnc_selectRandomWeighted;
-player addWeapon _rifle;
-switch(_rifle) do {
-	case "rhs_weap_m27iar": {
-		player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
-	};
-	case "rhs_weap_m4a1_blockII_d": {
-		_grip = ["", "rhsusf_acc_grip2_tan"] call BIS_fnc_selectRandom;
-		player addPrimaryWeaponItem _grip;
-	};
-	default {
-		_grip = ["", "rhsusf_acc_grip2"] call BIS_fnc_selectRandom;
-		player addPrimaryWeaponItem _grip;
-	};
-};
+player addWeapon "rhs_weap_mk18";
 _rail = ["rhsusf_acc_M952V", "acc_flashlight", "rhsusf_acc_wmx", "rhsusf_acc_wmx_bk"] call BIS_fnc_selectRandom;
 player addPrimaryWeaponItem _rail;
 _optic = ["rhsusf_acc_eotech_552", 0.70, "rhsusf_acc_compm4", 0.25, "rhsusf_acc_ACOG_RMR", 0.05] call BIS_fnc_selectRandomWeighted;
@@ -47,11 +33,14 @@ player addItem "SmokeShell";
 player addItem "HandGrenade";
 player addItem "SmokeShellRed";
 _ammo = ["rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", "rhs_mag_30Rnd_556x45_M855A1_EPM", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M855A1_Stanag"] call BIS_fnc_selectRandom;
-for "_i" from 1 to 7 do {player addItem _ammo;};
+for "_i" from 1 to 6 do {player addItem _ammo;};
 player addItem "ACE_DefusalKit";
+player addItem "ACE_Clacker";
 player addItem "ACE_SpraypaintGreen";
 player addItem "ACE_SpraypaintRed";
-player addItem "DemoCharge_Remote_Mag";
+player addItemToBackpack "DemoCharge_Remote_Mag";
+player addItemToBackpack "SatchelCharge_Remote_Mag";
+for "_i" from 1 to 2 do {player addItemToBackpack "SLAMDirectionalMine_Wire_Mag";};
 _helmet = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_headset_ocp"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
@@ -69,4 +58,4 @@ player setVariable ["ACE_GForceCoef", 1];
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;
 [[player],"ACE_IsEngineer", 2, true] call ace_common_fnc_assignObjectsInList;
 
-hint "You're now equipped as an Explosve Ordnance Disposal specialist. \nYou're equipped to find and defuse explosives.";
+hint "You're now equipped as an Explosive Ordnance Disposal specialist. \nYou're equipped to find and defuse explosives.";
