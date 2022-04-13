@@ -53,7 +53,7 @@ wreckRemovalMaxTime = 1200;
 minPlayerDistance = 100; //distance in meters from players to corpse or wreck before it can be removed
 //------------------------- Misc
 
-disableChannels[] = {2,6};							// 0 = Global, 1 = Side, 2 = Command, 3 = Group, 4 = Vehicle, 5 = Direct, 6 = System. Admin/server/BattlEye can still use Global.
+disableChannels[] = {0,2,6};							// 0 = Global, 1 = Side, 2 = Command, 3 = Group, 4 = Vehicle, 5 = Direct, 6 = System. Admin/server/BattlEye can still use Global.
 disabledAI = 1;											// No AI in playable units
 aiKills = 0; 											// disable scorelist for AI players
 joinUnassigned = 1;										// 0 = players forced into role on joinlated.
