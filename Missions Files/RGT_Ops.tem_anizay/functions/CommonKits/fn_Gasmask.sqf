@@ -1,3 +1,3 @@
 removeGoggles player;
 
-player addGoggles "G_CBRN_M04";
+player addGoggles "G_CBRN_M04_Hood";

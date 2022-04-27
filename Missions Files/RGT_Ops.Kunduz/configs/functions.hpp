@@ -97,6 +97,7 @@ class RGTFunctions
 			class CigarZippo {};
 			class CigsMatch {};
 			class Lolly {};
+			class Gasmask {};
 			class Sniperbag {};
 			class medbag {};
 			class bigbag {};

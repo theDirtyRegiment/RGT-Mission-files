@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 
 comment "Add weapons";
-_rifle = ["rhs_weap_g36kv", 0.60, "rhs_weap_g36c", 0.30, "rhs_weap_vhsd2", 0.10] call BIS_fnc_selectRandomWeighted;
+_rifle = ["rhs_weap_g36kv", 0.60, "rhs_weap_vhsd2", 0.10] call BIS_fnc_selectRandomWeighted;
 player addWeapon _rifle;
 _rail = ["rhsusf_acc_M952V", "acc_flashlight", "rhsusf_acc_wmx", "rhsusf_acc_wmx_bk"] call BIS_fnc_selectRandom;
 player addPrimaryWeaponItem _rail;
