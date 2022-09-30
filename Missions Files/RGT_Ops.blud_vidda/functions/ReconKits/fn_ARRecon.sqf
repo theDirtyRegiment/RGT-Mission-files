@@ -59,7 +59,7 @@ if(_rifle isEqualTo "rhs_weap_m27iar_grip") then {
 };
 _helmet = ["MCTropic_Boonie_HS", 0.75, "AOR2_Boonie_HS", 0.05, "milgp_h_cap_01_RGR", 0.05, "H_Watchcap_camo", 0.10, "TRYK_H_Bandana_H", 0.05, "TRYK_H_Bandana_wig", 0.05] call BIS_fnc_selectRandomWeighted;
 player addHeadgear _helmet;
-_goggles = ["", 0.60, "JK_FullBeard_DarkBrown", 0.10, "JK_CircleBeard_DarkBrown", 0.02, "JK_FriendlyMuttonChops_DarkBrown", 0.02, "JK_GoateeBeard_DarkBrown", 0.02, "JK_Mustage_DarkBrown", 0.02, "milgp_f_face_shield_BLK", 0.01, "milgp_f_face_shield_CB", 0.01, "milgp_f_face_shield_khk", 0.01, "milgp_f_face_shield_MC", 0.01, "milgp_f_face_shield_RGR", 0.01, "milgp_f_face_shield_shades_shemagh_BLK", 0.01, "milgp_f_face_shield_shemagh_CB", 0.01, "milgp_f_face_shield_shemagh_khk", 0.01, "milgp_f_face_shield_shemagh_MC", 0.01, "milgp_f_face_shield_shemagh_RGR", 0.01] call BIS_fnc_selectRandomWeighted;
+_goggles = ["", 0.60,  "milgp_f_face_shield_BLK", 0.10, "milgp_f_face_shield_CB", 0.10, "milgp_f_face_shield_khk", 0.10, "milgp_f_face_shield_MC", 0.10, "milgp_f_face_shield_RGR", 0.10, "milgp_f_face_shield_shades_shemagh_BLK", 0.10, "milgp_f_face_shield_shemagh_CB", 0.10, "milgp_f_face_shield_shemagh_khk", 0.10, "milgp_f_face_shield_shemagh_MC", 0.10, "milgp_f_face_shield_shemagh_RGR", 0.10] call BIS_fnc_selectRandomWeighted;
 player addGoggles _goggles;
 
 comment "Add items";
