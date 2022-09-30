@@ -46,7 +46,7 @@ player addItem "IEDLandBig_Remote_Mag";
 player addItem "rhs_30Rnd_762x39mm_89";
 _helmet = ["TRYK_H_pakol2", 0.20, "USP_PAKOL_HAT", 0.20, "USP_PAKOL_HAT_DIRT", 0.20, "USP_PAKOL_HAT_DUST", 0.20, "LOP_H_Turban", 0.10, "LOP_H_Turban_mask", 0.05, "LOP_H_Worker_cap", 0.20, "LOP_H_Shemag_OLV", 0.05, "LOP_H_Shemag_BLK", 0.05, "LOP_H_Shemag_BLU", 0.05, "LOP_H_Shemag_GRE", 0.05, "LOP_H_Shemag_RED1", 0.05, "LOP_H_Shemag_RED2", 0.05, "LOP_H_Shemag_TAN", 0.05] call BIS_fnc_selectRandomWeighted;
 player addHeadgear _helmet;
-player addGoggles "JK_FullBeard_DarkBrown";
+
 
 comment "Add items";
 player linkItem "ItemMap";

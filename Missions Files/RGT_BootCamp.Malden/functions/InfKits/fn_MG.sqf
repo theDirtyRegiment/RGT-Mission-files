@@ -11,8 +11,6 @@ comment "Add weapons";
 _rifle = ["rhs_weap_m240B", "rhs_weap_m240G", "rhs_weap_fnmag"] call BIS_fnc_selectRandom;
 player addWeapon _rifle;
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
-_optic = ["rhsusf_acc_ACOG_MDO", 0.50, "rhsusf_acc_elcan", 0.25, "rhsusf_acc_su230a_mrds_c", 0.12, "rhsusf_acc_su230a_c", 0.12] call BIS_fnc_selectRandomWeighted;
-player addPrimaryWeaponItem _optic;
 player addPrimaryWeaponItem "rhsusf_acc_ardec_m240";
 player addWeapon "Binocular";
 
