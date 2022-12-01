@@ -1,6 +1,0 @@
-this addAction['Get Sniper Loadout',RGT_fnc_SniperSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get Spotter Loadout',RGT_fnc_SpotterSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get AFO Sniper Loadout',RGT_fnc_SniperAFO,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get AFO Spotter Loadout',RGT_fnc_SpotterAFO,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get Heavy Sniper Loadout',RGT_fnc_HeavySniperSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction["<t color='#FF2B2B'>Camouflage", "createDialog 'SpecOpsLoadoutUI'",nil,1.5,true,true,"","((_target distance _this)<5)"]; 

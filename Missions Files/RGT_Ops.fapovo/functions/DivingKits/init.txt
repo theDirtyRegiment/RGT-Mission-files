@@ -1,4 +1,0 @@
-this addAction['Get Diver Loadout',RGT_fnc_RiflemanDiving ,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get CLS Loadout',RGT_fnc_CLSDiving,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get EOD Loadout',RGT_fnc_EngineerDiving,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
-this addAction['Get Leader Loadout', RGT_fnc_LeaderDiving,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
