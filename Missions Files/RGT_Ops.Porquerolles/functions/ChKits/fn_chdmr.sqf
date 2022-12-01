@@ -52,7 +52,7 @@ for "_i" from 1 to 2 do {player addItem "ACE_M84";};
 player addItem "SmokeShell";
 for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
 for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
-player addItem "rhsusf_mag_17Rnd_9x19_FMJ";
+player addItem "11Rnd_45ACP_Mag";
 _helmet = ["milgp_h_airframe_04_CB_hexagon", "milgp_h_airframe_04_CB", "milgp_h_airframe_04_goggles_CB_hexagon", "milgp_h_airframe_04_goggles_CB", "milgp_h_airframe_06_CB_hexagon", "milgp_h_airframe_06_CB", "milgp_h_airframe_06_goggles_CB_hexagon", "milgp_h_airframe_06_goggles_CB", "rhsusf_opscore_coy_cover_pelt", "milgp_h_opscore_04_CB_hexagon", "milgp_h_opscore_04_CB", "milgp_h_opscore_04_goggles_CB_hexagon", "milgp_h_opscore_04_goggles_CB", "milgp_h_opscore_05_CB_hexagon", "milgp_h_opscore_05_CB", "milgp_h_opscore_05_goggles_CB_hexagon", "milgp_h_opscore_05_goggles_CB", "milgp_h_opscore_06_CB_hexagon", "milgp_h_opscore_06_CB", "milgp_h_opscore_06_goggles_CB_hexagon", "milgp_h_opscore_06_goggles_CB", "USP_OPSCORE_FASTMTC_CBR_CMGSW", "USP_OPSCORE_FASTMTC_CBR_CMS", "USP_OPSCORE_FASTMTC_CBR_CMGTW", "USP_OPSCORE_FASTMTC_CBR_CMGSW"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 _goggles = ["rhsusf_shemagh2_od", "rhsusf_shemagh2_grn", "rhsusf_shemagh2_tan", "milgp_f_face_shield_BLK", "milgp_f_face_shield_CB", "milgp_f_face_shield_khk", "milgp_f_face_shield_MC", "milgp_f_face_shield_RGR", "milgp_f_face_shield_shemagh_BLK", "milgp_f_face_shield_shemagh_CB", "milgp_f_face_shield_shemagh_khk", "milgp_f_face_shield_shemagh_MC", "milgp_f_face_shield_shemagh_RGR"] call BIS_fnc_selectRandom;

@@ -55,7 +55,7 @@ player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
 player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
-_nods = ["USP_NSEAS", "rhsusf_ANPVS_14", "USP_PVS14"];
+_nods = ["USP_NSEAS", "rhsusf_ANPVS_14", "USP_PVS14"] call BIS_fnc_selectRandom;
 player linkItem _nods;
 
 player setSpeaker "ACE_NoVoice";
