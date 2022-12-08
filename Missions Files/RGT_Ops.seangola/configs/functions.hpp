@@ -20,10 +20,10 @@ class RGTFunctions
 			class GrenadierAmmoBearer {};
 			class JTAC {};
 			class Leader {};
-			class LightAT {};
 			class LRRM {};
 			class Marksman {};
 			class MedATAmmoBearer {};
+			class HeavyATAmmoBearer {};
 			class MG {};
 			class MGAmmoBearer {};
 			class Rifleman {};
@@ -42,7 +42,6 @@ class RGTFunctions
 			class GrenadierAmmoBearerwd {};
 			class JTACwd {};
 			class Leaderwd {};
-			class LightATwd {};
 			class LRRMwd {};
 			class Marksmanwd {};
 			class MedATAmmoBearerwd {};
@@ -102,6 +101,8 @@ class RGTFunctions
 			class medbag {};
 			class bigbag {};
 			class maws {};
+			class MedAT_AmmoBearer{};
+			class jav {};
 			class bigbagRUS {};
 			class smallbag {};
 			class smallbagRUS {};

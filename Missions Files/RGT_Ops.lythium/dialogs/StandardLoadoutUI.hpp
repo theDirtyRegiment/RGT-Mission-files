@@ -84,7 +84,7 @@ class StandardLoadoutUI
 		class RscText_1002: RscText
 		{
 			idc = 1002;
-			text = "              Medium AT Team"; //--- ToDo: Localize;
+			text = "              Heavy AT Team"; //--- ToDo: Localize;
 			x = 0.4125 * safezoneW + safezoneX;
 			y = 0.26 * safezoneH + safezoneY;
 			w = 0.1875 * safezoneW;
@@ -143,7 +143,7 @@ class StandardLoadoutUI
 		class RscButton_1603: RscButton
 		{
 			idc = 1603;
-			text = "Medium AT"; //--- ToDo: Localize;
+			text = "Heavy AT"; //--- ToDo: Localize;
 			x = 0.425 * safezoneW + safezoneX;
 			y = 0.32 * safezoneH + safezoneY;
 			w = 0.1625 * safezoneW;
@@ -151,12 +151,12 @@ class StandardLoadoutUI
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0.1,0.1,0.1,1};
 			sizeEx = 0.06;
-			action = "remoteExec ['RGT_fnc_maws', player, false]";
+			action = "remoteExec ['RGT_fnc_jav', player, false]";
 		};
 		class RscButton_1604: RscButton
 		{
 			idc = 1604;
-			text = "Medium AT Ammo Bearer"; //--- ToDo: Localize;
+			text = "Heavy AT Ammo Bearer"; //--- ToDo: Localize;
 			x = 0.425 * safezoneW + safezoneX;
 			y = 0.4 * safezoneH + safezoneY;
 			w = 0.1625 * safezoneW;
@@ -164,7 +164,7 @@ class StandardLoadoutUI
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0.1,0.1,0.1,1};
 			sizeEx = 0.06;
-			action = "remoteExec ['RGT_fnc_MedATAmmoBearer', player, false]";
+			action = "remoteExec ['RGT_fnc_HeavyATAmmoBearer', player, false]";
 		};
 		class RscButton_1605: RscButton
 		{
