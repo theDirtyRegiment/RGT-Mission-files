@@ -10,6 +10,7 @@ removeHeadgear player;
 comment "Add weapons";
 _rifle = ["rhs_weap_m240B", "rhs_weap_m240G", "rhs_weap_fnmag"] call BIS_fnc_selectRandom;
 player addWeapon _rifle;
+player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 player addPrimaryWeaponItem "rhsusf_acc_ardec_m240";
 player addWeapon "Binocular";
