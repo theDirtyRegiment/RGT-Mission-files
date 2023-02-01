@@ -10,9 +10,11 @@ removeHeadgear player;
 comment "Add weapons";
 _rifle = ["rhs_weap_m240B", "rhs_weap_m240G", "rhs_weap_fnmag"] call BIS_fnc_selectRandom;
 player addWeapon _rifle;
+player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 player addPrimaryWeaponItem "rhsusf_acc_ardec_m240";
 player addWeapon "Binocular";
+
 comment "Add containers";
 _uniform = ["milgp_u_g3_field_set_mc", "USP_PCU_G3C_MC", "USP_PCU_G3C_KP_MC", "USP_PCU_G3C_KP_MX_MC", "USP_PCU_G3C_KP_OR_MC", "USP_PCU_G3C_MX_MC", "USP_PCU_G3C_OR_MC", "USP_SOFTSHELL_G3C_MC", "USP_SOFTSHELL_G3C_KP_MC", "USP_SOFTSHELL_G3C_KP_MX_MC", "USP_SOFTSHELL_G3C_KP_OR_MC", "USP_SOFTSHELL_G3C_MX_MC", "USP_SOFTSHELL_G3C_OR_MC"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
