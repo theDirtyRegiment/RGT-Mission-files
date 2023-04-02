@@ -1,4 +1,4 @@
-comment "Remove existing items";
+// Remove gear before applying loadouts
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -7,14 +7,14 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-comment "Add weapons";
+// Add Weapons and attachments
 player addWeapon "rhs_weap_XM2010_sa";
 player addPrimaryWeaponItem "rhsusf_acc_M2010S_sa";
 player addPrimaryWeaponItem "rhsusf_acc_premier_mrds";
 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 player addWeapon "ACE_Vector";
 
-comment "Add containers";
+// Fill Uniform and Gear
 _array = ["milgp_u_g3_field_set_mc", "milgp_u_g3_field_set_rolled_mc"];
 _suit = selectRandom _array;
 player forceAddUniform _suit;
@@ -62,7 +62,7 @@ player addHeadgear _helmet;
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "rhsusf_acc_omega9k";
 
-comment "Add items";
+// Add final Gear
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -71,9 +71,10 @@ player linkItem "ItemGPS";
 player linkItem "USP_PVS14";
 player setSpeaker "ACE_NoVoice";
 
+// Set G Force resistance and Medical + Engineer training
 player setVariable ["ACE_GForceCoef", 1];
 
-[[player],"ace_medical_medicClass", 1, true] call ace_common_fnc_assignObjectsInList;
+[[player],"ace_medical_medicClass", 2, true] call ace_common_fnc_assignObjectsInList;
 [[player],"ACE_IsEngineer", 0, true] call ace_common_fnc_assignObjectsInList;
 
 hint "You're the sniper and medic of a 2-man sniper team. \nYou're equipped with everything needed for long range engagements and providing medical aid.";

@@ -1,4 +1,4 @@
-comment "Remove existing items";
+// Remove gear before applying loadouts
 removeBackpack player;
 
 comment "Add Mortar to back";

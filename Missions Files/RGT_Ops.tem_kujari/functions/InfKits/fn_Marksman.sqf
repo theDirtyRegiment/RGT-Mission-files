@@ -1,4 +1,4 @@
-comment "Remove existing items";
+// Remove gear before applying loadouts
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -7,8 +7,56 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-comment "Add weapons";
-_rifle = ["rhs_weap_m14ebrri", 0.50, "rhs_weap_mk17_LB", 0.10, "srifle_DMR_06_camo_F", 0.15, "rhs_weap_sr25_d", 0.10,"rhs_weap_sr25", 0.10, "rhs_weap_m14_rail", 0.15, "rhs_weap_m14_rail_d", 0.15, "rhs_weap_m14_rail_fiberglass", 0.15, "rhs_weap_m14_rail_wd", 0.15] call BIS_fnc_selectRandomWeighted;
+// Create the arrays for different equipment
+_rifle = [
+	"rhs_weap_m14ebrri", 
+	"rhs_weap_mk17_LB", 
+	"srifle_DMR_06_camo_F", 
+	"rhs_weap_sr25_d", 
+	"rhs_weap_sr25", 
+	"rhs_weap_m14_rail",  
+	"rhs_weap_m14_rail_d", 
+	"rhs_weap_m14_rail_fiberglass",
+	"rhs_weap_m14_rail_wd"] call BIS_fnc_selectRandom;
+_uniform = [
+	"milgp_u_g3_field_set_mc", 
+	"USP_PCU_G3C_MC", 
+	"USP_PCU_G3C_KP_MC", 
+	"USP_PCU_G3C_KP_MX_MC", 
+	"USP_PCU_G3C_KP_OR_MC", 
+	"USP_PCU_G3C_MX_MC", 
+	"USP_PCU_G3C_OR_MC", 
+	"USP_SOFTSHELL_G3C_MC", 
+	"USP_SOFTSHELL_G3C_KP_MC", 
+	"USP_SOFTSHELL_G3C_KP_MX_MC", 
+	"USP_SOFTSHELL_G3C_KP_OR_MC", 
+	"USP_SOFTSHELL_G3C_MX_MC", 
+	"USP_SOFTSHELL_G3C_OR_MC"] call BIS_fnc_selectRandom;
+_vest = [
+	"rhsusf_spcs_ocp_sniper", 
+	"milgp_v_marciras_marksman_mc", 
+	"milgp_v_marciras_marksman_belt_mc"] call BIS_fnc_selectRandom;
+_bag = [
+	"TRYK_B_BAF_BAG_mcamo", 
+	"USP_PATROL_PACK_CS_FH_ZT", 
+	"USP_PATROL_PACK_CB_CS_FH_RP_ZT", 
+	"USP_45L_RUCKSACK_MC"] call BIS_fnc_selectRandom;
+_helmet = [
+	"rhsusf_ach_helmet_ocp_norotos", 
+	"rhsusf_ach_helmet_camo_ocp", 
+	"rhsusf_ach_helmet_headset_ess_ocp", 
+	"rhsusf_ach_helmet_headset_ocp", 
+	"rhsusf_ach_helmet_ESS_ocp", 
+	"rhsusf_ach_helmet_ocp"] call BIS_fnc_selectRandom;
+
+// Add Uniforms and Gear
+player forceAddUniform _uniform;
+player addVest _vest;
+player addBackpack _bag;
+player addHeadgear _helmet;
+
+
+// Add Weapons and attachments
 player addWeapon _rifle;
 player addPrimaryWeaponItem "optic_MRCO";
 if (_rifle isEqualTo "rhs_weap_mk17_LB") then { 
@@ -19,13 +67,7 @@ if (_rifle isEqualTo "rhs_weap_mk17_LB") then {
 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 player addPrimaryWeaponItem "rhsusf_acc_m14_bipod";
 
-comment "Add containers";
-_uniform = ["milgp_u_g3_field_set_mc", "USP_PCU_G3C_MC", "USP_PCU_G3C_KP_MC", "USP_PCU_G3C_KP_MX_MC", "USP_PCU_G3C_KP_OR_MC", "USP_PCU_G3C_MX_MC", "USP_PCU_G3C_OR_MC", "USP_SOFTSHELL_G3C_MC", "USP_SOFTSHELL_G3C_KP_MC", "USP_SOFTSHELL_G3C_KP_MX_MC", "USP_SOFTSHELL_G3C_KP_OR_MC", "USP_SOFTSHELL_G3C_MX_MC", "USP_SOFTSHELL_G3C_OR_MC"] call BIS_fnc_selectRandom;
-player forceAddUniform _uniform;
-_vest = ["rhsusf_spcs_ocp_sniper", "milgp_v_marciras_marksman_mc", "milgp_v_marciras_marksman_belt_mc"] call BIS_fnc_selectRandom;
-player addVest _vest;
-_bag = ["TRYK_B_BAF_BAG_mcamo", "USP_PATROL_PACK_CS_FH_ZT", "USP_PATROL_PACK_CB_CS_FH_RP_ZT", "USP_45L_RUCKSACK_MC"] call BIS_fnc_selectRandom;
-player addBackpack _bag;
+// Fill Uniform and Gear
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -43,25 +85,27 @@ for "_i" from 1 to 2 do {player addItem "HandGrenade";};
 player addItem "ACE_EntrenchingTool";
 for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "SmokeShellBlue";
-if ((_rifle isEqualTo "rhs_weap_sr25_d") or (_rifle isEqualTo "rhs_weap_sr25")) then {
-	for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
-	for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
+switch (_rifle) do {
+	case "rhs_weap_sr25_d": {
+		for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
+		for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
+	};
+	case "rhs_weap_sr25": {
+		for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
+		for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
+	};
+	case "rhs_weap_mk17_LB": {
+		for "_i" from 1 to 4 do {player addItem "rhs_mag_20Rnd_SCAR_762x51_mk316_special";};
+		for "_i" from 1 to 3 do {player addItem "rhs_mag_20Rnd_SCAR_762x51_m61_ap";};
+	};
+	default {
+		for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
+		for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
+	};
 };
-if (_rifle isEqualTo "rhs_weap_mk17_LB") then {
-	_mag1 = ["rhs_mag_20Rnd_SCAR_762x51_mk316_special", "rhs_mag_20Rnd_SCAR_762x51_mk316_special_bk"] call BIS_fnc_selectRandom;
-	_mag2 = ["rhs_mag_20Rnd_SCAR_762x51_m61_ap", "rhs_mag_20Rnd_SCAR_762x51_m61_ap_bk"] call BIS_fnc_selectRandom;
-	for "_i" from 1 to 4 do {player addItem _mag1;};
-	for "_i" from 1 to 3 do {player addItem _mag2;}; 
-} else {
-	for "_i" from 1 to 4 do {player addItem "ACE_20Rnd_762x51_M118LR_Mag";};
-	for "_i" from 1 to 3 do {player addItem "ACE_20Rnd_762x51_M993_AP_Mag";};
-};
-_helmet = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_ESS_ocp", "rhsusf_ach_helmet_ocp"] call BIS_fnc_selectRandom;
-player addHeadgear _helmet;
-
 player addWeapon "rhsusf_weap_m9";
 
-comment "Add items";
+// Add final Gear
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -70,6 +114,7 @@ player linkItem "ItemGPS";
 player linkItem "USP_PVS14";
 player setSpeaker "ACE_NoVoice";
 
+// Set G Force resistance and Medical + Engineer training
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

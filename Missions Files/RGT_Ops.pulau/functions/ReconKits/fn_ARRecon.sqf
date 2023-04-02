@@ -1,4 +1,4 @@
-comment "Remove existing items";
+// Remove gear before applying loadouts
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,8 +8,53 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-comment "Add weapons";
-_rifle = ["rhs_weap_m249_pip_S_vfg1", 0.40, "rhs_weap_minimi_para_railed", 0.20, "rhs_weap_m249", 0.20, "rhs_weap_m249_pip", 0.20, "rhs_weap_m27iar_grip", 0.10] call BIS_fnc_selectRandomWeighted;
+// Create the arrays for different equipment
+_rifle = [
+	"rhs_weap_m249_pip_S_vfg1", 0.40, 
+	"rhs_weap_minimi_para_railed", 0.20, 
+	"rhs_weap_m249", 0.20, 
+	"rhs_weap_m249_pip", 0.20, 
+	"rhs_weap_m27iar_grip", 0.10] call BIS_fnc_selectRandomWeighted;
+_clothing = [
+	"milgp_u_g3_field_set_rolled_mctropic", 0.60, 
+	"milgp_u_g3_field_set_mctropic", 0.15, 
+	"ARD_AOR2_Camo_Cyre", 0.05, 
+	"ARD_AOR2_Camo_Cyre_SS", 0.05, 
+	"ARD_MCTropic_Camo_Cyre", 0.05, 
+	"ARD_MCTropic_Camo_Cyre_SS", 0.10] call BIS_fnc_selectRandomWeighted;
+_vest = [
+	"V_TacChestrig_grn_F", 0.60, 
+	"rhsgref_alice_webbing", 0.20, 
+	"rhsgref_chestrig", 0.10, 
+	"rhsgref_chicom", 0.10] call BIS_fnc_selectRandomWeighted;
+_helmet = [
+	"MCTropic_Boonie_HS", 0.75, 
+	"AOR2_Boonie_HS", 0.05, 
+	"milgp_h_cap_01_RGR", 0.05, 
+	"H_Watchcap_camo", 0.10, 
+	"TRYK_H_Bandana_H", 0.05, 
+	"TRYK_H_Bandana_wig", 0.05] call BIS_fnc_selectRandomWeighted;
+_goggles = [
+	"", 0.60,  
+	"milgp_f_face_shield_BLK", 0.10, 
+	"milgp_f_face_shield_CB", 0.10, 
+	"milgp_f_face_shield_khk", 0.10, 
+	"milgp_f_face_shield_MC", 0.10, 
+	"milgp_f_face_shield_RGR", 0.10, 
+	"milgp_f_face_shield_shades_shemagh_BLK", 0.10, 
+	"milgp_f_face_shield_shemagh_CB", 0.10, 
+	"milgp_f_face_shield_shemagh_khk", 0.10, 
+	"milgp_f_face_shield_shemagh_MC", 0.10, 
+	"milgp_f_face_shield_shemagh_RGR", 0.10] call BIS_fnc_selectRandomWeighted;
+
+// Add Uniforms and Gear
+player forceAddUniform _clothing;
+player addVest _vest;
+player addHeadgear _helmet;
+player addGoggles _goggles;
+player addBackpack "milgp_b_patrol_01_rgr";
+
+// Add Weapons and attachments
 player addWeapon _rifle;
 if ((_rifle isEqualTo "rhs_weap_m249_pip_S_vfg1") or (_rifle isEqualTo "rhs_weap_minimi_para_railed")) then {
 	_optic = ["rhsusf_acc_ELCAN_ard", 0.50, "rhsusf_acc_su230", 0.25, "rhsusf_acc_su230_mrds", 0.25] call BIS_fnc_selectRandomWeighted;
@@ -26,12 +71,7 @@ if(_rifle isEqualTo "rhs_weap_m27iar_grip") then {
 };
 player addWeapon "rhsusf_bino_m24_ARD";
 
-comment "Add containers";
-_clothing = ["milgp_u_g3_field_set_rolled_mctropic", 0.60, "milgp_u_g3_field_set_mctropic", 0.15, "ARD_AOR2_Camo_Cyre", 0.05, "ARD_AOR2_Camo_Cyre_SS", 0.05, "ARD_MCTropic_Camo_Cyre", 0.05, "ARD_MCTropic_Camo_Cyre_SS", 0.10] call BIS_fnc_selectRandomWeighted;
-player forceAddUniform _clothing;
-_vest = ["V_TacChestrig_grn_F", 0.60, "rhsgref_alice_webbing", 0.20, "rhsgref_chestrig", 0.10, "rhsgref_chicom", 0.10] call BIS_fnc_selectRandomWeighted;
-player addVest _vest;
-player addBackpack "milgp_b_patrol_01_rgr";
+// Fill Uniform and Gear
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -57,12 +97,8 @@ if(_rifle isEqualTo "rhs_weap_m27iar_grip") then {
 } else {
 	for "_i" from 1 to 5 do {player addItem "rhsusf_200rnd_556x45_mixed_box";};
 };
-_helmet = ["MCTropic_Boonie_HS", 0.75, "AOR2_Boonie_HS", 0.05, "milgp_h_cap_01_RGR", 0.05, "H_Watchcap_camo", 0.10, "TRYK_H_Bandana_H", 0.05, "TRYK_H_Bandana_wig", 0.05] call BIS_fnc_selectRandomWeighted;
-player addHeadgear _helmet;
-_goggles = ["", 0.60,  "milgp_f_face_shield_BLK", 0.10, "milgp_f_face_shield_CB", 0.10, "milgp_f_face_shield_khk", 0.10, "milgp_f_face_shield_MC", 0.10, "milgp_f_face_shield_RGR", 0.10, "milgp_f_face_shield_shades_shemagh_BLK", 0.10, "milgp_f_face_shield_shemagh_CB", 0.10, "milgp_f_face_shield_shemagh_khk", 0.10, "milgp_f_face_shield_shemagh_MC", 0.10, "milgp_f_face_shield_shemagh_RGR", 0.10] call BIS_fnc_selectRandomWeighted;
-player addGoggles _goggles;
 
-comment "Add items";
+// Add final Gear
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -72,9 +108,10 @@ player linkItem "ItemGPS";
 
 player setSpeaker "ACE_NoVoice";
 
+// Set G Force resistance and Medical + Engineer training
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;
-[[player],"ACE_IsEngineer", 0, true] call ace_common_fnc_assignObjectsInList;
+[[player],"ACE_IsEngineer", 1, true] call ace_common_fnc_assignObjectsInList;
 
 hint "You're equipped as long range reconnaissance patrol machine gunner. \nYour 5.56mm LMG is crucial, if your team is compromised. \nYou're also carrying tripwire mines for OP security.";

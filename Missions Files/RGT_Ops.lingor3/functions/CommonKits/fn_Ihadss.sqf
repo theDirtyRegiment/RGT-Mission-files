@@ -1,4 +1,4 @@
-comment "Remove existing items";
+// Remove gear before applying loadouts
 removeHeadgear player;
 
 player addHeadgear "rhsusf_ihadss";
