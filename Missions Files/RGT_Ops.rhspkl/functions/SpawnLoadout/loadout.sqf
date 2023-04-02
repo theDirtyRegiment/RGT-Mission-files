@@ -11,8 +11,13 @@ removeHeadgear player;
 removeGoggles player;
 
 player forceAddUniform "milgp_u_g3_field_set_mc";
-_array = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_ESS_ocp", "rhsusf_ach_helmet_ocp"];
-_helmet = selectRandom _array;
+_helmet = [
+	"rhsusf_ach_helmet_ocp_norotos", 
+	"rhsusf_ach_helmet_camo_ocp", 
+	"rhsusf_ach_helmet_headset_ess_ocp", 
+	"rhsusf_ach_helmet_headset_ocp", 
+	"rhsusf_ach_helmet_ESS_ocp", 
+	"rhsusf_ach_helmet_ocp"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 player linkItem "rhsusf_ANPVS_14";
 

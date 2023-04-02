@@ -1,4 +1,4 @@
-comment "Remove existing items";
+// Remove gear before applying loadouts
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -7,14 +7,14 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-comment "Add weapons";
+// Add Weapons and attachments
 player addWeapon "rhs_weap_m4a1_m203s_d";
 player addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 player addPrimaryWeaponItem "rhsusf_acc_acog_d";
 player addWeapon "ACE_Vector";
 
-comment "Add containers";
+// Fill Uniform and Gear
 _array = ["milgp_u_g3_field_set_mc", "milgp_u_g3_field_set_rolled_mc"];
 _suit = selectRandom _array;
 player forceAddUniform _suit;
@@ -44,7 +44,7 @@ _array = ["rhsusf_ach_helmet_ocp_norotos", "rhsusf_ach_helmet_camo_ocp", "rhsusf
 _helmet = selectRandom _array;
 player addHeadgear _helmet;
 
-comment "Add items";
+// Add final Gear
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -53,6 +53,7 @@ player linkItem "ItemGPS";
 player linkItem "USP_PVS14";
 player setSpeaker "ACE_NoVoice";
 
+// Set G Force resistance and Medical + Engineer training
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

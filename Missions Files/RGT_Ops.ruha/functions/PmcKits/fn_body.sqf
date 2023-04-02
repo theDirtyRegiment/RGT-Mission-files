@@ -1,4 +1,4 @@
-comment "Remove existing items";
+// Remove gear before applying loadouts
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -7,9 +7,43 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-comment "Add containers";
-_suit = ["LOP_U_CHR_Functionary_01", 0.45, "LOP_U_CHR_Functionary_02", 0.45, "TRYK_SUITS_BLK_F", 0.05, "TRYK_SUITS_BR_F", 0.05] call BIS_fnc_selectRandomWeighted;
+// Create the arrays for different equipment
+_suit = [
+	"LOP_U_CHR_Functionary_01", 0.45, 
+	"LOP_U_CHR_Functionary_02", 0.45, 
+	"TRYK_SUITS_BLK_F", 0.05, 
+	"TRYK_SUITS_BR_F", 0.05] call BIS_fnc_selectRandomWeighted;
+_bag = [
+	"", 0.80, 
+	"B_Messenger_Black_F", 0.10, 
+	"B_Messenger_Gray_F", 0.10] call BIS_fnc_selectRandomWeighted;
+	_mag = [
+		"rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", 
+		"rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", 
+		"rhs_mag_30Rnd_556x45_M855A1_EPM", 
+		"rhs_mag_30Rnd_556x45_M855A1_PMAG", 
+		"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan", 
+		"rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", 
+		"rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", 
+		"rhs_mag_30Rnd_556x45_M855A1_Stanag"] call BIS_fnc_selectRandom;
+_head = [
+	"", 
+	"TRYK_H_wig"] call BIS_fnc_selectRandom;
+_glasses = [
+	"USP_DETCORD", 
+	"USP_DETCORD3", 
+	"USP_DETCORD_GRN", 
+	"USP_DETCORD_GRN3", 
+	"USP_DETCORD_TAN", 
+	"USP_DETCORD_TAN3"] call BIS_fnc_selectRandom;
+
+// Add Uniforms and Gear
 player forceAddUniform _suit;
+player addBackpack _bag;
+player addHeadgear _head;
+player addGoggles _glasses;
+
+// Fill Uniform and Gear
 player addItem "ACE_epinephrine";
 for "_i" from 1 to 5 do {player addItem "ACE_elasticBandage";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -19,8 +53,6 @@ player addItem "ACE_MapTools";
 player addItem "ACE_Flashlight_XL50";
 player addItem "ACE_microDAGR";
 for "_i" from 1 to 3 do {player addItem "rhsusf_mag_17Rnd_9x19_FMJ";};
-_bag = ["", 0.80, "B_Messenger_Black_F", 0.10, "B_Messenger_Gray_F", 0.10] call BIS_fnc_selectRandomWeighted;
-player addBackpack _bag;
 if (_bag isEqualTo "") then {
 	player addItem "rhsusf_mag_17Rnd_9x19_FMJ";
 }	else	{
@@ -43,21 +75,15 @@ if ((_suit isEqualTo "TRYK_SUITS_BLK_F") or (_suit isEqualTo "TRYK_SUITS_BR_F"))
 	player addVest "rhsusf_plateframe_light";
 	player removeWeapon (primaryWeapon player);
 	player addWeapon "rhs_weap_m4a1_carryhandle";
-	_mag = ["rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", "rhs_mag_30Rnd_556x45_M855A1_EPM", "rhs_mag_30Rnd_556x45_M855A1_PMAG", "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M855A1_Stanag"] call BIS_fnc_selectRandom;
 	for "_i" from 1 to 3 do {player addItem _mag;};
 	for "_i" from 1 to 3 do {player addItem "rhsusf_mag_17Rnd_9x19_FMJ";};
 }	else	{
 	for "_i" from 1 to 3 do {player addItem "rhsusf_mag_17Rnd_9x19_FMJ";};
 };
-
-_head = ["", "TRYK_H_wig"] call BIS_fnc_selectRandom;
-player addHeadgear _head;
-_glasses = ["USP_DETCORD", "USP_DETCORD3", "USP_DETCORD_GRN", "USP_DETCORD_GRN3", "USP_DETCORD_TAN", "USP_DETCORD_TAN3"] call BIS_fnc_selectRandom;
-player addGoggles _glasses;
-
 player addWeapon "rhsusf_weap_glock17g4";
 
-comment "Add items";
+
+// Add final Gear
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -66,6 +92,7 @@ player linkItem "TFAR_rf7800str";
 
 player setSpeaker "ACE_NoVoice";
 
+// Set G Force resistance and Medical + Engineer training
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

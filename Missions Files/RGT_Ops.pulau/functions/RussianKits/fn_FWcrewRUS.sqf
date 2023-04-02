@@ -1,4 +1,4 @@
-comment "Remove existing items";
+// Remove gear before applying loadouts
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -7,10 +7,10 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-comment "Add weapons";
+// Add Weapons and attachments
 player addWeapon "rhs_weap_makarov_pm";
 
-comment "Add containers";
+// Fill Uniform and Gear
 player forceAddUniform "rhs_uniform_df15";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
@@ -30,7 +30,7 @@ player addItem "ACE_EntrenchingTool";
 player addItem "rhs_mag_9x18_8_57N181S";
 player addHeadgear "rhs_zsh7a";
 
-comment "Add items";
+// Add final Gear
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -39,6 +39,7 @@ player linkItem "ItemGPS";
 
 player setSpeaker "ACE_NoVoice";
 
+// Set G Force resistance and Medical + Engineer training
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

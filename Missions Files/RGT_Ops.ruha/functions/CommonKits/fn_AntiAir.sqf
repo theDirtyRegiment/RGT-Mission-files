@@ -1,6 +1,4 @@
-comment "Remove existing items";
-
-comment "Add Launcher";
+// Add the launcher with 1 round
 player addWeapon "rhs_weap_fim92";
 player addSecondaryWeaponItem "rhs_fim92_mag";
 
