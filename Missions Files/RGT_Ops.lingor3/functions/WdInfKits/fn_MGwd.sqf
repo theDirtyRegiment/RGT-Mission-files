@@ -42,6 +42,7 @@ _helmet = [
 
 // Add Weapons and attachments
 player addWeapon _weapon;
+player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 player addPrimaryWeaponItem _optic;
 player addPrimaryWeaponItem "rhsusf_acc_ardec_m240";
