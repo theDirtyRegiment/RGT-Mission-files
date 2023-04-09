@@ -45,6 +45,7 @@ player addHeadgear _helmet;
 
 // Add Weapons and attachments
 player addWeapon _rifle;
+player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 player addPrimaryWeaponItem "rhsusf_acc_ardec_m240";
 player addWeapon "Binocular";
