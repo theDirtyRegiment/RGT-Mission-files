@@ -23,22 +23,29 @@ _clothing = [
 	"ARD_MCAlpine_Camo_Cyre", 0.20] call BIS_fnc_selectRandomWeighted;
 _vest = [
 	"USP_EAGLE_MBAV_LOAD_MCA", 
-	"V_PlateCarrier2_blk"] call BIS_fnc_selectRandom;
+	"USP_CRYE_CPC_COMMS_MCA"] call BIS_fnc_selectRandom;
 _helmet = [
 	"USP_BASEBALL_CAP_MCA", 
-	"H_Watchcap_blk", 
-	"H_Watchcap_cbr", 
-	"H_Watchcap_camo", 
-	"H_Watchcap_khk", 
+	"USP_BASEBALL_CAP_CT3O_KTYETI",
+	"USP_BASEBALL_CAP_CT3O_MCA",
+	"USP_BASEBALL_CAP_CT3_MCA",
+	"USP_BASEBALL_CAP_CT3_KTYETI",
 	"TRYK_H_woolhat_CW",
 	"USP_OPSCORE_FASTMTC_MCA_CGSW"] call BIS_fnc_selectRandom;
+_LRR = [
+	"USP_TACTICAL_PACK_MCA_CCT2",
+	"USP_TACTICAL_PACK_MCA_CCT3",
+	"USP_TACTICAL_PACK_MCA_CCT4",
+	"USP_TACTICAL_PACK_MCA_CCT7",
+	"USP_TACTICAL_PACK_MCA_CCT8"
+] call BIS_fnc_selectRandom;
 
 // Add Uniforms and Gear
 player forceAddUniform _clothing;
 player addVest _vest;
 player addHeadgear _helmet;
 player addGoggles "rhsusf_shemagh_white";
-player addBackpack "TFAR_rt1523g_black";
+player addBackpack _LRR;
 
 // Add Weapons and attachments
 player addWeapon "rhs_weap_mk18_KAC_bk";

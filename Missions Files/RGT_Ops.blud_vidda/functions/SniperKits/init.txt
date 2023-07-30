@@ -1,0 +1,5 @@
+this addAction['Get Urban Sniper Loadout',RGT_fnc_Sniper,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Urban Spotter Loadout',RGT_fnc_Spotter,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Ghillie Sniper Loadout',RGT_fnc_SniperSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Ghillie Spotter Loadout',RGT_fnc_SpotterSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Heavy Sniper Loadout',RGT_fnc_HeavySniperSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
