@@ -9,14 +9,6 @@ removeHeadgear player;
 removeGoggles player;
 
 // Create the arrays for different equipment
-_rifle = [
-	"SMA_Mk16_EGLM",
-	"SMA_MK16_EGLM_Green",
-	"SMA_MK16_EGLM_black",
-	"SMA_ACRREMGL_B_N",
-	"SMA_ACRREMCQBGL_N",
-	"SMA_ACRREMCQBGL_B_N",
-	"SMA_ACRREMGL_N"] call BIS_fnc_selectRandom;
 _optic = [
 	"rhsusf_acc_su230a_mrds", 
 	"rhsusf_acc_compm4", 
@@ -175,7 +167,7 @@ player addBackpack "TFAR_rt1523g_black";
 player addHeadgear _helmet;
 
 // Add Weapons and attachments
-player addWeapon _rifle;
+player addWeapon "rhs_weap_g36kv_ag36";
 player addPrimaryWeaponItem "rhsusf_acc_m952v";
 player addPrimaryWeaponItem _optic;
 player addWeapon "rhsusf_weap_m1911a1";
@@ -197,7 +189,7 @@ for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "HandGrenade";
 player addItem "SmokeShellGreen";
 player addItem "SmokeShellRed";
-for "_i" from 1 to 5 do {player addItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+for "_i" from 1 to 5 do {player addItem "rhssaf_30rnd_556x45_Tracers_G36";};
 for "_i" from 1 to 8 do {player addItem "rhs_mag_M441_HE";};
 for "_i" from 1 to 2 do {player addItem "rhs_mag_m714_White";};
 player addItem "rhs_mag_m715_Green";

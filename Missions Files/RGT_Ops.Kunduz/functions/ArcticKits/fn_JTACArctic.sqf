@@ -23,28 +23,24 @@ _clothing = [
 	"milgp_u_fleece_grey_g3_field_pants_mcalpine", 0.05, 
 	"ARD_MCAlpine_Camo_Cyre", 0.20] call BIS_fnc_selectRandomWeighted;
 _vest = [
-	"USP_CRYE_CPC_COMMS_MCA", 
-	"USP_EAGLE_MBAV_LOAD_MCA"] call BIS_fnc_selectRandom;
+	"milgp_v_mmac_assaulter_belt_KHK", 
+	"milgp_v_mmac_assaulter_KHK", 
+	"milgp_v_jpc_Assaulter_khk", 
+	"milgp_v_jpc_assaulter_belt_khk"] call BIS_fnc_selectRandom;
 _helmet = [
 	"LOP_H_Beanie_tan", 
-	"TRYK_H_woolhat_CW",
-	"USP_BASEBALL_CAP_CT3O_KTYETI",
-	"USP_BASEBALL_CAP_CT3O_MCA",
-	"USP_BASEBALL_CAP_CT3_MCA",
-	"USP_BASEBALL_CAP_CT3_KTYETI",
-	"USP_BASEBALL_CAP_CT3O_KTYETI"] call BIS_fnc_selectRandom;
-_LRR = [
-	"USP_TACTICAL_PACK_MCA_CCT",
-	"USP_TACTICAL_PACK_MCA_CCT5",
-	"USP_TACTICAL_PACK_MCA_CCT6",
-] call BIS_fnc_selectRandom;
+	"H_Watchcap_blk", 
+	"H_Watchcap_cbr", 
+	"H_Watchcap_camo", 
+	"H_Watchcap_khk", 
+	"TRYK_H_woolhat_CW"] call BIS_fnc_selectRandom;
 
 // Add Uniforms and Gear
 player forceAddUniform _clothing;
 player addVest _vest;
 player addHeadgear _helmet;
 player addGoggles "rhsusf_shemagh_white";
-player addBackpack _LRR;
+player addBackpack "TFAR_rt1523g_sage";
 
 // Add Weapons and attachments
 player addWeapon "rhs_weap_mk18_KAC_bk";

@@ -9,22 +9,6 @@ removeHeadgear player;
 removeGoggles player;
 
 // Create the arrays for different equipment
-_rifle = [
-	"SMA_Mk16QCB",
-	"SMA_Mk16_GreenQCB",
-	"SMA_Mk16_blackQCB",
-	"SMA_MK16",
-	"SMA_Mk16_Green",
-	"SMA_Mk16_black",
-	"SMA_ACRREM_N",
-	"SMA_ACRREMAFG_N",
-	"SMA_ACRREMAFGCQB_N",
-	"SMA_ACRREMMOECQB_N",
-	"SMA_ACRREMMOE_N",
-	"SMA_ACRREMblk_N",
-	"SMA_ACRREMMOEblk_N",
-	"SMA_ACRREMMOECQBblk_N",
-	"SMA_ACRREMAFGCQBblk_N"] call BIS_fnc_selectRandom;
 _optic = [
 	"rhsusf_acc_eotech_552", 
 	"rhsusf_acc_compm4", 
@@ -192,9 +176,10 @@ player addBackpack "TRYK_B_Medbag_BK";
 player addHeadgear _helmet;
 
 // Add Weapons and attachments
-player addWeapon _rifle;
+player addWeapon "rhs_weap_g36c";
 player addPrimaryWeaponItem "rhsusf_acc_m952v";
 player addPrimaryWeaponItem _optic;
+player addPrimaryWeaponItem "rhsusf_acc_grip2";
 player addWeapon "rhsusf_weap_m9";
 
 // Fill Uniform and Gear
@@ -214,7 +199,7 @@ for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "HandGrenade";
 player addItem "SmokeShellGreen";
 player addItem "SmokeShellRed";
-for "_i" from 1 to 5 do {player addItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+for "_i" from 1 to 5 do {player addItem "rhssaf_30rnd_556x45_Tracers_G36";};
 for "_i" from 1 to 2 do {player addItem "rhsusf_mag_15Rnd_9x19_JHP";};
 
 //Start of standard medical gear

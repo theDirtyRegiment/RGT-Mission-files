@@ -22,13 +22,16 @@ _clothing = [
 	"TRYK_U_B_PCUHsW", 0.05, 
 	"milgp_u_fleece_grey_g3_field_pants_mcalpine", 0.05, 
 	"ARD_MCAlpine_Camo_Cyre", 0.20] call BIS_fnc_selectRandomWeighted;
+_vest = [
+	"USP_EAGLE_MBAV_LOAD_MCA", 
+	"V_PlateCarrier2_blk"] call BIS_fnc_selectRandom;
 _helmet = [
 	"USP_BASEBALL_CAP_MCA", 
+	"H_Watchcap_blk", 
+	"H_Watchcap_cbr", 
+	"H_Watchcap_camo", 
+	"H_Watchcap_khk", 
 	"TRYK_H_woolhat_CW", 
-	"USP_BASEBALL_CAP_CT3O_KTYETI",
-	"USP_BASEBALL_CAP_CT3O_MCA",
-	"USP_BASEBALL_CAP_CT3_MCA",
-	"USP_BASEBALL_CAP_CT3_KTYETI",
 	"USP_OPSCORE_FASTMTC_MCA_CGSW"] call BIS_fnc_selectRandom;
 _facewear = [
 	"rhsusf_shemagh_white", 
@@ -37,7 +40,7 @@ _facewear = [
 
 // Add Uniforms and Gear
 player forceAddUniform _clothing;
-player addVest "USP_EAGLE_MBAV_LOAD_MCA";
+player addVest _vest;
 player addHeadgear _helmet;
 player addGoggles _facewear;
 player addBackpack "TRYK_B_Coyotebackpack_WH";

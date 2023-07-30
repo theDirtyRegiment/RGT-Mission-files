@@ -87,7 +87,6 @@ addons[]=
 	"ace_realisticnames",
 	"A3_Weapons_F_Explosives",
 	"rhsusf_c_weapons",
-	"PLP_ArsenalExtended",
 	"USP_Gear_NVG",
 	"USP_Gear_Head",
 	"USP_Gear_Body",
@@ -440,11 +439,6 @@ class AddonsMetaData
 			name="RHSUSF Weapons & Accessories";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
-		};
-		class Item49
-		{
-			className="PLP_ArsenalExtended";
-			name="PLP_ArsenalExtended";
 		};
 		class Item50
 		{
