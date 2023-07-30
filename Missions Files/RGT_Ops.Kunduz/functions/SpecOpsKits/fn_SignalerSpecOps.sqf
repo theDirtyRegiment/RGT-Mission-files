@@ -143,7 +143,7 @@ player addHandgunItem "rhsusf_mag_17Rnd_9x19_FMJ";
 // Add Uniforms and Gear
 player forceAddUniform _clothing;
 player addVest _vest;
-player addBackpack ;
+player addBackpack _LRR;
 player addHeadgear _helmet;
 player addGoggles _goggles;
 
