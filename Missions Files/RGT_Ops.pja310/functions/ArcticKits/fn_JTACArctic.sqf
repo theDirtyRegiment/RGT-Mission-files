@@ -36,7 +36,7 @@ _helmet = [
 _LRR = [
 	"USP_TACTICAL_PACK_MCA_CCT",
 	"USP_TACTICAL_PACK_MCA_CCT5",
-	"USP_TACTICAL_PACK_MCA_CCT6",
+	"USP_TACTICAL_PACK_MCA_CCT6"
 ] call BIS_fnc_selectRandom;
 
 // Add Uniforms and Gear
