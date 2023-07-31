@@ -112,6 +112,14 @@ _nods = [
 	"USP_PVS31_HIGH", 0.50, 
 	"USP_PVS31_LOW", 0.25, 
 	"USP_PVS15", 0.25] call BIS_fnc_selectRandomWeighted;
+_LRR = [
+	"USP_TACTICAL_PACK_CCT2",
+	"USP_TACTICAL_PACK_CCT3",
+	"USP_TACTICAL_PACK_CCT4",
+	"USP_TACTICAL_PACK_CCT7",
+	"USP_TACTICAL_PACK_CCT8",
+	"TFAR_rt1523g_rhs"
+] call BIS_fnc_selectRandom;
 
 // Add Weapons and attachments
 player addWeapon _rifle;
@@ -135,7 +143,7 @@ player addHandgunItem "rhsusf_mag_17Rnd_9x19_FMJ";
 // Add Uniforms and Gear
 player forceAddUniform _clothing;
 player addVest _vest;
-player addBackpack "TFAR_rt1523g_rhs";
+player addBackpack _LRR;
 player addHeadgear _helmet;
 player addGoggles _goggles;
 

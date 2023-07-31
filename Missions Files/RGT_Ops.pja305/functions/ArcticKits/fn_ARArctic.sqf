@@ -26,11 +26,11 @@ _vest = [
 	"V_PlateCarrier2_blk"] call BIS_fnc_selectRandom;
 _helmet = [
 	"USP_BASEBALL_CAP_MCA", 
-	"H_Watchcap_blk", 
-	"H_Watchcap_cbr", 
-	"H_Watchcap_camo", 
-	"H_Watchcap_khk", 
 	"TRYK_H_woolhat_CW", 
+	"USP_BASEBALL_CAP_CT3O_KTYETI",
+	"USP_BASEBALL_CAP_CT3O_MCA",
+	"USP_BASEBALL_CAP_CT3_MCA",
+	"USP_BASEBALL_CAP_CT3_KTYETI",
 	"USP_OPSCORE_FASTMTC_MCA_CGSW"] call BIS_fnc_selectRandom;
 _facewear = [
 	"rhsusf_shemagh_white", 
@@ -42,7 +42,7 @@ player forceAddUniform _clothing;
 player addVest _vest;
 player addHeadgear _helmet;
 player addGoggles _facewear;
-player addBackpack "USP_TACTICAL_PACK_MCA_CCT2";
+player addBackpack "USP_TACTICAL_PACK_MCA";
 
 // Add Weapons and attachments
 player addWeapon "rhs_weap_m27iar_grip";

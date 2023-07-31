@@ -11,8 +11,7 @@ removeGoggles player;
 // Create the arrays for different equipment
 _rifle = [
 	"rhs_weap_m249_pip_S_para", 
-	"rhs_weap_minimi_para_railed", 
-	"rhs_weap_g36kv"] call BIS_fnc_selectRandom;
+	"rhs_weap_minimi_para_railed"] call BIS_fnc_selectRandom;
 _optic = [
 	"rhsusf_acc_eotech_552", 
 	"rhsusf_acc_compm4", 
@@ -180,10 +179,6 @@ player addHeadgear _helmet;
 
 // Add Weapons and attachments
 player addWeapon _rifle;
-if (_rifle isEqualTo "rhs_weap_g36kv") then { 
-	player addPrimaryWeaponItem "rhsusf_acc_grip1";
-	player addPrimaryWeaponItem _optic;
-};
 player addPrimaryWeaponItem "rhsusf_acc_m952v"; 
 player addWeapon "rhsusf_weap_glock17g4";
 player addWeapon "rhsusf_bino_m24";
@@ -202,11 +197,7 @@ player addItem "rhsusf_mag_17Rnd_9x19_FMJ";
 player addItem "HandGrenade";
 player addItem "SmokeShell";
 player addItem "SmokeShellBlue";
-if (_rifle isEqualTo "rhs_weap_g36kv") then { 
-	for "_i" from 1 to 4 do {player addItem "150Rnd_556x45_Drum_Mag_Tracer_F";};
-}	else	{
-	for "_i" from 1 to 4 do {player addItem "rhsusf_100Rnd_556x45_mixed_soft_pouch";};
-};
+for "_i" from 1 to 4 do {player addItem "rhsusf_100Rnd_556x45_mixed_soft_pouch";};
 
 // Add final Gear
 player linkItem "ItemMap";
