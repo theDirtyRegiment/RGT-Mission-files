@@ -1,4 +1,3 @@
-player call zade_boc_fnc_actionOnChest;
 removeGoggles player;
 
 // Create the arrays for different equipment
