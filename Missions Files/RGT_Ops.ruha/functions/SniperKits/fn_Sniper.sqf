@@ -63,22 +63,32 @@ player addItem "rhsusf_acc_premier_anpvs27";
 player addItem "rhs_weap_XM2010_sa";
 for "_i" from 1 to 4 do {player addItem "rhsusf_5Rnd_300winmag_xm2010";};
 
-//Start of medical gear
-for "_i" from 1 to 10 do {player addItem "ACE_morphine";};
-for "_i" from 1 to 10 do {player addItem "ACE_epinephrine";};
-player addItem "ACE_plasmaIV";
-player addItem "ACE_salineIV";
-for "_i" from 1 to 2 do {player addItem "ACE_salineIV_500";};
-for "_i" from 1 to 2 do {player addItem "ACE_plasmaIV_500";};
-player addItem "ACE_plasmaIV_250";
-player addItem "ACE_salineIV_250";
-player addItem "ACE_surgicalKit";
-player addItem "ACE_personalAidKit";
-for "_i" from 1 to 20 do {player addItem "ACE_elasticBandage";};
-for "_i" from 1 to 10 do {player addItem "ACE_packingBandage";};
-for "_i" from 1 to 10 do {player addItem "ACE_quikclot";};
-for "_i" from 1 to 7 do {player addItem "ACE_tourniquet";};
-for "_i" from 1 to 2 do {player addItem "ACE_adenosine";};
+//Start of standard medical gear
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
+for "_i" from 1 to 10 do {player addItemToBackpack "kat_TXA";};
+for "_i" from 1 to 2 do {player addItemToBackpack "kat_naloxone";};
+for "_i" from 1 to 2 do {player addItemToBackpack "kat_nitroglycerin";};
+for "_i" from 1 to 5 do {player addItemToBackpack "kat_norepinephrine";};
+player addItemToBackpack "kat_Carbonate";
+player addItemToBackpack "ACE_bodyBag";
+player addItemToBackpack "ACE_EntrenchingTool";
+player addItemToBackpack "ACE_SpraypaintRed";
+for "_i" from 1 to 5 do {player addItemToBackpack "kat_IV_16";};
+for "_i" from 1 to 2 do {player addItemToBackpack "kat_IO_FAST";};
+player addItemToBackpack "ACE_plasmaIV";
+player addItemToBackpack "ACE_salineIV";
+for "_i" from 1 to 2 do {player addItemToBackpack "ACE_salineIV_500";};
+for "_i" from 1 to 2 do {player addItemToBackpack "ACE_plasmaIV_500";};
+player addItemToBackpack "ACE_plasmaIV_250";
+player addItemToBackpack "ACE_salineIV_250";
+player addItemToBackpack "ACE_surgicalKit";
+player addItemToBackpack "ACE_personalAidKit";
+for "_i" from 1 to 20 do {player addItemToBackpack "ACE_elasticBandage";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_packingBandage";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_quikclot";};
+for "_i" from 1 to 7 do {player addItemToBackpack "ACE_tourniquet";};
+for "_i" from 1 to 2 do {player addItemToBackpack "ACE_adenosine";};
 //End of Medical gear
 
 // Add final Gear

@@ -77,15 +77,16 @@ player addItem "Chemlight_red";
 player addVest "rhsgref_alice_webbing";
 for "_i" from 1 to 2 do {player addItem "rhs_mag_762x25_8";};
 for "_i" from 1 to 5 do {player addItem "rhsgref_30rnd_1143x23_M1T_2mag_SMG";};
-for "_i" from 1 to 10 do {player addItem "ACE_morphine";};
-for "_i" from 1 to 2 do {player addItem "ACE_adenosine";};
-for "_i" from 1 to 10 do {player addItem "ACE_epinephrine";};
-player addItem "ACE_bodyBag";
-player addItem "ACE_SpraypaintRed";
-for "_i" from 1 to 4 do {player addItem "ACE_salineIV_500";};
-player addItem "ACE_personalAidKit";
-for "_i" from 1 to 20 do {player addItem "ACE_elasticBandage";};
-for "_i" from 1 to 7 do {player addItem "ACE_tourniquet";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 2 do {player addItemToBackpack "ACE_adenosine";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
+player addItemToBackpack "ACE_bodyBag";
+player addItemToBackpack "ACE_SpraypaintRed";
+for "_i" from 1 to 4 do {player addItemToBackpack "ACE_salineIV_500";};
+player addItemToBackpack "ACE_personalAidKit";
+for "_i" from 1 to 20 do {player addItemToBackpack "ACE_elasticBandage";};
+for "_i" from 1 to 7 do {player addItemToBackpack "ACE_tourniquet";};
+for "_i" from 1 to 5 do {player addItemToBackpack "kat_IV_16";};
 
 // Add final Gear
 player linkItem "ItemMap";
