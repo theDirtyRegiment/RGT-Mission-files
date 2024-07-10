@@ -104,17 +104,16 @@ _goggles = [
 	"USP_ok_sisj_MC_EMB"] call BIS_fnc_selectRandom;
 _nods = [
 	"USP_GPNVG18_TAN", 0.25, 
-	"USP_PVS31", 0.75, 
-	"USP_PVS31_COMPACT", 0.50, 
+	"USP_PVS31", 0.50, 
+	"USP_PVS31_MID", 0.50, 
 	"USP_PVS31_HIGH", 0.50, 
 	"USP_PVS31_LOW", 0.25, 
-	"USP_PVS15", 0.25] call BIS_fnc_selectRandomWeighted;
+	"USP_PVS15", 0.75] call BIS_fnc_selectRandomWeighted;
 _LRR = [
 	"USP_TACTICAL_PACK_CCT",
 	"USP_TACTICAL_PACK_CCT5",
 	"USP_TACTICAL_PACK_CCT6",
-	"TFAR_rt1523g_sage"
-] call BIS_fnc_selectRandom;
+	"TFAR_rt1523g_sage"] call BIS_fnc_selectRandom;
 
 // Add Weapons and attachments
 player addWeapon "rhs_weap_hk416d10_LMT_d";
