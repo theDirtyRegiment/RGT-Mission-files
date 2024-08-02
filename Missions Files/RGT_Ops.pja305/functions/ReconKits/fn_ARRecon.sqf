@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_m249_pip_S_vfg1", 0.40, 
 	"rhs_weap_minimi_para_railed", 0.20, 
@@ -34,6 +34,27 @@ _helmet = [
 	"H_Watchcap_camo", 0.10, 
 	"TRYK_H_Bandana_H", 0.05, 
 	"TRYK_H_Bandana_wig", 0.05] call BIS_fnc_selectRandomWeighted;
+_pack = [
+	"milgp_b_patrol_01_rgr",
+	"TRYK_B_Alicepack",
+	"USP_PATROL_PACK_CB",
+	"USP_PATROL_PACK_CB_CS",
+	"USP_PATROL_PACK_CB_CS_FH",
+	"USP_PATROL_PACK_CB_CS_FH_RP",
+	"USP_PATROL_PACK_CB_CS_FH_RP_ZT",
+	"USP_PATROL_PACK_CB_CS_FH_ZT",
+	"USP_PATROL_PACK_CB_CS_RP",
+	"USP_PATROL_PACK_CB_CS_RP_ZT",
+	"USP_REEBOW_3DAP_ACC1_RGR",
+	"USP_REEBOW_3DAP_ACC10_RGR",
+	"USP_REEBOW_3DAP_ACC2_RGR",
+	"USP_REEBOW_3DAP_ACC3_RGR",
+	"USP_REEBOW_3DAP_ACC4_RGR",
+	"USP_REEBOW_3DAP_ACC5_RGR",
+	"USP_REEBOW_3DAP_ACC6_RGR",
+	"USP_REEBOW_3DAP_ACC7_RGR",
+	"USP_REEBOW_3DAP_ACC8_RGR",
+	"USP_REEBOW_3DAP_ACC9_RGR"] call BIS_fnc_selectRandom;
 _goggles = [
 	"", 0.60,  
 	"milgp_f_face_shield_BLK", 0.10, 
@@ -47,14 +68,14 @@ _goggles = [
 	"milgp_f_face_shield_shemagh_MC", 0.10, 
 	"milgp_f_face_shield_shemagh_RGR", 0.10] call BIS_fnc_selectRandomWeighted;
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
 player addHeadgear _helmet;
 player addGoggles _goggles;
-player addBackpack "milgp_b_patrol_01_rgr";
+player addBackpack _pack;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 if ((_rifle isEqualTo "rhs_weap_m249_pip_S_vfg1") or (_rifle isEqualTo "rhs_weap_minimi_para_railed")) then {
 	_optic = ["rhsusf_acc_ELCAN_ard", 0.50, "rhsusf_acc_su230", 0.25, "rhsusf_acc_su230_mrds", 0.25] call BIS_fnc_selectRandomWeighted;
@@ -71,7 +92,7 @@ if(_rifle isEqualTo "rhs_weap_m27iar_grip") then {
 };
 player addWeapon "rhsusf_bino_m24_ARD";
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -98,7 +119,7 @@ if(_rifle isEqualTo "rhs_weap_m27iar_grip") then {
 	for "_i" from 1 to 5 do {player addItem "rhsusf_200rnd_556x45_mixed_box";};
 };
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -108,7 +129,7 @@ player linkItem "ItemGPS";
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

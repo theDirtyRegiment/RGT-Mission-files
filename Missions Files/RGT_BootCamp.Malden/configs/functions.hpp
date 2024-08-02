@@ -28,6 +28,35 @@ class RGTFunctions
 			class MGAmmoBearer {};
 			class Rifleman {};
 		};
+		class ColdWarKits
+		{
+			file = "functions\CWKits";
+
+			class cw_AntiAir {};
+			class cw_CLS {};
+			class cw_EOD {};
+			class cw_grenadier {};
+			class cw_leader {};
+			class cw_radioman {};
+			class cw_marksman {};
+			class cw_MG {};
+			class cw_Rifleman {};
+			class cw_LightAT {};
+		};
+		class ColdWarM16Kits
+		{
+			file = "functions\cwkitsm16";
+
+			class cw_AntiAir_ar15 {};
+			class cw_CLS_ar15 {};
+			class cw_EOD_ar15 {};
+			class cw_grenadier_ar15 {};
+			class cw_leader_ar15 {};
+			class cw_radioman_ar15 {};
+			class cw_marksman_m14 {};
+			class cw_Rifleman_ar15 {};
+			class cw_LightAT_ar15 {};
+		};
 		class WoodlandKits
 		{
 			file = "functions\WdInfKits";

@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,12 +8,16 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_sr25_ec", 0.25, 
-	"rhs_weap_sr25", 0.75] call BIS_fnc_selectRandomWeighted;
+	"rhs_weap_sr25", 0.75,
+	"rhs_weap_SCARH_STD", 0.25] call BIS_fnc_selectRandomWeighted;
 _optic = [
-	"optic_mrco", 0.90, 
+	"optic_mrco", 0.90,
+	"sma_spitfire_03_rds_low_ard_black", 0.4,
+	"sma_spitfire_03_rds_black", 0.4,
+	"sma_spitfire_03_rds_low_black", 0.4,
 	"rhsusf_acc_anpas13gv1", 0.01] call BIS_fnc_selectRandomWeighted;
 _optic1 = [
 	"optic_mrd", 
@@ -69,7 +73,21 @@ _vest = [
 	"milgp_v_jpc_teamleader_belt_cb"] call BIS_fnc_selectRandom;
 _pack = [
 	"milgp_bp_Pointman_cb", 
-	"USP_ZIPON_PANEL_CBR"] call BIS_fnc_selectRandom;
+	"USP_CRYE_BELT_PACK",
+	"USP_ZIPON_PACK_CPC_CBR",
+	"USP_ZIPON_PACK_CPC_BC_CBR",
+	"USP_ZIPON_PACK_CPC_BC_SM_CBR",
+	"USP_ZIPON_PACK_CPC_SM_CBR",
+	"USP_ZIPON_PANEL_CPC_CBR",
+	"USP_ZIPON_PANEL_CPC_BC_CBR",
+	"USP_ZIPON_PANEL_CPC_BC_SM_CBR",
+	"USP_ZIPON_PANEL_CPC_BC_SMK_CBR",
+	"USP_ZIPON_PANEL_CPC_BC_SMK_SM_CBR",
+	"USP_ZIPON_PANEL_CPC_SM_CBR",
+	"USP_ZIPON_PANEL_CPC_SMK_CBR",
+	"USP_ZIPON_PANEL_CPC_SMK_SM_CBR",
+	"USP_HYDRATION_PACK_CBR",
+	"USP_PACK_BREACHER_CBR"] call BIS_fnc_selectRandom;
 _helmet = [
 	"milgp_h_airframe_04_CB_hexagon", 
 	"milgp_h_airframe_04_CB", 
@@ -111,31 +129,66 @@ _goggles = [
 	"milgp_f_face_shield_shemagh_MC", 
 	"milgp_f_face_shield_shemagh_RGR"] call BIS_fnc_selectRandom;
 _nods = [
-	"USP_GPNVG18_TAN", 0.25, 
-	"USP_PVS31", 0.50, 
-	"USP_PVS31_COMPACT", 0.50, 
-	"USP_PVS31_HIGH", 0.50, 
-	"USP_PVS31_LOW", 0.25, 
-	"USP_PVS15", 0.75] call BIS_fnc_selectRandomWeighted;
+	"USP_GPNVG18_WP_GM_TAN", 0.25, 
+	"USP_GPNVG18_WP_GM_TAR_TAN", 0.25,
+	"USP_PVS31_WP", 0.50, 
+	"USP_PVS31_WP_BLK2", 0.50, 
+	"USP_PVS31_WP_TAN", 0.50, 
+	"USP_PVS31_WP_TAN2", 0.25,
+	"USP_PVS31_WP_HIGH", 0.25,
+	"USP_PVS31_WP_HIGH_BLK2", 0.25,
+	"USP_PVS31_WP_HIGH_TAN", 0.25,
+	"USP_PVS31_WP_HIGH_TAN2", 0.25,
+	"USP_PVS31_WP_LOW", 0.25,
+	"USP_PVS31_WP_LOW_BLK2", 0.25,
+	"USP_PVS31_WP_LOW_TAN", 0.25,
+	"USP_PVS31_WP_LOW_TAN2", 0.25,
+	"USP_PVS31_WP_MID", 0.25,
+	"USP_PVS31_WP_MID_BLK2", 0.25,
+	"USP_PVS31_WP_MID_TAN2", 0.25,
+	"USP_PVS31_WP_TAR", 0.25,
+	"USP_PVS31_WP_TAR_BLK2", 0.25,
+	"USP_PVS31_WP_TAR_TAN", 0.25,
+	"USP_PVS31_WP_TAR_TAN2", 0.25,
+	"USP_PVS31_WP_TAR_HIGH", 0.25,
+	"USP_PVS31_WP_TAR_HIGH_BLK2", 0.25,
+	"USP_PVS31_WP_TAR_HIGH_TAN", 0.25,
+	"USP_PVS31_WP_TAR_HIGH_TAN2", 0.25,
+	"USP_PVS31_WP_TAR_LOW", 0.25,
+	"USP_PVS31_WP_TAR_LOW_BLK2", 0.25,
+	"USP_PVS31_WP_TAR_LOW_TAN", 0.25,
+	"USP_PVS31_WP_TAR_LOW_TAN2", 0.25,
+	"USP_PVS31_WP_TAR_MID", 0.25,
+	"USP_PVS31_WP_TAR_MID_BLK2", 0.25,
+	"USP_PVS31_WP_TAR_MID_TAN", 0.25,
+	"USP_PVS31_WP_TAR_MID_TAN2", 0.25,	
+	"USP_PVS15", 0.25,
+	"USP_PVS15_TAR", 0.25] call BIS_fnc_selectRandomWeighted;
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
 player addBackpack _pack;
 player addHeadgear _helmet;
 player addGoggles _goggles;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 switch(_rifle) do {
 	case "rhs_weap_sr25_ec": {
 		player addPrimaryWeaponItem "rhsusf_acc_aac_762sdn6_silencer";
+		player addPrimaryWeaponItem "rhsusf_acc_anpeq16a";
+		};
+	case "rhs_weap_SCARH_STD": {
+		player addPrimaryWeaponItem "rhsusf_acc_aac_762sdn6_silencer";
+		_rail = ["rhsusf_acc_anpeq15", 0.4, "rhsusf_acc_anpeq15_bk", 0.4, "rhsusf_acc_anpeq16a_top", 0.4, "rhsusf_acc_anpeq16a_top", 0.1] call BIS_fnc_selectRandomWeighted;
+		player addPrimaryWeaponItem _rail;
 		};
 	default {
 		player addPrimaryWeaponItem "rhsusf_acc_sr25s";
+		player addPrimaryWeaponItem "rhsusf_acc_anpeq16a";
 		};
 };
-player addPrimaryWeaponItem "rhsusf_acc_anpeq16a";
 player addPrimaryWeaponItem _optic;
 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 player addWeapon "hgun_Pistol_heavy_01_F";
@@ -143,7 +196,7 @@ player addHandgunItem "acc_flashlight_pistol";
 player addHandgunItem "11Rnd_45ACP_Mag";
 player addHandgunItem _optic1;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -162,11 +215,22 @@ player addItem "SmokeShellBlue";
 player addItem "AMP_Breaching_Charge_Mag";
 for "_i" from 1 to 2 do {player addItem "ACE_M84";};
 player addItem "SmokeShell";
-for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
-for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
+switch(_rifle) do {
+	case "rhs_weap_sr25_ec": {
+		for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
+		for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
+		};
+	case "SMA_HK417_16in": {
+		for "_i" from 1 to 7 do {player addItem "SMA_20Rnd_762x51mm_Mk316_Mod_0_Special_Long_Range_IR";};
+		};
+	default {
+		for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m993_Mag";};
+		for "_i" from 1 to 4 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
+		};
+};
 player addItem "11Rnd_45ACP_Mag";
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -176,7 +240,7 @@ player linkItem _nods;
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_ak74m_zenitco01_afg", 
 	"rhs_weap_ak105_zenitco01"] call BIS_fnc_selectRandom;
@@ -21,6 +21,10 @@ _optic = [
 	"rhs_acc_ekp1", 
 	"rhs_acc_ekp8_02", 
 	"rhs_acc_pkas"] call BIS_fnc_selectRandom;
+_medbag = [
+	"TRYK_B_Medbag_BK",
+	"USP_DELTA_BAG_BLK",
+	"USP_DELTA_BAG_MCB"] call BIS_fnc_selectRandom;
 _grip = [
 	"rhs_acc_grip_rk6", 
 	"rhsusf_acc_rvg_blk", 
@@ -176,7 +180,7 @@ _nods = [
 	"rhsusf_ANPVS_14", 
 	"USP_PVS14"] call BIS_fnc_selectRandom;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 player addPrimaryWeaponItem _muzzle;
 player addPrimaryWeaponItem "rhs_acc_perst3_2dp_h";
@@ -185,14 +189,14 @@ player addPrimaryWeaponItem _grip;
 player addWeapon "hgun_Rook40_F";
 player addHandgunItem "rhsusf_acc_omega9k";
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
-player addBackpack "TRYK_B_Medbag_BK";
+player addBackpack _medbag;
 player addHeadgear _helmet;
 player addGoggles _facewear;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_EarPlugs";
 player addItem "ACE_MapTools";
 player addItem "ACE_CableTie";
@@ -229,7 +233,7 @@ for "_i" from 1 to 7 do {player addItemToBackpack "ACE_tourniquet";};
 for "_i" from 1 to 2 do {player addItemToBackpack "ACE_adenosine";};
 
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
@@ -239,7 +243,7 @@ player linkItem _nods;
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 2, true] call ace_common_fnc_assignObjectsInList;

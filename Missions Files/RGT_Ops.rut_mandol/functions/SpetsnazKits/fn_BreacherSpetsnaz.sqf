@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_ak105_zenitco01_b33_grip1", 
 	"rhs_weap_ak74m_zenitco01_b33"] call BIS_fnc_selectRandom;
@@ -180,7 +180,7 @@ _nods = [
 	"USP_PVS14"] call BIS_fnc_selectRandom;
 
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 player addPrimaryWeaponItem _muzzle;
 player addPrimaryWeaponItem "rhs_acc_perst3_2dp_h";
@@ -188,14 +188,14 @@ player addPrimaryWeaponItem _optic;
 player addPrimaryWeaponItem _grip;
 player addWeapon "ACE_VMM3";
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
 player addBackpack "rhs_assault_umbts_engineer_empty";
 player addHeadgear _helmet;
 player addGoggles _facewear;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_EarPlugs";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
@@ -220,7 +220,7 @@ player addItem "ACE_SpraypaintGreen";
 for "_i" from 1 to 2 do {player addItem "AMP_Breaching_Charge_Mag";};
 player addItem "DemoCharge_Remote_Mag";
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
@@ -230,7 +230,7 @@ player linkItem _nods;
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

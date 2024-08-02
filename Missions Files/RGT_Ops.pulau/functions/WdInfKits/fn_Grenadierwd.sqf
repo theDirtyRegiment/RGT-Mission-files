@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -7,7 +7,7 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_g36kv_ag36", 0.70, 
 	"rhs_weap_vhsd2_bg", 0.10] call BIS_fnc_selectRandomWeighted;
@@ -46,18 +46,18 @@ _helmet = [
 	"rhsusf_ach_bare_wood_headset_ess", 
 	"rhsusf_ach_bare"] call BIS_fnc_selectRandom;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 player addPrimaryWeaponItem _rail;
 player addPrimaryWeaponItem _optic;
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _uniform;
 player addVest _vest;
 player addBackpack _bag;
 player addHeadgear _helmet;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -82,7 +82,7 @@ for "_i" from 1 to 8 do {player addItem "rhssaf_30rnd_556x45_EPR_G36";};
 player addItem "ACE_HuntIR_monitor";
 player addItem "ACE_CableTie";
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -91,7 +91,7 @@ player linkItem "ItemGPS";
 player linkItem "USP_PVS14";
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

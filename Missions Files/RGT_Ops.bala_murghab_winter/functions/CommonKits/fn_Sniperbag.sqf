@@ -1,7 +1,7 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeBackpack player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _bag = [
 	"USP_PATROL_PACK_BLK", 
 	"USP_PATROL_PACK_CBR", 

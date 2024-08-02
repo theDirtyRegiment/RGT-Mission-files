@@ -4,7 +4,7 @@ this addAction['Get Automatic Rifleman Loadout',RGT_fnc_ARPmc,nil,1.5,true,true,
 this addAction['Get Commander Loadout',RGT_fnc_LeaderPmc,nil,1.5,true,true,"","((_target distance _this)<5)"];    
 this addAction['Get Sniper Loadout',RGT_fnc_SniperPmc,nil,1.5,true,true,"","((_target distance _this)<5)"];   
 
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons this;
 removeAllItems this;
 removeAllAssignedItems this;
@@ -14,7 +14,7 @@ removeBackpack this;
 removeHeadgear this;
 removeGoggles this;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 this forceAddUniform "U_I_G_Story_Protagonist_F";
 this addItem "ACE_EarPlugs";
 this addItem "ACE_MapTools";
@@ -33,9 +33,9 @@ this addItem "SmokeShellGreen";
 this addItem "SmokeShellRed";
 this addGoggles "rhs_googles_clear";
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 
-// Add final Gear
+comment "Add final Gear";
 this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "ItemWatch";

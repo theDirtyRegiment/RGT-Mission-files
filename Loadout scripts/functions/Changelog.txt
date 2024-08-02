@@ -1,3 +1,48 @@
+***MAP FILE CHANGELOG 31JUL2024***
+Common scripts:
+* Added variety of pack to the medbag script
+* You don't need a White Phos mod anymore for NODs. The SOF ones have WP, Infantry has GP
+Infantry loadouts:
+* Added gun variety (+URGI M4s, +oldschool M4)
+* Added uniform variety
+* Added backpacks and variety of them
+SOF:
+* Added gun variety (+Geissele 416s, +Noveske M4s)
+* Added NODs variety
+* Added dark brown beards into face facewear array
+* Implemented a flashbang array, where you have a 50/50 chance of getting a M84 or a 9banger
+* Added uniform variety
+PMC SOF:
+* Added gun variety (+Geissele 416s, +Noveske M4s, +SCAR-H)
+* Added NODs variety
+* Added backpacks and variety of them
+PMC:
+* Added M4 variety to the bodyguard
+* Replaced SMA weapons with more PMC-y guns
+SCUBA:
+* Added NODs variety
+Guerilla:
+* Added Scorpion as secondary for the M79-equipped grenadier for some automatic fire
+* Improved/adjusted CLS medbag to have more stuff (had less equipment due to a smaller bag)
+* Added stock Mosin and K98 in addition to the suppressed shorty scoped mosin
+Recon:
+* Adjusted CLS pack
+* Added grip variety
+Sniper:
+* Added M14 to AFO Sniper
+* Added scope variety
+* Added uniform variety
+Non-attributable clothing SOF:
+* Added NODs variety
+Infantry (Rus):
+* Added SVD variety
+* Added RPK variety
+* Added backpack variety
+Spetsnaz:
+* Added backpack variety
+SOG (indig clothing):
+* Backpack variety
+
 ***MAP FILE CHANGELOG 01OCT21***
 Loadouts:
 * Added Woodland pattern infantry loadouts

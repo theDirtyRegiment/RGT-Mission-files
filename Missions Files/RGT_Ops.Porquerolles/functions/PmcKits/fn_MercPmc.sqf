@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,23 +8,14 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
-	"SMA_Mk16QCB",
-	"SMA_Mk16_GreenQCB",
-	"SMA_Mk16_blackQCB",
-	"SMA_MK16",
-	"SMA_Mk16_Green",
-	"SMA_Mk16_black",
-	"SMA_ACRREM_N",
-	"SMA_ACRREMAFG_N",
-	"SMA_ACRREMAFGCQB_N",
-	"SMA_ACRREMMOECQB_N",
-	"SMA_ACRREMMOE_N",
-	"SMA_ACRREMblk_N",
-	"SMA_ACRREMMOEblk_N",
-	"SMA_ACRREMMOECQBblk_N",
-	"SMA_ACRREMAFGCQBblk_N"] call BIS_fnc_selectRandom;
+	"rhs_weap_savz58p_rail_black",
+	"rhs_weap_savz58v_rail_black",
+	"rhs_weap_savz58v_ris",
+	"rhs_weap_m21a_pr",
+	"rhs_weap_m21s_pr",
+	"rhs_weap_aks74n_2_npz"] call BIS_fnc_selectRandom;
 _optic = [
 	"rhsusf_acc_eotech_552", 
 	"rhsusf_acc_compm4", 
@@ -191,19 +182,19 @@ _helmet = [
 	"USP_BASEBALL_CAP_MCB_CGS", 
 	"USP_BASEBALL_CAP_CT3_RT6"] call BIS_fnc_selectRandom;
 	
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
 player AddBackpack _bag;
 player addHeadgear _helmet;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 player addPrimaryWeaponItem "rhsusf_acc_m952v";
 player addPrimaryWeaponItem _optic;
 player addWeapon "rhsusf_weap_m1911a1";
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_EarPlugs";
 player addItem "ACE_MapTools";
 player addItem "ACE_morphine";
@@ -219,9 +210,41 @@ for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "HandGrenade";
 player addItem "SmokeShellGreen";
 player addItem "SmokeShellRed";
-for "_i" from 1 to 8 do {player addItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+switch (_rifle) do {
+	case "rhs_weap_savz58p_rail_black": {
+		player addPrimaryWeaponItem _optic;
+		for "_i" from 1 to 5 do {player addItem "rhs_30Rnd_762x39mm_Savz58";};
+		player addPrimaryWeaponItem "rhsgref_acc_zendl";		
+	};
+	case "rhs_weap_savz58v_rail_black": {
+		player addPrimaryWeaponItem _optic;		
+		for "_i" from 1 to 5 do {player addItem "rhs_30Rnd_762x39mm_Savz58";};
+	};
+	case "rhs_weap_savz58v_ris": {
+		player addPrimaryWeaponItem _optic;
+		for "_i" from 1 to 5 do {player addItem "rhs_30Rnd_762x39mm_Savz58";};
+		player addPrimaryWeaponItem "rhs_acc_2dpZenit_ris";
+		player addPrimaryWeaponItem "rhsgref_acc_zendl";		
+	};
+	case "rhs_weap_m21a_pr": {
+		player addPrimaryWeaponItem _optic;
+		for "_i" from 1 to 5 do {player addItem "rhsgref_30rnd_556x45_m21";};
+		player addPrimaryWeaponItem "rhs_acc_2dpZenit";		
+	};
+	case "rhs_weap_m21s_pr": {
+		player addPrimaryWeaponItem _optic;
+		for "_i" from 1 to 5 do {player addItem "rhsgref_30rnd_556x45_m21";};
+		player addPrimaryWeaponItem "rhs_acc_2dpZenit";
+	};
+	case "rhs_weap_aks74n_2_npz": {
+		_mags = ["rhs_30Rnd_545x39_7N10_2mag_AK", "rhs_30Rnd_545x39_7N10_2mag_camo_AK", "rhs_30Rnd_545x39_7N10_2mag_desert_AK", "rhs_30Rnd_545x39_7N10_2mag_plum_AK", "rhs_30Rnd_545x39_7N10_camo_AK", "rhs_30Rnd_545x39_7N10_desert_AK", "rhs_30Rnd_545x39_7N10_plum_AK", "rhs_30Rnd_545x39_7N10_AK"] call BIS_fnc_selectRandom;
+		for "_i" from 1 to 5 do {player addItem _mags;};
+		player addPrimaryWeaponItem _optic;
+		player addPrimaryWeaponItem "rhs_acc_2dpZenit";
+	};
+};
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -231,7 +254,7 @@ player linkItem "ItemGPS";
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

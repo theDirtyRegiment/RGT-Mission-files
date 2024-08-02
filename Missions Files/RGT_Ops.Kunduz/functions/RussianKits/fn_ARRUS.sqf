@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _uniform = [
 	"rhs_uniform_emr_patchless", 
 	"rhs_uniform_vkpo", 
@@ -39,18 +39,22 @@ _helmet = [
 	"rhs_6b47_emr_2", 
 	"rhs_6b47_emr_1", 
 	"rhs_6b47_ess"] call BIS_fnc_selectRandom;
+_rifle = [
+	"rhs_weap_rpk74m",
+	"rhs_weap_rpk_wood",
+	"rhs_weap_rpk74_wood"] call BIS_fnc_selectRandom;
 
-// Add Weapons and attachments
-player addWeapon "rhs_weap_rpk74m";
+comment "Add Weapons and attachments";
+player addWeapon _rifle;
 player addPrimaryWeaponItem "rhs_acc_dtkrpk";
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _uniform;
 player addVest _vest;
 player addBackpack _backpack;
 player addHeadgear _helmet;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -65,16 +69,23 @@ player addItem "rhs_mag_rdg2_black";
 player addItem "ACE_microDAGR";
 player addItem "ACE_EntrenchingTool";
 player addItem "rhs_mag_f1";
-switch(_mag) do {
-	case "rhs_45Rnd_545X39_7N10_AK": {
-		for "_i" from 1 to 10 do {player addItem "rhs_45Rnd_545X39_7N10_AK";};
+switch(_rifle) do {
+	case "rhs_weap_rpk_wood": {
+		for "_i" from 1 to 6 do {player addItem "rhs_75Rnd_762x39mm_tracer";};
 	};
-	case "rhs_60Rnd_545X39_7N10_AK": {
-		for "_i" from 1 to 8 do {player addItem "rhs_60Rnd_545X39_7N10_AK";};		
+	default {
+		switch(_mag) do {
+			case "rhs_45Rnd_545X39_7N10_AK": {
+				for "_i" from 1 to 10 do {player addItem "rhs_45Rnd_545X39_AK_Green";};
+			};
+			case "rhs_60Rnd_545X39_7N10_AK": {
+				for "_i" from 1 to 8 do {player addItem "rhs_60Rnd_545X39_AK_Green";};		
+			};
+		};	
 	};
 };
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -84,7 +95,7 @@ player linkItem "rhs_1PN138";
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_m4a1_m203s_wd", 0.75, 
 	"rhs_weap_m4a1_blockII_M203_wd", 0.25] call BIS_fnc_selectRandomWeighted;
@@ -36,6 +36,16 @@ _helmet = [
 	"H_Watchcap_camo", 0.10, 
 	"TRYK_H_Bandana_H", 0.05, 
 	"TRYK_H_Bandana_wig", 0.05] call BIS_fnc_selectRandomWeighted;
+_grip = [
+	"",
+	"rhsusf_acc_grip_m203_blk",
+	"rhsusf_acc_grip_m203_wd"] call BIS_fnc_selectRandom;
+_optic = [
+	"rhsusf_acc_su230a",
+	"rhsusf_acc_su230a_mrds",
+	"rhsusf_acc_su230_mrds",
+	"rhsusf_acc_ACOG_wd",
+	"rhsusf_acc_ACOG_RMR"] call BIS_fnc_selectRandom;
 _goggles = [
 	"", 0.60,  
 	"milgp_f_face_shield_BLK", 0.10, 
@@ -49,21 +59,22 @@ _goggles = [
 	"milgp_f_face_shield_shemagh_MC", 0.10, 
 	"milgp_f_face_shield_shemagh_RGR", 0.10] call BIS_fnc_selectRandomWeighted;
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
 player addHeadgear _helmet;
 player addGoggles _goggles;
 player addBackpack "TFAR_rt1523g_big_bwmod";
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 player addPrimaryWeaponItem "muzzle_snds_m_khk_F";
+player addPrimaryWeaponItem _grip;
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
-player addPrimaryWeaponItem "rhsusf_acc_su230a";
+player addPrimaryWeaponItem _optic;
 player addWeapon "ACE_Vector";
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -96,7 +107,7 @@ player addItem "APERSTripMine_Wire_Mag";
 player addItem "rhs_mag_m661_green";
 player addItem "rhs_mag_m715_Green";
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -105,7 +116,7 @@ player linkItem "ItemGPS";
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

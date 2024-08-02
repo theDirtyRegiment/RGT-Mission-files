@@ -1,6 +1,6 @@
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _goggles = [
 	"USP_ADVANCER_CLR", 
 	"USP_ADVANCER_YEL", 
@@ -18,7 +18,7 @@ _goggles = [
 	"USP_OAKLEY_SI2_TAN_YEL", 
 	"USP_OAKLEY_SI2_TAN"] call BIS_fnc_selectRandom;
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player addBackpack "rhs_d6_Parachute_backpack";
 player addGoggles _goggles;
 player linkItem "ACE_Altimeter";

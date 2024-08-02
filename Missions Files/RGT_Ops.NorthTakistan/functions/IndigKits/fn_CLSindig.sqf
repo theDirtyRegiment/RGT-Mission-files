@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _clothing = [
 	"TRYK_U_taki_BL", 
 	"TRYK_U_taki_BLK", 
@@ -37,15 +37,19 @@ _helmet = [
 	"LOP_H_Shemag_RED1", 0.05, 
 	"LOP_H_Shemag_RED2", 0.05, 
 	"LOP_H_Shemag_TAN", 0.05] call BIS_fnc_selectRandomWeighted;
+_medbag = [
+	"TRYK_B_Medbag_BK",
+	"USP_DELTA_BAG_BLK",
+	"USP_DELTA_BAG_MCB"] call BIS_fnc_selectRandom;
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
-player addBackpack "TRYK_B_Medbag_BK";
+player addBackpack _medbag;
 player addHeadgear _helmet;
 
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon "rhs_weap_akm";
 player addPrimaryWeaponItem "rhs_acc_pbs1";
 player addPrimaryWeaponItem "rhs_acc_2dpZenit";
@@ -54,7 +58,7 @@ player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "acc_flashlight_pistol";
 player addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -75,7 +79,7 @@ player addItem "rhs_30Rnd_762x39mm_U";
 player addItem "AMP_Breaching_Charge_Mag";
 player addItem "rhs_30Rnd_762x39mm_89";
 
-//Start of standard medical gear
+comment "Start of standard medical gear";
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
 player addItemToBackpack "ACE_bodyBag";
@@ -93,10 +97,10 @@ for "_i" from 1 to 10 do {player addItemToBackpack "ACE_packingBandage";};
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_quikclot";};
 for "_i" from 1 to 7 do {player addItemToBackpack "ACE_tourniquet";};
 for "_i" from 1 to 2 do {player addItemToBackpack "ACE_adenosine";};
-//End of Medical gear
+comment "End of Medical gear";
 
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -106,7 +110,7 @@ player linkItem "ItemGPS";
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 1, true] call ace_common_fnc_assignObjectsInList;

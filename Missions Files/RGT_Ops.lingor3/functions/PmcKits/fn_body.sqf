@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -7,7 +7,7 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _suit = [
 	"LOP_U_CHR_Functionary_01", 0.45, 
 	"LOP_U_CHR_Functionary_02", 0.45, 
@@ -37,13 +37,13 @@ _glasses = [
 	"USP_DETCORD_TAN", 
 	"USP_DETCORD_TAN3"] call BIS_fnc_selectRandom;
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _suit;
 player addBackpack _bag;
 player addHeadgear _head;
 player addGoggles _glasses;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_epinephrine";
 for "_i" from 1 to 5 do {player addItem "ACE_elasticBandage";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -74,7 +74,9 @@ if ((_suit isEqualTo "TRYK_SUITS_BLK_F") or (_suit isEqualTo "TRYK_SUITS_BR_F"))
 	removeBackpack player;
 	player addVest "rhsusf_plateframe_light";
 	player removeWeapon (primaryWeapon player);
-	player addWeapon "rhs_weap_m4a1_carryhandle";
+	player addWeapon "rhs_weap_m4a1_handguard";
+	_grip = ["rhs_acc_m4_moe", "rhs_acc_m4_moe_d", "rhs_acc_m4_handguard"] call BIS_fnc_selectRandom;
+	player addPrimaryWeaponItem _grip;
 	for "_i" from 1 to 3 do {player addItem _mag;};
 	for "_i" from 1 to 3 do {player addItem "rhsusf_mag_17Rnd_9x19_FMJ";};
 }	else	{
@@ -83,7 +85,7 @@ if ((_suit isEqualTo "TRYK_SUITS_BLK_F") or (_suit isEqualTo "TRYK_SUITS_BR_F"))
 player addWeapon "rhsusf_weap_glock17g4";
 
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -92,7 +94,7 @@ player linkItem "TFAR_rf7800str";
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

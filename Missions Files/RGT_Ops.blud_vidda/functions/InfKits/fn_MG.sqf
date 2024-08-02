@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -7,13 +7,22 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_m240B", 
 	"rhs_weap_m240G", 
 	"rhs_weap_fnmag"] call BIS_fnc_selectRandom;
 _uniform = [
-	"milgp_u_g3_field_set_mc", 
+	"milgp_u_g3_field_set_mc",
+	"USP_G3F_MC",
+	"USP_G3F_MX_MC",
+	"USP_G3F_OR_MC",
+	"USP_G3F_G3C_MC",
+	"USP_G3F_G3C_KP_MC",
+	"USP_G3F_G3C_KP_MX_MC",
+	"USP_G3F_G3C_KP_OR_MC",
+	"USP_G3F_G3C_MX_MC",
+	"USP_G3F_G3C_OR_MC",
 	"USP_PCU_G3C_MC", 
 	"USP_PCU_G3C_KP_MC", 
 	"USP_PCU_G3C_KP_MX_MC", 
@@ -22,7 +31,7 @@ _uniform = [
 	"USP_PCU_G3C_OR_MC", 
 	"USP_SOFTSHELL_G3C_MC", 
 	"USP_SOFTSHELL_G3C_KP_MC", 
-	"USP_SOFTSHELL_G3C_KP_MX_MC",
+	"USP_SOFTSHELL_G3C_KP_MX_MC", 
 	"USP_SOFTSHELL_G3C_KP_OR_MC", 
 	"USP_SOFTSHELL_G3C_MX_MC", 
 	"USP_SOFTSHELL_G3C_OR_MC"] call BIS_fnc_selectRandom;
@@ -37,20 +46,25 @@ _helmet = [
 	"rhsusf_ach_helmet_headset_ocp", 
 	"rhsusf_ach_helmet_ESS_ocp", 
 	"rhsusf_ach_helmet_ocp"] call BIS_fnc_selectRandom;
+_nods = [
+	"USP_PVS14",
+	"USP_PVS14_TAR"] call BIS_fnc_selectRandom;
 	
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _uniform;
 player addVest _vest;
 player addHeadgear _helmet;
+player addBackpack "USP_HYDRATION_PACK_MC";
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 player addPrimaryWeaponItem "rhsusf_acc_ardec_m240";
 player addWeapon "Binocular";
+player addWeapon "rhsusf_weap_m9";
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_EarPlugs";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
@@ -64,18 +78,17 @@ player addItem "HandGrenade";
 player addItem "ACE_EntrenchingTool";
 player addItem "SmokeShell";
 for "_i" from 1 to 3 do {player addItem "rhsusf_100Rnd_762x51_m62_tracer";};
-player addWeapon "rhsusf_weap_m9";
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
 player linkItem "TFAR_anprc152";
 player linkItem "ItemGPS";
-player linkItem "USP_PVS14";
+player linkItem _nods;
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

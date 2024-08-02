@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeHeadgear player;
 
 player addHeadgear "rhsusf_ihadss";

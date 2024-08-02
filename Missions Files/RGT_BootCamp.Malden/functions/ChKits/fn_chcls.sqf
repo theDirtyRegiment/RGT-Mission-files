@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,13 +8,19 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_mk18_bk", 0.05, 
+	"rhs_weap_mk18_urgi_kac", 0.05,
+	"rhs_weap_m4_urgi_kac", 0.1,
 	"rhs_weap_mk18_KAC_bk", 0.05, 
 	"rhs_weap_m4a1_blockII_bk", 0.40, 
 	"rhs_weap_m4a1_blockII_KAC_bk", 0.40, 
-	"rhs_weap_hk416d10_LMT", 0.05, 
+	"rhs_weap_hk416d10_LMT", 0.05,
+	"rhs_weap_hk416d10_smr", 0.05,
+	"rhs_weap_hk416d10_smr_kac", 0.05,
+	"rhs_weap_hk416d15_smr", 0.05,
+	"rhs_weap_hk416d15_smr_kac", 0.05,
 	"rhs_weap_hk416d10", 0.05] call BIS_fnc_selectRandomWeighted;
 _lam = [
 	"rhsusf_acc_anpeq15", 0.50, 
@@ -28,6 +34,10 @@ _optic = [
 _optic1 = [
 	"optic_mrd", 
 	"optic_mrd_black"] call BIS_fnc_selectRandom;
+_medbag = [
+	"TRYK_B_Medbag_BK",
+	"USP_DELTA_BAG_BLK",
+	"USP_DELTA_BAG_MCB"] call BIS_fnc_selectRandom;
 _clothing = [
 	"U_I_C_Soldier_Bandit_2_F", 
 	"U_I_C_Soldier_Bandit_3_F", 
@@ -116,21 +126,50 @@ _goggles = [
 	"milgp_f_face_shield_shemagh_MC", 
 	"milgp_f_face_shield_shemagh_RGR"] call BIS_fnc_selectRandom;
 _nods = [
-	"USP_GPNVG18_TAN", 0.25, 
-	"USP_PVS31", 0.50, 
-	"USP_PVS31_MID", 0.50, 
-	"USP_PVS31_HIGH", 0.50, 
-	"USP_PVS31_LOW", 0.25, 
-	"USP_PVS15", 0.75] call BIS_fnc_selectRandomWeighted;
+	"USP_GPNVG18_WP_GM_TAN", 0.25, 
+	"USP_GPNVG18_WP_GM_TAR_TAN", 0.25,
+	"USP_PVS31_WP", 0.50, 
+	"USP_PVS31_WP_BLK2", 0.50, 
+	"USP_PVS31_WP_TAN", 0.50, 
+	"USP_PVS31_WP_TAN2", 0.25,
+	"USP_PVS31_WP_HIGH", 0.25,
+	"USP_PVS31_WP_HIGH_BLK2", 0.25,
+	"USP_PVS31_WP_HIGH_TAN", 0.25,
+	"USP_PVS31_WP_HIGH_TAN2", 0.25,
+	"USP_PVS31_WP_LOW", 0.25,
+	"USP_PVS31_WP_LOW_BLK2", 0.25,
+	"USP_PVS31_WP_LOW_TAN", 0.25,
+	"USP_PVS31_WP_LOW_TAN2", 0.25,
+	"USP_PVS31_WP_MID", 0.25,
+	"USP_PVS31_WP_MID_BLK2", 0.25,
+	"USP_PVS31_WP_MID_TAN2", 0.25,
+	"USP_PVS31_WP_TAR", 0.25,
+	"USP_PVS31_WP_TAR_BLK2", 0.25,
+	"USP_PVS31_WP_TAR_TAN", 0.25,
+	"USP_PVS31_WP_TAR_TAN2", 0.25,
+	"USP_PVS31_WP_TAR_HIGH", 0.25,
+	"USP_PVS31_WP_TAR_HIGH_BLK2", 0.25,
+	"USP_PVS31_WP_TAR_HIGH_TAN", 0.25,
+	"USP_PVS31_WP_TAR_HIGH_TAN2", 0.25,
+	"USP_PVS31_WP_TAR_LOW", 0.25,
+	"USP_PVS31_WP_TAR_LOW_BLK2", 0.25,
+	"USP_PVS31_WP_TAR_LOW_TAN", 0.25,
+	"USP_PVS31_WP_TAR_LOW_TAN2", 0.25,
+	"USP_PVS31_WP_TAR_MID", 0.25,
+	"USP_PVS31_WP_TAR_MID_BLK2", 0.25,
+	"USP_PVS31_WP_TAR_MID_TAN", 0.25,
+	"USP_PVS31_WP_TAR_MID_TAN2", 0.25,	
+	"USP_PVS15", 0.25,
+	"USP_PVS15_TAR", 0.25] call BIS_fnc_selectRandomWeighted;
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
 player addHeadgear _helmet;
 player addGoggles _goggles;
-player addBackpack "TRYK_B_Medbag_BK";
+player addBackpack _medbag;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 player addPrimaryWeaponItem "ace_muzzle_mzls_l";
 player addPrimaryWeaponItem _lam;
@@ -139,8 +178,39 @@ player addWeapon "hgun_Pistol_heavy_01_F";
 player addHandgunItem "acc_flashlight_pistol";
 player addHandgunItem "11Rnd_45ACP_Mag";
 player addHandgunItem _optic1;
+switch(_rifle) do {
+	case "rhs_weap_mk18_urgi_kac": {
+		player addPrimaryWeaponItem "rhs_acc_mk18_urgi";
+	};
+	case "rhs_weap_m4_urgi_kac": {
+		player addPrimaryWeaponItem "rhs_acc_m4_urgi";
+	};
+	case "rhs_weap_hk416d10_smr": {
+		player addPrimaryWeaponItem "rhs_acc_mk18_smr";
+	};
+	case "rhs_weap_hk416d10_smr_kac": {
+		player addPrimaryWeaponItem "rhs_acc_mk18_smr";
+	};	
+	case "rhs_weap_hk416d15_smr": {
+		player addPrimaryWeaponItem "rhs_acc_m4_smr";
+	};
+	case "rhs_weap_mk18_bk": {
+		_grip = ["", "rhsusf_acc_grip2"] call BIS_fnc_selectRandom;
+		player addPrimaryWeaponItem _grip;
+	};
+	case "rhs_weap_mk18_KAC_bk": {
+		_grip = ["", "rhsusf_acc_grip2"] call BIS_fnc_selectRandom;
+		player addPrimaryWeaponItem _grip;
+	};
+	case "rhs_weap_m4a1_blockII_bk": {
+		player addPrimaryWeaponItem "rhsusf_acc_grip2";
+	};	
+	case "rhs_weap_m4a1_blockII_KAC_bk": {
+		player addPrimaryWeaponItem "rhsusf_acc_grip2";
+	};		
+};
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 
 player addItem "ACE_EarPlugs";
 player addItem "ACE_MapTools";
@@ -159,7 +229,7 @@ player addItem "SmokeShellGreen";
 player addItem "SmokeShellRed";
 for "_i" from 1 to 5 do {player addItem "rhs_mag_30Rnd_556x45_Mk318_PMAG";};
 
-//Start of standard medical gear
+comment "Start of standard medical gear";
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
 player addItemToBackpack "ACE_bodyBag";
@@ -177,12 +247,12 @@ for "_i" from 1 to 10 do {player addItemToBackpack "ACE_packingBandage";};
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_quikclot";};
 for "_i" from 1 to 7 do {player addItemToBackpack "ACE_tourniquet";};
 for "_i" from 1 to 2 do {player addItemToBackpack "ACE_adenosine";};
-//End of Medical gear
+comment "End of Medical gear";
 
 
 
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -192,7 +262,7 @@ player linkItem _nods;
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 2, true] call ace_common_fnc_assignObjectsInList;
