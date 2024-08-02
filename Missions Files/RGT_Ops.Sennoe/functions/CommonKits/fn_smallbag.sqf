@@ -1,7 +1,7 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeBackpack player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _pack = [
 	"milgp_bp_Pointman_mc", 
 	"milgp_bp_Breacher_mc", 

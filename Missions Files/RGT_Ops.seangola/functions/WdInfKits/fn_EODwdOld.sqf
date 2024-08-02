@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -7,7 +7,7 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 _rifle = ["rhs_weap_g36kv", 0.60, "rhs_weap_vhsd2", 0.10] call BIS_fnc_selectRandomWeighted;
 player addWeapon _rifle;
 _rail = ["rhsusf_acc_M952V", "acc_flashlight", "rhsusf_acc_wmx", "rhsusf_acc_wmx_bk"] call BIS_fnc_selectRandom;
@@ -18,7 +18,7 @@ _optic = ["rhsusf_acc_eotech_552", 0.70, "rhsusf_acc_compm4", 0.25, "rhsusf_acc_
 player addPrimaryWeaponItem _optic;
 player addWeapon "ACE_VMM3";
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 _uniform = ["rhs_uniform_g3_m81", "rhs_uniform_bdu_erdl", "USP_PCU_G3C_MCT_M81", "USP_G3C_M81", "USP_G3C_CU_TSW", "USP_G3C_CU_KP_M81", "USP_G3C_CU_KP_MX_M81", "USP_G3C_CU_KP_OR_TSW", "USP_G3C_CU_MX_M81", "USP_G3C_CU_OR_M81", "USP_G3C_KP_TSW"] call BIS_fnc_selectRandom;
 player forceAddUniform _uniform;
 player addVest "rhsusf_iotv_ocp_Repair";
@@ -43,7 +43,7 @@ player addItem "DemoCharge_Remote_Mag";
 _helmet = ["rhsusf_ach_helmet_M81", "rhsusf_ach_bare_wood", "rhsusf_ach_bare_wood_ess", "rhsusf_ach_bare_wood_headset", "rhsusf_ach_bare_wood_headset_ess", "rhsusf_ach_bare"] call BIS_fnc_selectRandom;
 player addHeadgear _helmet;
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
@@ -52,7 +52,7 @@ player linkItem "ItemGPS";
 player linkItem "USP_PVS14";
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

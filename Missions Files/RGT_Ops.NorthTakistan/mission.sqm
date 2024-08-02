@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=721;
+		nextID=725;
 	};
 	class LayerIndexProvider
 	{
-		nextID=8;
+		nextID=10;
 	};
 	class Camera
 	{
-		pos[]={9793.1367,250.79121,4313.9629};
-		dir[]={-0.9301495,-0.33296323,-0.15481131};
-		up[]={-0.32844922,0.94293886,-0.054665864};
-		aside[]={-0.16417855,-2.605957e-007,0.98643452};
+		pos[]={9735.8242,244.28421,4437.6924};
+		dir[]={-0.7362113,-0.43739763,-0.5164507};
+		up[]={-0.35809055,0.89926523,-0.25119859};
+		aside[]={-0.57429558,1.8277206e-08,0.81867296};
 	};
 };
 binarizationWanted=0;
@@ -31,12 +31,13 @@ sourceName="RGT_Ops";
 addons[]=
 {
 	"rhsusf_c_melb",
-	"ace_compat_rhs_usf3",
+	"ace_compat_rhs_usf3_fastroping",
 	"A3_Modules_F_Multiplayer",
 	"A3_Characters_F",
 	"A3_Weapons_F",
 	"tfar_handhelds",
 	"rhsusf_c_troops",
+	"ace_compat_rhs_usf3_nightvision",
 	"milgp_uniforms_cfg",
 	"A3_Data_F_Curator_Virtual",
 	"cba_main",
@@ -88,31 +89,36 @@ addons[]=
 	"ace_realisticnames",
 	"A3_Weapons_F_Explosives",
 	"rhsusf_c_weapons",
+	"ace_compat_rhs_usf3_scopes",
 	"USP_Gear_NVG",
 	"USP_Gear_Head",
 	"USP_Gear_Body",
 	"ace_captives",
 	"tfar_core",
+	"ace_medical_vitals",
 	"rhs_c_troops",
-	"ace_compat_rhs_afrf3",
+	"ace_compat_rhs_afrf3_nightvision",
 	"rhsgref_c_weapons",
 	"ace_trenches",
 	"TRYK_Uniform",
 	"AMP_Breaching_Charge",
 	"ace_grenades",
+	"ace_compat_rhs_usf3",
 	"po_factions_fic",
 	"RHS_US_A2_AirImport",
 	"A3_Air_F_EPC_Plane_CAS_01",
 	"RHSGREF_c_A29",
 	"rhsusf_c_m11xx",
 	"FIR_F16_F",
-	"FIR_FA18_F"
+	"FIR_FA18_F",
+	"USP_Gear_Face",
+	"rhsgref_c_troops"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=69;
+		items=73;
 		class Item0
 		{
 			className="rhsusf_c_melb";
@@ -122,8 +128,8 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="ace_compat_rhs_usf3";
-			name="ACE3 - RHS USF Compatibility";
+			className="ace_compat_rhs_usf3_fastroping";
+			name="ACE3 - RHS USAF Compatibility - Fastroping";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
@@ -163,410 +169,438 @@ class AddonsMetaData
 		};
 		class Item7
 		{
+			className="ace_compat_rhs_usf3";
+			name="ACE3 - RHS USAF Compatibility";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item8
+		{
 			className="milgp_uniforms_cfg";
 			name="milgp_uniforms_cfg";
 		};
-		class Item8
+		class Item9
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item10
 		{
 			className="cba_main";
 			name="Community Base Addons - Main Component";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item10
+		class Item11
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item12
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item13
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item13
+		class Item14
 		{
 			className="rhsusf_c_mrzr";
 			name="MRZR";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item14
+		class Item15
 		{
 			className="rhsusf_c_RG33L";
 			name="RG33L MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item15
+		class Item16
 		{
 			className="NDS_6x6_ATV";
 			name="NDS_6x6_ATV";
 			author="Neddles";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item24
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item24
+		class Item25
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item26
 		{
 			className="rhsusf_c_Cougar";
 			name="Cougar MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item26
+		class Item27
 		{
 			className="rhsusf_c_MATV";
 			name="MATV MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item27
+		class Item28
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item28
+		class Item29
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item29
+		class Item30
 		{
 			className="ace_slideshow";
 			name="ACE3 - Slideshow";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item30
+		class Item31
 		{
 			className="Jbad_Misc_Construction";
 			name="Jbad_Misc_Construction";
 		};
-		class Item31
+		class Item32
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item32
+		class Item33
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item34
 		{
 			className="po_factions_eu";
 			name="po_factions_eu";
 			author="Leight, Keeway";
 		};
-		class Item34
+		class Item35
 		{
 			className="milgp_headgear_cfg";
 			name="milgp_headgear_cfg";
 		};
-		class Item35
+		class Item36
 		{
 			className="MyAddon";
 			name="ACE Compat - Military Gear Pack";
 			author="Smith";
 			url="https://steamcommunity.com/profiles/76561197990550454/";
 		};
-		class Item36
+		class Item37
 		{
 			className="ARD_Crye_Config";
 			name="ARD_Crye_Config";
 		};
-		class Item37
+		class Item38
 		{
 			className="milgp_vests_cfg";
 			name="milgp_vests_cfg";
 		};
-		class Item38
+		class Item39
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item39
+		class Item40
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item40
+		class Item41
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item41
+		class Item42
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item42
+		class Item43
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item43
+		class Item44
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item44
+		class Item45
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item46
 		{
 			className="ace_atragmx";
 			name="ACE3 - ATragMX";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item46
+		class Item47
 		{
 			className="ace_kestrel4500";
 			name="ACE3 - Kestrel 4500";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item47
+		class Item48
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item49
+		class Item50
 		{
 			className="rhsusf_c_weapons";
 			name="RHSUSF Weapons & Accessories";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item50
+		class Item51
 		{
 			className="USP_Gear_NVG";
 			name="USP Gear (NVG)";
 			author="UnderSiege Productions";
 			url="https://uspmod.com/";
 		};
-		class Item51
+		class Item52
 		{
 			className="USP_Gear_Head";
 			name="USP_Gear_Head";
 		};
-		class Item52
+		class Item53
 		{
 			className="USP_Gear_Body";
 			name="USP Gear (Body)";
 			author="UnderSiege Productions";
 			url="https://uspmod.com/";
 		};
-		class Item53
+		class Item54
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item54
+		class Item55
 		{
 			className="tfar_core";
 			name="TFAR - Core";
 			author="Task Force Arrowhead Radio Team";
 		};
-		class Item55
+		class Item56
+		{
+			className="ace_medical_vitals";
+			name="ACE3 - Medical Vitals";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item57
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item56
+		class Item58
 		{
-			className="ace_compat_rhs_afrf3";
+			className="ace_compat_rhs_afrf3_nightvision";
 			name="ACE3 - RHS AFRF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item57
+		class Item59
 		{
 			className="rhsgref_c_weapons";
 			name="GREF Weapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item58
+		class Item60
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item59
+		class Item61
 		{
 			className="TRYK_Uniform";
 			name="TRYK_Uniform";
 		};
-		class Item60
+		class Item62
 		{
 			className="AMP_Breaching_Charge";
 			name="bcdw - main";
 			author="Ampersand";
 		};
-		class Item61
+		class Item63
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item62
+		class Item64
 		{
 			className="po_factions_fic";
 			name="po_factions_fic";
 			author="Leight, Keeway";
 		};
-		class Item63
+		class Item65
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item64
+		class Item66
 		{
 			className="A3_Air_F_EPC";
 			name="Arma 3 Win Episode - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item65
+		class Item67
 		{
 			className="RHSGREF_c_A29";
 			name="GREF Super Tucano";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item66
+		class Item68
 		{
 			className="rhsusf_c_m11xx";
 			name="M1151/M1152/M1165";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item67
+		class Item69
 		{
 			className="FIR_F16_F";
 			name="FIR_F16_F";
 		};
-		class Item68
+		class Item70
 		{
 			className="FIR_FA18_F";
 			name="FIR_FA18_F";
+		};
+		class Item71
+		{
+			className="USP_Gear_Face";
+			name="USP Gear (Face)";
+			author="UnderSiege Productions";
+			url="https://uspmod.com/";
+		};
+		class Item72
+		{
+			className="rhsgref_c_troops";
+			name="GREF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -578,7 +612,8 @@ dlcs[]=
 	"LOP_LeightsOPFOR",
 	"Ard_Crye_G3_Mod",
 	"USP_GearUniforms",
-	"RHS_AFRF"
+	"RHS_AFRF",
+	"RHS_GREF"
 };
 randomSeed=11497489;
 class ScenarioData
@@ -609,7 +644,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=97;
+		items=99;
 		class Item0
 		{
 			dataType="Object";
@@ -3235,7 +3270,7 @@ class Mission
 			description="ZEUS";
 			id=383;
 			type="VirtualCurator_F";
-			atlOffset=6.1035156e-005;
+			atlOffset=6.1035156e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3320,7 +3355,7 @@ class Mission
 			description="ZEUS";
 			id=385;
 			type="VirtualCurator_F";
-			atlOffset=6.1035156e-005;
+			atlOffset=6.1035156e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3656,7 +3691,7 @@ class Mission
 			};
 			id=396;
 			type="rhsusf_m1025_w_m2";
-			atlOffset=3.0517578e-005;
+			atlOffset=3.0517578e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3899,7 +3934,7 @@ class Mission
 			};
 			id=397;
 			type="rhsusf_m1025_w_mk19";
-			atlOffset=3.0517578e-005;
+			atlOffset=3.0517578e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4129,7 +4164,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9784.4277,243.78838,4341.5059};
-				angles[]={-0,1.9877139,0};
+				angles[]={0,1.9877139,0};
 			};
 			side="Empty";
 			flags=4;
@@ -4333,7 +4368,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9783.2754,243.78836,4338.7134};
-				angles[]={-0,1.9877139,0};
+				angles[]={0,1.9877139,0};
 			};
 			side="Empty";
 			flags=4;
@@ -4346,6 +4381,7 @@ class Mission
 			};
 			id=401;
 			type="rhsusf_mrzr4_d";
+			atlOffset=-1.5258789e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5164,7 +5200,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isRepairVehicle";
-							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 							class Value
 							{
 								class data
@@ -5312,7 +5348,7 @@ class Mission
 					};
 					id=418;
 					type="PortableHelipadLight_01_yellow_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item10
 				{
@@ -5383,7 +5419,7 @@ class Mission
 					};
 					id=422;
 					type="Land_BagFence_Long_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item14
 				{
@@ -5520,7 +5556,7 @@ class Mission
 					};
 					id=430;
 					type="Land_BagFence_Long_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item22
 				{
@@ -5661,7 +5697,7 @@ class Mission
 					};
 					id=438;
 					type="Land_BagFence_Round_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item30
 				{
@@ -5805,7 +5841,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isRepairVehicle";
-							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 							class Value
 							{
 								class data
@@ -6442,7 +6478,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isRepairVehicle";
-							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 							class Value
 							{
 								class data
@@ -6590,7 +6626,7 @@ class Mission
 					};
 					id=589;
 					type="PortableHelipadLight_01_yellow_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item82
 				{
@@ -6661,7 +6697,7 @@ class Mission
 					};
 					id=593;
 					type="Land_BagFence_Long_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item86
 				{
@@ -6798,7 +6834,7 @@ class Mission
 					};
 					id=601;
 					type="Land_BagFence_Long_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item94
 				{
@@ -6939,7 +6975,7 @@ class Mission
 					};
 					id=609;
 					type="Land_BagFence_Round_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item102
 				{
@@ -7083,7 +7119,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isRepairVehicle";
-							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 							class Value
 							{
 								class data
@@ -7231,7 +7267,7 @@ class Mission
 					};
 					id=628;
 					type="PortableHelipadLight_01_yellow_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item118
 				{
@@ -7302,7 +7338,7 @@ class Mission
 					};
 					id=632;
 					type="Land_BagFence_Long_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item122
 				{
@@ -7439,7 +7475,7 @@ class Mission
 					};
 					id=640;
 					type="Land_BagFence_Long_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item130
 				{
@@ -7580,7 +7616,7 @@ class Mission
 					};
 					id=648;
 					type="Land_BagFence_Round_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item138
 				{
@@ -7821,7 +7857,7 @@ class Mission
 					};
 					id=669;
 					type="PortableHelipadLight_01_yellow_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=6.1035156e-05;
 				};
 				class Item152
 				{
@@ -7995,7 +8031,7 @@ class Mission
 				};
 			};
 			id=408;
-			atlOffset=1.5258789e-005;
+			atlOffset=1.5258789e-05;
 		};
 		class Item23
 		{
@@ -8019,13 +8055,13 @@ class Mission
 			};
 			id=477;
 			type="CargoNet_01_barrels_F";
-			atlOffset=6.1035156e-005;
+			atlOffset=6.1035156e-05;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -10891,7 +10927,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -11159,7 +11195,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -11339,7 +11375,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -11564,7 +11600,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -11819,7 +11855,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -12019,7 +12055,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -12208,7 +12244,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -12435,7 +12471,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -12631,7 +12667,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -12893,7 +12929,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -13095,7 +13131,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -13221,7 +13257,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -13423,7 +13459,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -13557,7 +13593,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -13759,7 +13795,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -13811,7 +13847,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -13868,13 +13904,13 @@ class Mission
 			};
 			id=616;
 			type="CargoNet_01_barrels_F";
-			atlOffset=6.1035156e-005;
+			atlOffset=6.1035156e-05;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -13931,13 +13967,13 @@ class Mission
 			};
 			id=655;
 			type="CargoNet_01_barrels_F";
-			atlOffset=6.1035156e-005;
+			atlOffset=6.1035156e-05;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -14373,7 +14409,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -14766,7 +14802,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -16066,7 +16102,7 @@ class Mission
 			};
 			id=715;
 			type="FIR_F16C";
-			atlOffset=1.5258789e-005;
+			atlOffset=1.5258789e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16114,7 +16150,7 @@ class Mission
 			};
 			id=716;
 			type="FIR_F18C";
-			atlOffset=1.5258789e-005;
+			atlOffset=1.5258789e-05;
 		};
 		class Item93
 		{
@@ -16136,7 +16172,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -16214,7 +16250,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -16239,6 +16275,424 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item97
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9733.2461,242.22144,4436.6118};
+						angles[]={0,1.0686477,-0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="call{" \n "this addAction['Get Rifleman Loadout',RGT_fnc_cw_rifleman_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get Light AT Loadout',RGT_fnc_cw_LightAT_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get CLS Loadout',RGT_fnc_cw_CLS_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get Marksman Loadout',RGT_fnc_cw_marksman_m14,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n " " \n "this addAction['Get Grenadier Loadout',RGT_fnc_cw_grenadier_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n " " \n "this addAction['Get Leader Loadout', RGT_fnc_cw_leader_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get Radioman Loadout',RGT_fnc_cw_radioman_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "" \n "this addAction['Get Machinegunner Loadout',RGT_fnc_cw_MG,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get Anti Air Loadout',RGT_fnc_cw_AntiAir_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get EOD Specialist Loadout',RGT_fnc_cw_EOD_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction[""<t color='#2C75FF'>Add Static Line Parachute"", RGT_fnc_ParachuteS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get AFV Crewman Loadout', RGT_fnc_Crewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get RW Crewman Loadout', RGT_fnc_HeliCrewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "" \n "this addAction['Get FW Crewman Loadout', RGT_fnc_PlaneCrewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];}";
+						description="CW Loadouts";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
+						receiveRemoteTargets=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_bdu_erdl";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="ACE_Chemlight_IR";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_red";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=5;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_CableTie";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item5
+									{
+										name="ACE_Flashlight_MX991";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsgref_alice_webbing";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
+							gps="ItemGPS";
+							goggles="USP_BEARD_CH_MS_BLK5";
+						};
+					};
+					id=722;
+					type="LOP_CHR_Civ_Assistant";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Infantry Quartermaster";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="AfricanHead_03";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="RHS_Male01RUS";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_allowSprint";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=721;
+		};
+		class Item98
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9732.4697,242.22308,4436.2456};
+						angles[]={0,1.0686477,-0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="call{" \n "this addAction['Get Rifleman Loadout',RGT_fnc_cw_rifleman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get Light AT Loadout',RGT_fnc_cw_LightAT,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get CLS Loadout',RGT_fnc_cw_CLS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get Marksman Loadout',RGT_fnc_cw_marksman,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n " " \n "this addAction['Get Grenadier Loadout',RGT_fnc_cw_grenadier,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n " " \n "this addAction['Get Leader Loadout', RGT_fnc_cw_leader,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get Radioman Loadout',RGT_fnc_cw_radioman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "" \n "this addAction['Get Machinegunner Loadout',RGT_fnc_cw_MG,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get Anti Air Loadout',RGT_fnc_cw_AntiAir,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get EOD Specialist Loadout',RGT_fnc_cw_EOD,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction[""<t color='#2C75FF'>Add Static Line Parachute"", RGT_fnc_ParachuteS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get AFV Crewman Loadout', RGT_fnc_Crewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get RW Crewman Loadout', RGT_fnc_HeliCrewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "" \n "this addAction['Get FW Crewman Loadout', RGT_fnc_PlaneCrewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];}";
+						description="CW Loadouts";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_bdu_erdl";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="ACE_Chemlight_IR";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_red";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=5;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_CableTie";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item5
+									{
+										name="ACE_Flashlight_MX991";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsgref_alice_webbing";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
+							gps="ItemGPS";
+							headgear="rhsgref_helmet_M1_erdl";
+						};
+					};
+					id=724;
+					type="LOP_CHR_Civ_Assistant";
+					atlOffset=0.0016479492;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="RHS_Male01RUS";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Infantry Quartermaster";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_allowSprint";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=723;
+			atlOffset=0.0016479492;
 		};
 	};
 };

@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _clothing = [
 	"TRYK_B_TRYK_UCP_T", 
 	"TRYK_U_B_PCUGs_BLK_R", 
@@ -96,6 +96,11 @@ _ammo = [
 	"rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", 
 	"rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", 
 	"rhs_mag_30Rnd_556x45_M855A1_Stanag"] call BIS_fnc_selectRandom;
+_vest = [
+	"V_TacChestrig_grn_F",
+	"V_TacChestrig_cbr_F",
+	"V_TacChestrig_oli_F",
+	"rhsgref_chestrig"] call BIS_fnc_selectRandom;
 _helmet = [
 	"TRYK_H_headset2", 
 	"TRYK_H_headsetcap_Glasses", 
@@ -157,21 +162,40 @@ _helmet = [
 	"USP_BASEBALL_CAP_CGS", 
 	"USP_BASEBALL_CAP_MCB_CGS", 
 	"USP_BASEBALL_CAP_CT3_RT6"] call BIS_fnc_selectRandom;
+_grip = [
+	"", 0.9,
+	"rhsusf_acc_grip_m203_blk", 0.1,
+	"rhsusf_acc_grip_m203_d", 0.2] call BIS_fnc_selectRandomWeighted;
+_optic = [
+	"rhsusf_acc_su230_mrds_c", 0.1,
+	"rhsusf_acc_ACOG_d", 0.8,
+	"rhsusf_acc_su230_c", 0.1] call BIS_fnc_selectRandomWeighted;
+_pack = [
+	"TFAR_rt1523g_green",
+	"USP_TACTICAL_PACK_MCT_CCT",
+	"USP_TACTICAL_PACK_MCB_CCT",
+	"USP_TACTICAL_PACK_MCT_CCT2",
+	"USP_TACTICAL_PACK_MCB_CCT2",
+	"USP_TACTICAL_PACK_MCT_CCT3",
+	"USP_TACTICAL_PACK_MCB_CCT3",
+	"USP_TACTICAL_PACK_MCT_CCT4",
+	"USP_TACTICAL_PACK_MCB_CCT4"] call BIS_fnc_selectRandom;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon "rhs_weap_m4a1_m203s_d";
 player addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
+player addPrimaryWeaponItem _grip;
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side";
-player addPrimaryWeaponItem "rhsusf_acc_ACOG_d";
+player addPrimaryWeaponItem _optic;
 player addWeapon "ACE_Vector";
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
-player addVest "V_TacChestrig_grn_F";
-player addBackpack "TFAR_rt1523g_green";
+player addVest _vest;
+player addBackpack _pack;
 player addHeadgear _helmet;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -193,7 +217,7 @@ player addItem "ACE_SpottingScope";
 player addItem "APERSBoundingMine_Range_Mag";
 for "_i" from 1 to 2 do {player addItem "APERSTripMine_Wire_Mag";};
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -203,7 +227,7 @@ player linkItem "ItemGPS";
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

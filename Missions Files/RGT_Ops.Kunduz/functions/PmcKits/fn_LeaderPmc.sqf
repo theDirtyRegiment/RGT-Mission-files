@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,19 +8,12 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
-	"SMA_Mk16_EGLM",
-	"SMA_MK16_EGLM_Green",
-	"SMA_MK16_EGLM_black",
-	"SMA_ACRREMGL_B_N",
-	"SMA_ACRREMCQBGL_N",
-	"SMA_ACRREMCQBGL_B_N",
-	"SMA_ACRREMGL_N"] call BIS_fnc_selectRandom;
-_optic = [
-	"rhsusf_acc_su230a_mrds", 
-	"rhsusf_acc_compm4", 
-	"rhsusf_acc_acog_rmr"] call BIS_fnc_selectRandom;
+	"rhs_weap_g36kv_ag36",
+	"rhs_weap_m21a_pr_pbg40",
+	"rhs_weap_m70b3n_pbg40",
+	"rhs_weap_vhsd2_bg_ct15x"] call BIS_fnc_selectRandom;
 _clothing = [
 	"TRYK_B_TRYK_UCP_T", 
 	"TRYK_U_B_PCUGs_BLK_R", 
@@ -168,19 +161,17 @@ _helmet = [
 	"USP_BASEBALL_CAP_MCB_CGS", 
 	"USP_BASEBALL_CAP_CT3_RT6"] call BIS_fnc_selectRandom;
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
 player addBackpack "TFAR_rt1523g_black";
 player addHeadgear _helmet;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
-player addPrimaryWeaponItem "rhsusf_acc_m952v";
-player addPrimaryWeaponItem _optic;
 player addWeapon "rhsusf_weap_m1911a1";
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_EarPlugs";
 player addItem "ACE_MapTools";
 player addItem "ACE_CableTie";
@@ -197,15 +188,46 @@ for "_i" from 1 to 2 do {player addItem "SmokeShell";};
 player addItem "HandGrenade";
 player addItem "SmokeShellGreen";
 player addItem "SmokeShellRed";
-for "_i" from 1 to 5 do {player addItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
-for "_i" from 1 to 8 do {player addItem "rhs_mag_M441_HE";};
-for "_i" from 1 to 2 do {player addItem "rhs_mag_m714_White";};
-player addItem "rhs_mag_m715_Green";
-for "_i" from 1 to 2 do {player addItem "ACE_HuntIR_M203";};
-player addItem "ACE_HuntIR_monitor";
-player addItem "UGL_FlareWhite_F";
+switch (_rifle) do {
+	case "rhs_weap_g36kv_ag36": {
+		_optic = ["rhsusf_acc_su230a_mrds", "rhsusf_acc_compm4", "rhsusf_acc_acog_rmr"] call BIS_fnc_selectRandom;
+		player addPrimaryWeaponItem _optic;
+		for "_i" from 1 to 5 do {player addItem "rhssaf_30rnd_556x45_EPR_G36";};
+		for "_i" from 1 to 8 do {player addItem "rhs_mag_M441_HE";};
+		for "_i" from 1 to 2 do {player addItem "rhs_mag_m714_White";};
+		player addItem "rhs_mag_m715_Green";
+		player addItem "UGL_FlareWhite_F";
+		player addPrimaryWeaponItem "rhsusf_acc_m952v";
+	};
+	case "rhs_weap_vhsd2_bg_ct15x": {
+		for "_i" from 1 to 5 do {player addItem "rhssaf_30rnd_556x45_EPR_G36";};
+		for "_i" from 1 to 8 do {player addItem "rhs_mag_M441_HE";};
+		for "_i" from 1 to 2 do {player addItem "rhs_mag_m714_White";};
+		player addItem "rhs_mag_m715_Green";
+		player addItem "UGL_FlareWhite_F";
+		player addPrimaryWeaponItem "rhsusf_acc_m952v";
+	};
+	case "rhs_weap_m21a_pr_pbg40": {
+		_optic = ["rhsusf_acc_su230a_mrds", "rhsusf_acc_compm4", "rhsusf_acc_acog_rmr"] call BIS_fnc_selectRandom;
+		player addPrimaryWeaponItem _optic;		
+		for "_i" from 1 to 5 do {player addItem "rhsgref_30rnd_556x45_m21";};
+		for "_i" from 1 to 8 do {player addItem "rhs_VOG25";};
+		for "_i" from 1 to 2 do {player addItem "rhs_GRD40_White";};
+		player addItem "rhs_GRD40_Green";
+		player addItem "rhs_VG40OP_white";
+	};
+	case "rhs_weap_m70b3n_pbg40": {
+		_optic = ["rhs_acc_ekp1", "rhs_acc_ekp8_02", "rhs_acc_nita", "rhs_acc_okp7_dovetail", "rhs_acc_pkas", "rhs_acc_1p63"] call BIS_fnc_selectRandom;
+		player addPrimaryWeaponItem _optic;
+		for "_i" from 1 to 5 do {player addItem "rhssaf_30Rnd_762x39mm_M67";};
+		for "_i" from 1 to 8 do {player addItem "rhs_VOG25";};
+		for "_i" from 1 to 2 do {player addItem "rhs_GRD40_White";};
+		player addItem "rhs_GRD40_Green";
+		player addItem "rhs_VG40OP_white";
+	};
+};
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
@@ -215,7 +237,7 @@ player linkItem "ItemGPS";
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

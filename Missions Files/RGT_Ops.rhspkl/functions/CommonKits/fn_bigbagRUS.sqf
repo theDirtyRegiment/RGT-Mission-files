@@ -1,7 +1,7 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeBackpack player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _backpack = [
 	"rhs_assault_umbts", 
 	"rhs_rd54", "rhs_rk_sht_30_emr", 

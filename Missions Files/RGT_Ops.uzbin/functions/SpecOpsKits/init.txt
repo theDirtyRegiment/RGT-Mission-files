@@ -1,0 +1,11 @@
+this addAction['Get Assaulter Loadout',RGT_fnc_AssaultSpecOps ,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Pointman Loadout',RGT_fnc_PointmanSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"];
+this addAction['Get Breacher Loadout',RGT_fnc_BreacherSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get CLS Loadout',RGT_fnc_CLSSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Autorifleman Loadout',RGT_fnc_ARSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Light AT Loadout',RGT_fnc_LightATSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get JTAC Loadout',RGT_fnc_JTACSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"];
+this addAction['Get Radioman Loadout',RGT_fnc_SignalerSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction['Get Marksman Loadout',RGT_fnc_MarksmanSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"]; 
+this addAction['Get Leader Loadout', RGT_fnc_LeaderSpecOps,nil,1.5,true,true,"","((_target distance _this)<5)"];  
+this addAction["<t color='#2C75FF'>Add Parachute", RGT_fnc_Parachute,nil,1.5,true,true,"","((_target distance _this)<5)"]; 

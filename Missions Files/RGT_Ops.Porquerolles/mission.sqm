@@ -12,14 +12,14 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=229;
+		nextID=233;
 	};
 	class Camera
 	{
-		pos[]={3935.8674,85.348663,8638.8076};
-		dir[]={-0.67730653,-0.73272318,0.067921378};
-		up[]={-0.72906578,0.68052506,0.073111735};
-		aside[]={0.099784099,-1.7622951e-006,0.99509549};
+		pos[]={3955.5254,29.730314,8633.9492};
+		dir[]={-0.59509122,-0.8015424,-0.060416114};
+		up[]={-0.79742736,0.59796286,-0.080958262};
+		aside[]={-0.10101872,-2.049841e-06,0.99497658};
 	};
 };
 binarizationWanted=0;
@@ -36,7 +36,7 @@ addons[]=
 	"A3_Static_F_Destroyer_Boat_Rack_01",
 	"rhsgref_c_air",
 	"rhsusf_c_melb",
-	"ace_compat_rhs_usf3",
+	"ace_compat_rhs_usf3_fastroping",
 	"A3_Modules_F_Multiplayer",
 	"CUP_CAMisc",
 	"cba_main",
@@ -55,6 +55,7 @@ addons[]=
 	"A3_Weapons_F",
 	"tfar_handhelds",
 	"rhsusf_c_troops",
+	"ace_compat_rhs_usf3_nightvision",
 	"milgp_uniforms_cfg",
 	"ace_explosives",
 	"ace_medical_treatment",
@@ -85,25 +86,30 @@ addons[]=
 	"ace_realisticnames",
 	"A3_Weapons_F_Explosives",
 	"rhsusf_c_weapons",
+	"ace_compat_rhs_usf3_scopes",
 	"USP_Gear_NVG",
 	"USP_Gear_Head",
 	"USP_Gear_Body",
 	"ace_captives",
 	"tfar_core",
+	"ace_medical_vitals",
 	"rhs_c_troops",
-	"ace_compat_rhs_afrf3",
+	"ace_compat_rhs_afrf3_nightvision",
 	"rhsgref_c_weapons",
 	"ace_trenches",
 	"TRYK_Uniform",
 	"AMP_Breaching_Charge",
 	"ace_grenades",
-	"po_factions_fic"
+	"ace_compat_rhs_usf3",
+	"po_factions_fic",
+	"USP_Gear_Face",
+	"rhsgref_c_troops"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=63;
+		items=67;
 		class Item0
 		{
 			className="A3_Boat_F_Jets";
@@ -148,8 +154,8 @@ class AddonsMetaData
 		};
 		class Item6
 		{
-			className="ace_compat_rhs_usf3";
-			name="ACE3 - RHS USF Compatibility";
+			className="ace_compat_rhs_usf3_fastroping";
+			name="ACE3 - RHS USAF Compatibility - Fastroping";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
@@ -260,265 +266,293 @@ class AddonsMetaData
 		};
 		class Item23
 		{
+			className="ace_compat_rhs_usf3";
+			name="ACE3 - RHS USAF Compatibility";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item24
+		{
 			className="milgp_uniforms_cfg";
 			name="milgp_uniforms_cfg";
 		};
-		class Item24
+		class Item25
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item25
+		class Item26
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item26
+		class Item27
 		{
 			className="rhsusf_c_ch53";
 			name="CH-53 Helicopter";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item27
+		class Item28
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item28
+		class Item29
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="ace_slideshow";
 			name="ACE3 - Slideshow";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item30
+		class Item31
 		{
 			className="Jbad_Misc_Construction";
 			name="Jbad_Misc_Construction";
 		};
-		class Item31
+		class Item32
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item32
+		class Item33
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item34
 		{
 			className="po_factions_eu";
 			name="po_factions_eu";
 			author="Leight, Keeway";
 		};
-		class Item34
+		class Item35
 		{
 			className="milgp_headgear_cfg";
 			name="milgp_headgear_cfg";
 		};
-		class Item35
+		class Item36
 		{
 			className="MyAddon";
 			name="ACE Compat - Military Gear Pack";
 			author="Smith";
 			url="https://steamcommunity.com/profiles/76561197990550454/";
 		};
-		class Item36
+		class Item37
 		{
 			className="ARD_Crye_Config";
 			name="ARD_Crye_Config";
 		};
-		class Item37
+		class Item38
 		{
 			className="milgp_vests_cfg";
 			name="milgp_vests_cfg";
 		};
-		class Item38
+		class Item39
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item39
+		class Item40
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item40
+		class Item41
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item41
+		class Item42
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item42
+		class Item43
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item43
+		class Item44
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item44
+		class Item45
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item46
 		{
 			className="ace_atragmx";
 			name="ACE3 - ATragMX";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item46
+		class Item47
 		{
 			className="ace_kestrel4500";
 			name="ACE3 - Kestrel 4500";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item47
+		class Item48
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item49
+		class Item50
 		{
 			className="rhsusf_c_weapons";
 			name="RHSUSF Weapons & Accessories";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item50
+		class Item51
 		{
 			className="USP_Gear_NVG";
 			name="USP Gear (NVG)";
 			author="UnderSiege Productions";
 			url="https://uspmod.com/";
 		};
-		class Item51
+		class Item52
 		{
 			className="USP_Gear_Head";
 			name="USP_Gear_Head";
 		};
-		class Item52
+		class Item53
 		{
 			className="USP_Gear_Body";
 			name="USP Gear (Body)";
 			author="UnderSiege Productions";
 			url="https://uspmod.com/";
 		};
-		class Item53
+		class Item54
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item54
+		class Item55
 		{
 			className="tfar_core";
 			name="TFAR - Core";
 			author="Task Force Arrowhead Radio Team";
 		};
-		class Item55
+		class Item56
+		{
+			className="ace_medical_vitals";
+			name="ACE3 - Medical Vitals";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item57
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item56
+		class Item58
 		{
-			className="ace_compat_rhs_afrf3";
+			className="ace_compat_rhs_afrf3_nightvision";
 			name="ACE3 - RHS AFRF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item57
+		class Item59
 		{
 			className="rhsgref_c_weapons";
 			name="GREF Weapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item58
+		class Item60
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item59
+		class Item61
 		{
 			className="TRYK_Uniform";
 			name="TRYK_Uniform";
 		};
-		class Item60
+		class Item62
 		{
 			className="AMP_Breaching_Charge";
 			name="bcdw - main";
 			author="Ampersand";
 		};
-		class Item61
+		class Item63
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item62
+		class Item64
 		{
 			className="po_factions_fic";
 			name="po_factions_fic";
 			author="Leight, Keeway";
+		};
+		class Item65
+		{
+			className="USP_Gear_Face";
+			name="USP Gear (Face)";
+			author="UnderSiege Productions";
+			url="https://uspmod.com/";
+		};
+		class Item66
+		{
+			className="rhsgref_c_troops";
+			name="GREF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -531,7 +565,8 @@ dlcs[]=
 	"LOP_LeightsOPFOR",
 	"Ard_Crye_G3_Mod",
 	"USP_GearUniforms",
-	"RHS_AFRF"
+	"RHS_AFRF",
+	"RHS_GREF"
 };
 randomSeed=6559697;
 class ScenarioData
@@ -556,7 +591,7 @@ class CustomAttributes
 		class Attribute0
 		{
 			property="ENH_dynamicSkill";
-			expression="if (!is3DEN && _value # 0 && isServer) then      {        _value params        [          '_enable',          '_skillMinBLUFOR',          '_skillAimMinBLUFOR',          '_skillMaxBLUFOR',          '_skillAimMaxBlUFOR',          '_skillMinOPFOR',          '_skillAimMinOPFOR',          '_skillMaxOPFOR',          '_skillAimMaxOPFOR',          '_skillMinINDFOR',          '_skillAimMinINDFOR',          '_skillMaxINDFOR',          '_skillAimMaxINDFOR'        ];        [          true,          [            [WEST, _skillMinBLUFOR, _skillAimMinBLUFOR, _skillMaxBLUFOR, _skillAimMaxBlUFOR],            [EAST, _skillMinOPFOR, _skillAimMinOPFOR, _skillMaxOPFOR, _skillAimMaxOPFOR],            [INDEPENDENT, _skillMinINDFOR, _skillAimMinINDFOR, _skillMaxINDFOR, _skillAimMaxINDFOR]          ]        ] call BIS_fnc_EXP_camp_dynamicAISkill;      }";
+			expression="if (!is3DEN && _value # 0 && isServer) then      {        _value params        [          '_enable',          '_skillMinBLUFOR',          '_skillAimMinBLUFOR',          '_skillMaxBLUFOR',          '_skillAimMaxBlUFOR',          '_skillMinOPFOR',          '_skillAimMinOPFOR',          '_skillMaxOPFOR',          '_skillAimMaxOPFOR',          '_skillMinIndependent',          '_skillAimMinIndependent',          '_skillMaxIndependent',          '_skillAimMaxIndependent'        ];        [          true,          [            [WEST, _skillMinBLUFOR, _skillAimMinBLUFOR, _skillMaxBLUFOR, _skillAimMaxBlUFOR],            [EAST, _skillMinOPFOR, _skillAimMinOPFOR, _skillMaxOPFOR, _skillAimMaxOPFOR],            [INDEPENDENT, _skillMinIndependent, _skillAimMinIndependent, _skillMaxIndependent, _skillAimMaxIndependent]          ]        ] call BIS_fnc_EXP_camp_dynamicAISkill;      }";
 			class Value
 			{
 				class data
@@ -676,7 +711,7 @@ class CustomAttributes
 		class Attribute1
 		{
 			property="ENH_saveLoadout";
-			expression="if (!isMultiplayer || !_value || is3DEN || !hasInterface) exitWith {};    [] spawn    {      waitUntil {sleep 1; !isNull player};      player setVariable ['ENH_savedLoadout', getUnitloadout player];      player addMPEventHandler ['MPRespawn',      {        params ['_unit'];        private _loadout = _unit getVariable ['ENH_savedLoadout', []];        if (_loadout isNotEqualTo []) then {_unit setUnitLoadout _loadout};      }];    };";
+			expression="if (!isMultiplayer || !_value || is3DEN || !hasInterface) exitWith {};    0 spawn    {      waitUntil {sleep 1; !isNull player};      player setVariable ['ENH_savedLoadout', getUnitloadout player];      player addMPEventHandler ['MPRespawn',      {        params ['_unit'];        private _loadout = _unit getVariable ['ENH_savedLoadout', []];        if (_loadout isNotEqualTo []) then {_unit setUnitLoadout _loadout};      }];    };";
 			class Value
 			{
 				class data
@@ -738,7 +773,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=88;
+		items=90;
 		class Item0
 		{
 			dataType="Object";
@@ -753,7 +788,7 @@ class Mission
 			};
 			id=0;
 			type="Land_Carrier_01_base_F";
-			atlOffset=6.4701362;
+			atlOffset=30.008446;
 		};
 		class Item1
 		{
@@ -769,7 +804,7 @@ class Mission
 			};
 			id=1;
 			type="Land_Destroyer_01_base_F";
-			atlOffset=8.9459229;
+			atlOffset=29.951582;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1010,7 +1045,7 @@ class Mission
 			};
 			id=9;
 			type="B_SAM_System_01_F";
-			atlOffset=9.5367432e-007;
+			atlOffset=9.5367432e-07;
 		};
 		class Item10
 		{
@@ -2009,7 +2044,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -2206,7 +2241,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3927.585,26.031942,8642.6904};
-				angles[]={-0,3.1231444,0};
+				angles[]={0,3.1231444,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2327,7 +2362,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3842.1633,26.042086,8641.874};
-				angles[]={-0,3.1231444,0};
+				angles[]={0,3.1231444,0};
 			};
 			side="Empty";
 			flags=4;
@@ -4681,7 +4716,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -5009,7 +5044,7 @@ class Mission
 			};
 			id=134;
 			type="RHS_AH1Z_wd";
-			atlOffset=29.992271;
+			atlOffset=53.536888;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6633,7 +6668,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3952.2185,27.008068,8632.1191};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=3;
@@ -6723,7 +6758,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -6769,7 +6804,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3953.2185,27.010105,8632.1221};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=3;
@@ -6993,7 +7028,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -7039,7 +7074,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3952.2156,27.006531,8633.1182};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=3;
@@ -7175,7 +7210,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -7221,7 +7256,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3953.2158,27.006531,8633.1211};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=3;
@@ -7402,7 +7437,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -7448,7 +7483,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3952.2129,27.006531,8634.1182};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -7659,7 +7694,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -7705,7 +7740,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3953.2131,27.006531,8634.1221};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -7861,7 +7896,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -7907,7 +7942,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3952.2092,27.006531,8635.1182};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -8052,7 +8087,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -8098,7 +8133,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3953.2095,27.006531,8635.1211};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -8281,7 +8316,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -8327,7 +8362,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3952.2068,27.013966,8636.1182};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -8479,7 +8514,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -8525,7 +8560,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3953.2068,27.017056,8636.1221};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -8743,7 +8778,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -8789,7 +8824,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3952.2041,27.01125,8637.1191};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -8947,7 +8982,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -8993,7 +9028,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3953.2041,27.014584,8637.1211};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -9075,7 +9110,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -9121,7 +9156,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3952.2861,27.006531,8638.0869};
-						angles[]={0,1.5441022,-0};
+						angles[]={0,1.5441022,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -9279,7 +9314,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -9325,7 +9360,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3953.2007,27.011143,8638.1221};
-						angles[]={0,1.4976864,-0};
+						angles[]={0,1.4976864,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -9414,7 +9449,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -9616,7 +9651,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_allowSprint";
-							expression="_this allowSprint _value";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
 							class Value
 							{
 								class data
@@ -9647,6 +9682,426 @@ class Mission
 			{
 			};
 			id=224;
+		};
+		class Item88
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3954.8247,26.918545,8632.6982};
+						angles[]={0,1.5607716,-0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						init="call{" \n "this addAction['Get Rifleman Loadout',RGT_fnc_cw_rifleman_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get Light AT Loadout',RGT_fnc_cw_LightAT_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get CLS Loadout',RGT_fnc_cw_CLS_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get Marksman Loadout',RGT_fnc_cw_marksman_m14,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n " " \n "this addAction['Get Grenadier Loadout',RGT_fnc_cw_grenadier_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n " " \n "this addAction['Get Leader Loadout', RGT_fnc_cw_leader_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get Radioman Loadout',RGT_fnc_cw_radioman_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "" \n "this addAction['Get Machinegunner Loadout',RGT_fnc_cw_MG,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get Anti Air Loadout',RGT_fnc_cw_AntiAir_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get EOD Specialist Loadout',RGT_fnc_cw_EOD_ar15,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction[""<t color='#2C75FF'>Add Static Line Parachute"", RGT_fnc_ParachuteS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get AFV Crewman Loadout', RGT_fnc_Crewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get RW Crewman Loadout', RGT_fnc_HeliCrewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "" \n "this addAction['Get FW Crewman Loadout', RGT_fnc_PlaneCrewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];}";
+						description="CW Loadouts";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
+						receiveRemoteTargets=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_bdu_erdl";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="ACE_Chemlight_IR";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_red";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=5;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_CableTie";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item5
+									{
+										name="ACE_Flashlight_MX991";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsgref_alice_webbing";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
+							gps="ItemGPS";
+							goggles="USP_BEARD_CH_MS_BLK5";
+						};
+					};
+					id=230;
+					type="LOP_CHR_Civ_Assistant";
+					atlOffset=3.2752075;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Infantry Quartermaster";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="AfricanHead_03";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="RHS_Male01RUS";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_allowSprint";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=229;
+			atlOffset=3.2752075;
+		};
+		class Item89
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3953.9663,26.920292,8632.7422};
+						angles[]={0,1.5607716,-0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						init="call{" \n "this addAction['Get Rifleman Loadout',RGT_fnc_cw_rifleman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get Light AT Loadout',RGT_fnc_cw_LightAT,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get CLS Loadout',RGT_fnc_cw_CLS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction['Get Marksman Loadout',RGT_fnc_cw_marksman,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n " " \n "this addAction['Get Grenadier Loadout',RGT_fnc_cw_grenadier,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n " " \n "this addAction['Get Leader Loadout', RGT_fnc_cw_leader,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get Radioman Loadout',RGT_fnc_cw_radioman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];   " \n "" \n "this addAction['Get Machinegunner Loadout',RGT_fnc_cw_MG,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get Anti Air Loadout',RGT_fnc_cw_AntiAir,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get EOD Specialist Loadout',RGT_fnc_cw_EOD,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "" \n "this addAction[""<t color='#2C75FF'>Add Static Line Parachute"", RGT_fnc_ParachuteS,nil,1.5,true,true,"""",""((_target distance _this)<5)""];  " \n "this addAction['Get AFV Crewman Loadout', RGT_fnc_Crewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""]; " \n "" \n "this addAction['Get RW Crewman Loadout', RGT_fnc_HeliCrewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];" \n "" \n "this addAction['Get FW Crewman Loadout', RGT_fnc_PlaneCrewman,nil,1.5,true,true,"""",""((_target distance _this)<5)""];}";
+						description="CW Loadouts";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_bdu_erdl";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="ACE_Chemlight_IR";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_red";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=5;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_CableTie";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item5
+									{
+										name="ACE_Flashlight_MX991";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsgref_alice_webbing";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="TFAR_microdagr";
+							radio="TFAR_anprc152";
+							gps="ItemGPS";
+							headgear="rhsgref_helmet_M1_erdl";
+						};
+					};
+					id=232;
+					type="LOP_CHR_Civ_Assistant";
+					atlOffset=3.2769547;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="RHS_Male01RUS";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Infantry Quartermaster";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_allowSprint";
+							expression="[_this, _value] remoteExec ['allowSprint', _this]";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=231;
+			atlOffset=3.2769547;
 		};
 	};
 	class Connections

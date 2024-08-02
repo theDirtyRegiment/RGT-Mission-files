@@ -1,6 +1,6 @@
 comment "Exported from Arsenal by Dirty";
 
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -10,7 +10,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_svdp_wd", 
 	"rhs_weap_svds"] call BIS_fnc_selectRandom;
@@ -167,21 +167,21 @@ _nods = [
 	"rhsusf_ANPVS_14", 
 	"USP_PVS14"] call BIS_fnc_selectRandom;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 player addPrimaryWeaponItem _muzzle;
 player addPrimaryWeaponItem "rhs_acc_pso1m21_svd";
 player addWeapon "hgun_Rook40_F";
 player addHandgunItem "rhsusf_acc_omega9k";
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
 player addBackpack _bag;
 player addHeadgear _helmet;
 player addGoggles _facewear;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -207,7 +207,7 @@ for "_i" from 1 to 7 do {player addItem "rhs_10Rnd_762x54mmR_7N14";};
 player addItem "rhs_acc_1pn93_1";
 
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -217,7 +217,7 @@ player linkItem _nods;
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;

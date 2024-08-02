@@ -1,4 +1,4 @@
-// Remove gear before applying loadouts
+comment "Remove gear before applying loadouts";
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -8,7 +8,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-// Create the arrays for different equipment
+comment "Create the arrays for different equipment";
 _rifle = [
 	"rhs_weap_ak105_zenitco01_b33_grip1", 
 	"rhs_weap_ak74m_zenitco01_b33"] call BIS_fnc_selectRandom;
@@ -181,8 +181,11 @@ _nods = [
 	"USP_NSEAS", 
 	"rhsusf_ANPVS_14", 
 	"USP_PVS14"] call BIS_fnc_selectRandom;
+_radiobag = [
+	"B_RadioBag_01_ghex_F",
+	"TFAR_mr3000_rhs"] call BIS_fnc_selectRandom;
 
-// Add Weapons and attachments
+comment "Add Weapons and attachments";
 player addWeapon _rifle;
 player addPrimaryWeaponItem _muzzle;
 player addPrimaryWeaponItem "rhs_acc_perst3_2dp_h";
@@ -192,14 +195,14 @@ player addWeapon "hgun_Rook40_F";
 player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "16Rnd_9x21_Mag";
 
-// Add Uniforms and Gear
+comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
 player addVest _vest;
-player addBackpack "TFAR_mr3000_rhs";
+player addBackpack _radiobag;
 player addHeadgear _helmet;
 player addGoggles _facewear;
 
-// Fill Uniform and Gear
+comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
 for "_i" from 1 to 5 do {player addItem "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
@@ -221,7 +224,7 @@ player addItem "rhssaf_mag_brd_m83_red";
 player addItem "O_IR_Grenade";
 player addItem "rhs_mag_fakel";
 
-// Add final Gear
+comment "Add final Gear";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "TFAR_microdagr";
@@ -231,7 +234,7 @@ player linkItem _nods;
 
 player setSpeaker "ACE_NoVoice";
 
-// Set G Force resistance and Medical + Engineer training
+comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;
