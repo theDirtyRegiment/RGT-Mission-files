@@ -53,6 +53,7 @@ player addPrimaryWeaponItem _optic;
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "acc_flashlight_pistol";
+player addHandgunItem "rhsusf_mag_17Rnd_9x19_FMJ";
 
 comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";

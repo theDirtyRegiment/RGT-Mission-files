@@ -170,6 +170,7 @@ player addHeadgear _helmet;
 player addGoggles _facewear;
 player addWeapon "hgun_Rook40_F";
 player addHandgunItem "rhsusf_acc_omega9k";
+player addHandgunItem "16Rnd_9x21_Mag";
 
 comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;

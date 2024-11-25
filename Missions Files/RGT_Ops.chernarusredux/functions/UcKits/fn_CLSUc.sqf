@@ -148,6 +148,7 @@ player addPrimaryWeaponItem "rhsusf_acc_grip2";
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "acc_flashlight_pistol";
+player addHandgunItem "rhsusf_mag_17Rnd_9x19_FMJ";
 
 comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
@@ -174,7 +175,6 @@ player addItem "HandGrenade";
 player addItem "SmokeShellGreen";
 player addItem "SmokeShellRed";
 for "_i" from 1 to 6 do {player addItem _mag;};
-player addItem "rhsusf_mag_17Rnd_9x19_FMJ";
 player addItem "ACE_M84";
 
 comment "Start of standard medical gear";

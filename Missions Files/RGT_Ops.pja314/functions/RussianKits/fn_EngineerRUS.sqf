@@ -93,6 +93,6 @@ comment "Set G Force resistance and Medical + Engineer training";
 player setVariable ["ACE_GForceCoef", 1];
 
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;
-[[player],"ACE_IsEngineer", 1, true] call ace_common_fnc_assignObjectsInList;
+[[player],"ACE_IsEngineer", 2, true] call ace_common_fnc_assignObjectsInList;
 
 hint "You're now a Russian combat pioneer. \nNeed something blown up? Great! \nYou're equipped with a variety of explosives.";

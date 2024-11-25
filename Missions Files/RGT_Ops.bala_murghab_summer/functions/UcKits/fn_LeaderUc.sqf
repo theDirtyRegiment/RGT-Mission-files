@@ -139,6 +139,7 @@ player addPrimaryWeaponItem "rhsusf_acc_grip2";
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "acc_flashlight_pistol";
+player addHandgunItem "rhsusf_mag_17Rnd_9x19_FMJ";
 
 comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
@@ -159,7 +160,6 @@ player addItem "ACE_Clacker";
 player addItem "Chemlight_green";
 player addItem "ACE_Chemlight_IR";
 player addItem "Chemlight_red";
-player addItem "rhsusf_mag_17Rnd_9x19_JHP";
 player addItem "ACE_CableTie";
 player addItem "ACE_microDAGR";
 for "_i" from 1 to 2 do {player addItem "HandGrenade";};

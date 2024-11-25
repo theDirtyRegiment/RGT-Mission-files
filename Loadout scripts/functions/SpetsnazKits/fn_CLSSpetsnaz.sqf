@@ -188,6 +188,7 @@ player addPrimaryWeaponItem _optic;
 player addPrimaryWeaponItem _grip;
 player addWeapon "hgun_Rook40_F";
 player addHandgunItem "rhsusf_acc_omega9k";
+player addHandgunItem "16Rnd_9x21_Mag";
 
 comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
@@ -207,7 +208,6 @@ for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
 player addItem "Chemlight_green";
 player addItem "ACE_Chemlight_IR";
 player addItem "Chemlight_red";
-player addItem "16Rnd_9x21_Mag";
 player addItem "ACE_microDAGR";
 for "_i" from 1 to 2 do {player addItem "rhs_mag_rdg2_white";};
 player addItem "rhs_mag_rgd5";

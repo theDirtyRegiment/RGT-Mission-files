@@ -179,7 +179,6 @@ _goggles = [
 _nods = [
 	"USP_GPNVG18_WP_GM_TAN", 0.25, 
 	"USP_GPNVG18_WP_GM_TAR_TAN", 0.25,
-	"USP_PVS31_WP", 0.50, 
 	"USP_PVS31_WP_BLK2", 0.50, 
 	"USP_PVS31_WP_TAN", 0.50, 
 	"USP_PVS31_WP_TAN2", 0.25,
