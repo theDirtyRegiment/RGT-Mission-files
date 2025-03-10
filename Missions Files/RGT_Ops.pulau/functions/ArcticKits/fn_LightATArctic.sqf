@@ -51,6 +51,7 @@ player addWeapon "rhs_weap_m72a7";
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "acc_flashlight_pistol";
+player addHandgunItem "rhsusf_mag_17Rnd_9x19_FMJ";
 
 comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
@@ -65,7 +66,6 @@ player addItem "ACE_MapTools";
 player addItem "ACE_microDAGR";
 player addItem "B_IR_Grenade";
 player addItem "rhs_m72a7_mag";
-player addItem "rhsusf_mag_17Rnd_9x19_FMJ";
 player addItem "ACE_bodyBag";
 for "_i" from 1 to 2 do {player addItem "HandGrenade";};
 player addItem "SmokeShell";

@@ -51,6 +51,7 @@ player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "acc_flashlight_pistol";
+player addHandgunItem "rhsusf_mag_17Rnd_9x19_FMJ";
 
 comment "Fill Uniform and Gear";
 player addItem "ACE_morphine";
@@ -80,7 +81,6 @@ switch(_rifle) do {
 		for "_i" from 1 to 3 do {player addItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";};
 	};
 };
-player addItemToBackpack "rhsusf_mag_17Rnd_9x19_FMJ";
 player addItemToBackpack "rhsusf_ANPVS_14";
 
 comment "Add final Gear";

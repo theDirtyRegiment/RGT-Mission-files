@@ -105,34 +105,33 @@ _goggles = [
 _nods = [
 	"USP_GPNVG18_WP_GM_TAN", 0.25, 
 	"USP_GPNVG18_WP_GM_TAR_TAN", 0.25,
-	"USP_PVS31_WP", 0.50, 
 	"USP_PVS31_WP_BLK2", 0.50, 
 	"USP_PVS31_WP_TAN", 0.50, 
 	"USP_PVS31_WP_TAN2", 0.25,
-	"USP_PVS31_WP_HIGH", 0.25,
+	"USP_PVS31_WP_HIGH_BLK", 0.25,
 	"USP_PVS31_WP_HIGH_BLK2", 0.25,
 	"USP_PVS31_WP_HIGH_TAN", 0.25,
 	"USP_PVS31_WP_HIGH_TAN2", 0.25,
-	"USP_PVS31_WP_LOW", 0.25,
+	"USP_PVS31_WP_LOW_BLK", 0.25,
 	"USP_PVS31_WP_LOW_BLK2", 0.25,
 	"USP_PVS31_WP_LOW_TAN", 0.25,
 	"USP_PVS31_WP_LOW_TAN2", 0.25,
-	"USP_PVS31_WP_MID", 0.25,
+	"USP_PVS31_WP_MID_BLK", 0.25,
 	"USP_PVS31_WP_MID_BLK2", 0.25,
 	"USP_PVS31_WP_MID_TAN2", 0.25,
-	"USP_PVS31_WP_TAR", 0.25,
+	"USP_PVS31_WP_TAR_BLK", 0.25,
 	"USP_PVS31_WP_TAR_BLK2", 0.25,
 	"USP_PVS31_WP_TAR_TAN", 0.25,
 	"USP_PVS31_WP_TAR_TAN2", 0.25,
-	"USP_PVS31_WP_TAR_HIGH", 0.25,
+	"USP_PVS31_WP_TAR_HIGH_BLK", 0.25,
 	"USP_PVS31_WP_TAR_HIGH_BLK2", 0.25,
 	"USP_PVS31_WP_TAR_HIGH_TAN", 0.25,
 	"USP_PVS31_WP_TAR_HIGH_TAN2", 0.25,
-	"USP_PVS31_WP_TAR_LOW", 0.25,
+	"USP_PVS31_WP_TAR_LOW_BLK", 0.25,
 	"USP_PVS31_WP_TAR_LOW_BLK2", 0.25,
 	"USP_PVS31_WP_TAR_LOW_TAN", 0.25,
 	"USP_PVS31_WP_TAR_LOW_TAN2", 0.25,
-	"USP_PVS31_WP_TAR_MID", 0.25,
+	"USP_PVS31_WP_TAR_MID_BLK", 0.25,
 	"USP_PVS31_WP_TAR_MID_BLK2", 0.25,
 	"USP_PVS31_WP_TAR_MID_TAN", 0.25,
 	"USP_PVS31_WP_TAR_MID_TAN2", 0.25,	
@@ -148,6 +147,7 @@ player addPrimaryWeaponItem "rhsusf_acc_grip2";
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "acc_flashlight_pistol";
+player addHandgunItem "rhsusf_mag_17Rnd_9x19_FMJ";
 
 comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
@@ -174,7 +174,6 @@ player addItem "HandGrenade";
 player addItem "SmokeShellGreen";
 player addItem "SmokeShellRed";
 for "_i" from 1 to 6 do {player addItem _mag;};
-player addItem "rhsusf_mag_17Rnd_9x19_FMJ";
 player addItem "ACE_M84";
 
 comment "Start of standard medical gear";

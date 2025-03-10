@@ -54,6 +54,7 @@ player addPrimaryWeaponItem _optic;
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "rhsusf_acc_omega9k";
 player addHandgunItem "acc_flashlight_pistol";
+player addHandgunItem "rhsusf_mag_17Rnd_9x19_FMJ";
 player addWeapon "ACE_Vector";
 
 comment "Fill Uniform and Gear";
@@ -67,7 +68,6 @@ player addItemToUniform "ACE_Flashlight_MX991";
 player addItemToUniform "ACE_Clacker";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_microDAGR";
-player addItemToUniform "rhsusf_mag_17Rnd_9x19_FMJ";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 player addItemToVest "SmokeShell";
 player addItemToVest "SmokeShellRed";

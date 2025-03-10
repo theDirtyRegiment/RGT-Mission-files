@@ -184,6 +184,7 @@ player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
 player addWeapon "ACE_Vector";
 player addWeapon "hgun_Rook40_F";
 player addHandgunItem "rhsusf_acc_omega9k";
+player addHandgunItem "16Rnd_9x21_Mag";
 
 comment "Add Uniforms and Gear";
 player forceAddUniform _clothing;
@@ -206,7 +207,6 @@ player addItem "ACE_bodyBag";
 player addItem "Chemlight_green";
 player addItem "ACE_Chemlight_IR";
 player addItem "Chemlight_red";
-player addItem "16Rnd_9x21_Mag";
 player addItem "AMP_Breaching_Charge_Mag";
 for "_i" from 1 to 6 do {player addItem _mag;};
 for "_i" from 1 to 2 do {player addItem "rhs_mag_rgd5";};
