@@ -202,7 +202,7 @@ player addItem "ACE_Clacker";
 player addItem "rhs_mag_f1";
 player addItem "rhs_mag_rgd5";
 for "_i" from 1 to 2 do {player addItem "rhs_mag_fakel";};
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 for "_i" from 1 to 6 do {player addItem "rhs_75Rnd_762x39mm_tracer";};
 
 

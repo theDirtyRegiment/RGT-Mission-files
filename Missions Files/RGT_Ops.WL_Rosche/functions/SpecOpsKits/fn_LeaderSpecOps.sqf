@@ -294,7 +294,7 @@ player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
 for "_i" from 1 to 6 do {player addItem _ammo;};
 for "_i" from 1 to 2 do {player addItem _flash;};
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 player addItem "ACE_Flashlight_MX991";
 player addItem "ACE_Clacker";
 player addItem "ACE_MapTools";

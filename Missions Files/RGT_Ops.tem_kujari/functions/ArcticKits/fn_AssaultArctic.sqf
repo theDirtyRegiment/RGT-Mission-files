@@ -71,7 +71,7 @@ player addItem "SmokeShell";
 player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
 for "_i" from 1 to 6 do {player addItem "rhs_mag_30Rnd_556x45_M855A1_PMAG";};
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 for "_i" from 1 to 2 do {player addItem "ACE_M84";};
 player addItemToBackpack "rhsusf_ANPVS_14";
 

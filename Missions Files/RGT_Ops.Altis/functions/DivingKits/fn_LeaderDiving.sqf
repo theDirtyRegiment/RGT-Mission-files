@@ -126,7 +126,7 @@ player addItemToBackpack "ACE_microDAGR";
 player addItemToBackpack "ACE_Clacker";
 player addItemToBackpack "arifle_SDAR_F";
 for "_i" from 1 to 2 do {player addItemToBackpack "20Rnd_556x45_UW_mag";};
-player addItemToBackpack "AMP_Breaching_Charge_Mag";
+player addItemToBackpack "tsp_breach_linear_mag";
 player addItemToBackpack "ACE_M84";
 player addItemToBackpack "rhs_mag_an_m8hc";
 player addItemToBackpack "ACE_Chemlight_IR";

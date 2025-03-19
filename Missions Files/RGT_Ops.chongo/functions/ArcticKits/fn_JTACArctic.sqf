@@ -73,7 +73,7 @@ player addItemToVest "SmokeShell";
 player addItemToVest "SmokeShellRed";
 player addItemToVest "SmokeShellBlue";
 for "_i" from 1 to 6 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_PMAG_Tan";};
-player addItemToVest "AMP_Breaching_Charge_Mag";
+player addItemToVest "tsp_breach_linear_mag";
 for "_i" from 1 to 2 do {player addItemToVest "ACE_M84";};
 player addItemToBackpack "ACE_bodyBag";
 player addItemToBackpack "Laserdesignator_03";

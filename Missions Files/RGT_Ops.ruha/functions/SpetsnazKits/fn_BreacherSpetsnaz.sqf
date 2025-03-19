@@ -217,7 +217,7 @@ player addItem "ACE_DefusalKit";
 player addItem "ACE_Clacker";
 player addItem "ACE_SpraypaintRed";
 player addItem "ACE_SpraypaintGreen";
-for "_i" from 1 to 2 do {player addItem "AMP_Breaching_Charge_Mag";};
+for "_i" from 1 to 2 do {player addItem "tsp_breach_linear_mag";};
 player addItem "DemoCharge_Remote_Mag";
 
 comment "Add final Gear";

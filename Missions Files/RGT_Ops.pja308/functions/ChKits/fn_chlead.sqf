@@ -250,7 +250,7 @@ player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
 for "_i" from 1 to 8 do {player addItem _mag;};
 player addItem "ACE_M84";
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 
 comment "Add final Gear";
 player linkItem "ItemMap";

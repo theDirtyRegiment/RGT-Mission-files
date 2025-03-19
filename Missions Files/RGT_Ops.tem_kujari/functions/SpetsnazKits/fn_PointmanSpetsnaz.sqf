@@ -196,7 +196,7 @@ player addItem "rhssaf_mag_brd_m83_red";
 for "_i" from 1 to 6 do {player addItem "rhs_20rnd_9x39mm_SP5";};
 for "_i" from 1 to 3 do {player addItem "rhs_20rnd_9x39mm_SP6";};
 player addItem "ACE_wirecutter";
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 player addItem "rhs_acc_2dpzenit_ris";
 
 

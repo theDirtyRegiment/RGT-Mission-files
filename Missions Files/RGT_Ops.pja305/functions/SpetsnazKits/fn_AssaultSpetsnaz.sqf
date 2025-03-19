@@ -216,7 +216,7 @@ player addItem "ACE_bodyBag";
 player addItem "Chemlight_green";
 player addItem "ACE_Chemlight_IR";
 player addItem "Chemlight_red";
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 for "_i" from 1 to 6 do {player addItem _mag;};
 for "_i" from 1 to 2 do {player addItem "rhs_mag_rgd5";};
 player addItem "rhs_mag_rdg2_white";

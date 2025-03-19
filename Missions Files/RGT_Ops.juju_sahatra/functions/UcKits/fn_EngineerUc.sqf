@@ -178,7 +178,7 @@ player addItem "ACE_Clacker";
 player addItem "ACE_wirecutter";
 player addItem "SatchelCharge_Remote_Mag";
 for "_i" from 1 to 2 do {player addItem "DemoCharge_Remote_Mag";};
-for "_i" from 1 to 2 do {player addItem "AMP_Breaching_Charge_Mag";};
+for "_i" from 1 to 2 do {player addItem "tsp_breach_linear_mag";};
 
 comment "Add final Gear";
 player linkItem "ItemMap";

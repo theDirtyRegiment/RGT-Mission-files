@@ -211,7 +211,7 @@ player addItem "ACE_bodyBag";
 for "_i" from 1 to 2 do {player addItem "HandGrenade";};
 player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 for "_i" from 1 to 2 do {player addItem "ACE_M84";};
 player addItem "SmokeShell";
 switch(_rifle) do {

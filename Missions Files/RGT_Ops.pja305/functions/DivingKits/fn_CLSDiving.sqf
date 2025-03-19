@@ -145,7 +145,7 @@ for "_i" from 1 to 2 do {player addItem "ACE_adenosine";};
 comment "End of Medical gear";
 
 player addItem "arifle_SDAR_F";
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 player addItem "ACE_M84";
 player addItem "rhs_mag_an_m8hc";
 player addItem "ACE_Chemlight_IR";

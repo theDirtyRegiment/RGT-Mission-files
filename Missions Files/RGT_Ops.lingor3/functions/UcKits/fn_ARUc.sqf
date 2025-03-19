@@ -155,7 +155,7 @@ for "_i" from 1 to 2 do {player addItem "HandGrenade";};
 player addItem "SmokeShell";
 player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 player addItem "ACE_M84";
 for "_i" from 1 to 2 do {player addItem "rhsusf_100Rnd_556x45_mixed_soft_pouch";};
 player addItem "rhsusf_200rnd_556x45_mixed_box";

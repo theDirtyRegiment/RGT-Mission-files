@@ -134,7 +134,7 @@ player addItemToBackpack "Chemlight_red";
 player addItemToBackpack "Chemlight_green";
 player addItemToBackpack "ACE_HandFlare_Green";
 for "_i" from 1 to 2 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
-for "_i" from 1 to 2 do {player addItemToBackpack "AMP_Breaching_Charge_Mag";};
+for "_i" from 1 to 2 do {player addItemToBackpack "tsp_breach_linear_mag";};
 
 comment "Add final Gear";
 player linkItem "ItemMap";

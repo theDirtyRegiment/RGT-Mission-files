@@ -185,7 +185,7 @@ player addItem "rhsusf_mag_40Rnd_46x30_AP";
 player addItem "rhsusf_mag_40Rnd_46x30_JHP";
 player addItem "ACE_wirecutter";
 player addItem "ACE_HuntIR_monitor";
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 player addItem "ACE_Flashlight_MX991";
 player addItem "ACE_Clacker";
 player addItem "ACE_MapTools";

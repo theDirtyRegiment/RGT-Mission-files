@@ -71,7 +71,7 @@ player addItemToBackpack "ACE_DefusalKit";
 player addItemToBackpack "ACE_Clacker";
 player addItemToBackpack "ACE_SpraypaintRed";
 player addItemToBackpack "ACE_SpraypaintGreen";
-for "_i" from 1 to 3 do {player addItemToBackpack "AMP_Breaching_Charge_Mag";};
+for "_i" from 1 to 3 do {player addItemToBackpack "tsp_breach_linear_mag";};
 for "_i" from 1 to 2 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
 player addItemToBackpack "rhsusf_ANPVS_14";
 

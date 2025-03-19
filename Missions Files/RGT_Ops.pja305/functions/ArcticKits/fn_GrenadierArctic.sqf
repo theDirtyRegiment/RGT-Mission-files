@@ -77,7 +77,7 @@ for "_i" from 1 to 2 do {player addItem "ACE_HuntIR_M203";};
 for "_i" from 1 to 6 do {player addItem "rhs_mag_30Rnd_556x45_Mk318_PMAG";};
 player addItemToBackpack "ACE_wirecutter";
 player addItemToBackpack "ACE_HuntIR_monitor";
-player addItemToBackpack "AMP_Breaching_Charge_Mag";
+player addItemToBackpack "tsp_breach_linear_mag";
 player addItemToBackpack "rhsusf_ANPVS_14";
 
 comment "Add final Gear";

@@ -273,7 +273,7 @@ player addItem "SmokeShell";
 player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
 for "_i" from 1 to 4 do {player addItem _ammo;};
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 for "_i" from 1 to 2 do {player addItem _flash;};
 player addItem "ACE_bodyBag";
 player addItemToBackpack "Laserdesignator_03";

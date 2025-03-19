@@ -75,7 +75,7 @@ player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
 player addItem "ACE_M84";
 for "_i" from 1 to 3 do {player addItem "rhs_30Rnd_762x39mm_89";};
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 for "_i" from 1 to 2 do {player addItem "rhs_30Rnd_762x39mm_89";};
 player addItem "rhs_30Rnd_762x39mm_U";
 player addItem "ACE_DefusalKit";

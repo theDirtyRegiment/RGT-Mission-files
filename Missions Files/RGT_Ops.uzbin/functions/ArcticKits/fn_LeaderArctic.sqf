@@ -74,7 +74,7 @@ player addItem "SmokeShellRed";
 player addItem "SmokeShellBlue";
 for "_i" from 1 to 6 do {player addItem "rhs_mag_30Rnd_556x45_Mk318_PMAG";};
 player addItem "ACE_M84";
-player addItem "AMP_Breaching_Charge_Mag";
+player addItem "tsp_breach_linear_mag";
 player addItemToBackpack "rhsusf_ANPVS_14";
 
 comment "Add final Gear";
