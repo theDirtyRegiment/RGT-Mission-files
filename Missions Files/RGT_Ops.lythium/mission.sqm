@@ -6,10 +6,6 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=521;
-	mods[]=
-	{
-		"3denEnhanced"
-	};
 	class ItemIDProvider
 	{
 		nextID=791;
@@ -20,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=287;
+		nextID=292;
 	};
 	class Camera
 	{
@@ -55,7 +51,6 @@ addons[]=
 	"ace_realisticnames",
 	"ace_attach",
 	"ace_chemlights",
-	"tsp_faction",
 	"A3_Ui_F",
 	"rhsusf_vehicles",
 	"rhsusf_c_mrzr",
@@ -113,6 +108,7 @@ addons[]=
 	"ace_medical_vitals",
 	"rhs_c_troops",
 	"ace_compat_rhs_afrf3_nightvision",
+	"tsp_rhs_tweak",
 	"rhsgref_c_weapons",
 	"ace_trenches",
 	"TRYK_Uniform",
@@ -249,306 +245,306 @@ class AddonsMetaData
 		};
 		class Item17
 		{
-			className="tsp_faction";
-			name="tsp_faction";
-		};
-		class Item18
-		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item18
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item20
+		class Item19
 		{
 			className="rhsusf_c_mrzr";
 			name="MRZR";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item21
+		class Item20
 		{
 			className="rhsusf_c_fmtv";
 			name="FMTV Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item22
+		class Item21
 		{
 			className="rhsusf_c_RG33L";
 			name="RG33L MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item23
+		class Item22
 		{
 			className="NDS_6x6_ATV";
 			name="NDS_6x6_ATV";
 			author="Neddles";
 		};
-		class Item24
+		class Item23
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item24
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item25
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item26
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item28
+		class Item27
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item28
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item31
+		class Item30
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item32
+		class Item31
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item32
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item33
 		{
 			className="rhsusf_c_Cougar";
 			name="Cougar MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item35
+		class Item34
 		{
 			className="rhsusf_c_MATV";
 			name="MATV MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item36
+		class Item35
 		{
 			className="ace_slideshow";
 			name="ACE3 - Slideshow";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item37
+		class Item36
 		{
 			className="Jbad_Misc_Construction";
 			name="Jbad_Misc_Construction";
 		};
-		class Item38
+		class Item37
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item39
+		class Item38
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item40
+		class Item39
 		{
 			className="po_factions_eu";
 			name="po_factions_eu";
 			author="Leight, Keeway";
 		};
-		class Item41
+		class Item40
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item42
+		class Item41
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item43
+		class Item42
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item44
+		class Item43
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item44
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item46
+		class Item45
 		{
 			className="milgp_headgear_cfg";
 			name="milgp_headgear_cfg";
 		};
-		class Item47
+		class Item46
 		{
 			className="MyAddon";
 			name="ACE Compat - Military Gear Pack";
 			author="Smith";
 			url="https://steamcommunity.com/profiles/76561197990550454/";
 		};
-		class Item48
+		class Item47
 		{
 			className="ARD_Crye_Config";
 			name="ARD_Crye_Config";
 		};
-		class Item49
+		class Item48
 		{
 			className="milgp_vests_cfg";
 			name="milgp_vests_cfg";
 		};
-		class Item50
+		class Item49
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item51
+		class Item50
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item52
+		class Item51
 		{
 			className="ace_atragmx";
 			name="ACE3 - ATragMX";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item53
+		class Item52
 		{
 			className="ace_kestrel4500";
 			name="ACE3 - Kestrel 4500";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item54
+		class Item53
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item55
+		class Item54
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item56
+		class Item55
 		{
 			className="USP_Gear_NVG";
 			name="USP Gear (NVG)";
 			author="UnderSiege Productions";
 			url="https://uspmod.com/";
 		};
-		class Item57
+		class Item56
 		{
 			className="USP_Gear_Head";
 			name="USP_Gear_Head";
 		};
-		class Item58
+		class Item57
 		{
 			className="USP_Gear_Body";
 			name="USP Gear (Body)";
 			author="UnderSiege Productions";
 			url="https://uspmod.com/";
 		};
-		class Item59
+		class Item58
 		{
 			className="tfar_core";
 			name="TFAR - Core";
 			author="Task Force Arrowhead Radio Team";
 		};
-		class Item60
+		class Item59
 		{
 			className="ace_medical_vitals";
 			name="ACE3 - Medical Vitals";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item61
+		class Item60
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item62
+		class Item61
 		{
 			className="ace_compat_rhs_afrf3_nightvision";
 			name="ACE3 - RHS AFRF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
+		};
+		class Item62
+		{
+			className="tsp_rhs_tweak";
+			name="tsp_rhs_tweak";
 		};
 		class Item63
 		{
@@ -655,19 +651,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="ENH_saveLoadout";
-			expression="if (!isMultiplayer || !_value || is3DEN || !hasInterface) exitWith {};        0 spawn        {            waitUntil {sleep 1; !isNull player};            player setVariable ['ENH_savedLoadout', getUnitloadout player];            player addMPEventHandler ['MPRespawn',            {                params ['_unit'];                private _loadout = _unit getVariable ['ENH_savedLoadout', []];                if (_loadout isNotEqualTo []) then {_unit setUnitLoadout _loadout};            }];        };";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -690,60 +673,12 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		nAttributes=1;
 	};
 	class Category1
 	{
 		name="Scenario";
 		class Attribute0
-		{
-			property="ENH_mapIndicators";
-			expression="if (!is3DEN && (_value isNotEqualTo [false, false, false, false]) && hasInterface) then {disableMapIndicators _value}";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-					class value
-					{
-						items=4;
-						class Item0
-						{
-							class data
-							{
-								singleType="BOOL";
-								value=1;
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								singleType="BOOL";
-								value=1;
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								singleType="BOOL";
-								value=1;
-							};
-						};
-						class Item3
-						{
-							class data
-							{
-								singleType="BOOL";
-								value=1;
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="cba_settings_hash";
 			expression="false";
@@ -12732,7 +12667,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		nAttributes=1;
 	};
 };
 class Mission
@@ -19168,134 +19103,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ENH_HoldAction";
-					expression="            _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow', '_removeAfterUse'];            if (!is3DEN && (_name != '')) then            {                if _removeAfterUse then                {                    _codeCompletion = format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion];                };                [                    _this,                    _name,                    _iconIdle,                    _iconProgress,                    _conditionShow,                    _conditionProgress,                    compile _codeStart,                    compile _codeProgress,                    compile _codeCompletion,                    compile _codeInterrupt,                    nil,                    _duration,                    _priority,                    _removeAfterUse,                    _showUnconscious,                    _showWindow                ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];            };";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=14;
-								class Item0
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="STRING";
-										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="STRING";
-										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-									};
-								};
-								class Item3
-								{
-									class data
-									{
-										singleType="STRING";
-										value="true";
-									};
-								};
-								class Item4
-								{
-									class data
-									{
-										singleType="STRING";
-										value="true";
-									};
-								};
-								class Item5
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item6
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item7
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item8
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item9
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=10;
-									};
-								};
-								class Item10
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=1000;
-									};
-								};
-								class Item11
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-								class Item12
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-								class Item13
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
 					class Value
@@ -19344,7 +19151,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -19357,7 +19164,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute2
 				{
 					property="ace_isMedicalVehicle";
 					expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
@@ -19370,7 +19177,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item40
@@ -19398,134 +19205,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ENH_HoldAction";
-					expression="            _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow', '_removeAfterUse'];            if (!is3DEN && (_name != '')) then            {                if _removeAfterUse then                {                    _codeCompletion = format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion];                };                [                    _this,                    _name,                    _iconIdle,                    _iconProgress,                    _conditionShow,                    _conditionProgress,                    compile _codeStart,                    compile _codeProgress,                    compile _codeCompletion,                    compile _codeInterrupt,                    nil,                    _duration,                    _priority,                    _removeAfterUse,                    _showUnconscious,                    _showWindow                ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];            };";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=14;
-								class Item0
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="STRING";
-										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="STRING";
-										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-									};
-								};
-								class Item3
-								{
-									class data
-									{
-										singleType="STRING";
-										value="true";
-									};
-								};
-								class Item4
-								{
-									class data
-									{
-										singleType="STRING";
-										value="true";
-									};
-								};
-								class Item5
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item6
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item7
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item8
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item9
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=10;
-									};
-								};
-								class Item10
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=1000;
-									};
-								};
-								class Item11
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-								class Item12
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-								class Item13
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
 					class Value
@@ -19574,7 +19253,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -19587,7 +19266,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute2
 				{
 					property="ace_isMedicalVehicle";
 					expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
@@ -19600,7 +19279,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item41
@@ -19628,134 +19307,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ENH_HoldAction";
-					expression="            _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow', '_removeAfterUse'];            if (!is3DEN && (_name != '')) then            {                if _removeAfterUse then                {                    _codeCompletion = format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion];                };                [                    _this,                    _name,                    _iconIdle,                    _iconProgress,                    _conditionShow,                    _conditionProgress,                    compile _codeStart,                    compile _codeProgress,                    compile _codeCompletion,                    compile _codeInterrupt,                    nil,                    _duration,                    _priority,                    _removeAfterUse,                    _showUnconscious,                    _showWindow                ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];            };";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=14;
-								class Item0
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="STRING";
-										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="STRING";
-										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-									};
-								};
-								class Item3
-								{
-									class data
-									{
-										singleType="STRING";
-										value="true";
-									};
-								};
-								class Item4
-								{
-									class data
-									{
-										singleType="STRING";
-										value="true";
-									};
-								};
-								class Item5
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item6
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item7
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item8
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item9
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=10;
-									};
-								};
-								class Item10
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=1000;
-									};
-								};
-								class Item11
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-								class Item12
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-								class Item13
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
 					class Value
@@ -19804,7 +19355,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -19817,7 +19368,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute2
 				{
 					property="ace_isMedicalVehicle";
 					expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
@@ -19830,7 +19381,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item42
@@ -20037,135 +19588,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ENH_HoldAction";
-					expression="            _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow', '_removeAfterUse'];            if (!is3DEN && (_name != '')) then            {                if _removeAfterUse then                {                    _codeCompletion = format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion];                };                [                    _this,                    _name,                    _iconIdle,                    _iconProgress,                    _conditionShow,                    _conditionProgress,                    compile _codeStart,                    compile _codeProgress,                    compile _codeCompletion,                    compile _codeInterrupt,                    nil,                    _duration,                    _priority,                    _removeAfterUse,                    _showUnconscious,                    _showWindow                ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];            };";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=14;
-								class Item0
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="STRING";
-										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="STRING";
-										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-									};
-								};
-								class Item3
-								{
-									class data
-									{
-										singleType="STRING";
-										value="true";
-									};
-								};
-								class Item4
-								{
-									class data
-									{
-										singleType="STRING";
-										value="true";
-									};
-								};
-								class Item5
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item6
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item7
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item8
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-								class Item9
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=10;
-									};
-								};
-								class Item10
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=991;
-									};
-								};
-								class Item11
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-								class Item12
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-								class Item13
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item50
@@ -21642,19 +21065,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -21666,7 +21076,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -21812,19 +21222,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -21836,7 +21233,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -22080,19 +21477,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -22104,7 +21488,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -22260,19 +21644,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -22284,7 +21655,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -22485,19 +21856,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -22509,7 +21867,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -22740,19 +22098,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -22764,7 +22109,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -22940,19 +22285,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -22964,7 +22296,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -23129,19 +22461,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -23153,7 +22472,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -23356,19 +22675,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -23380,7 +22686,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -23552,19 +22858,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -23576,7 +22869,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -23814,19 +23107,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -23838,7 +23118,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -24016,19 +23296,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -24040,7 +23307,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -24142,19 +23409,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -24166,7 +23420,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -24344,19 +23598,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -24368,7 +23609,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -24478,19 +23719,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -24502,7 +23730,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -24679,19 +23907,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -24703,7 +23918,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
@@ -24842,19 +24057,6 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="unitName";
-							expression="_this setname _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Infantry Quartermaster";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="face";
 							expression="_this setface _value;";
 							class Value
@@ -24863,6 +24065,19 @@ class Mission
 								{
 									singleType="STRING";
 									value="AfricanHead_03";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="RHS_Male01RUS";
 								};
 							};
 						};
@@ -24881,14 +24096,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="speaker";
-							expression="_this setspeaker _value;";
+							property="unitName";
+							expression="_this setname _value;";
 							class Value
 							{
 								class data
 								{
 									singleType="STRING";
-									value="RHS_Male01RUS";
+									value="Infantry Quartermaster";
 								};
 							};
 						};
@@ -24905,20 +24120,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute6
-						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						nAttributes=7;
+						nAttributes=6;
 					};
 				};
 			};
@@ -25102,19 +24304,6 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_allowSprint";
-							expression="[_this, _value] remoteExec ['allowSprint', _this]";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
 							class Value
@@ -25126,7 +24315,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=5;
 					};
 				};
 			};
